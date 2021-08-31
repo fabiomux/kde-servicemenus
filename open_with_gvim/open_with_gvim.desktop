@@ -1,0 +1,27 @@
+# Author: Fabio Mucciante
+# Last Update: 2021/08/30
+# Version: 1.0.0
+#
+# Manual Install:
+#   - KDE4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
+#   - KDE5: Copy this file under: ~/.local/share/kservices5/ServiceMenus/
+#
+# References:
+#   - https://freeaptitude.altervista.org/downloads/open-with-gvim.html
+#   - https://github.com/fabiomux/kde-servicemenus
+
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+Icon=gvim
+MimeType=all/allfiles
+X-KDE-Priority=TopLevel
+Actions=open_with_gvim
+
+[Desktop Action open_with_gvim]
+Name=Open with gVIM
+Name[it]=Apri con gVIM
+Name[fr]=Ouvrir avec gVIM
+Name[es]=Abrir con gVIM
+Icon=gvim
+Exec=gvim -p %F
