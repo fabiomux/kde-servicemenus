@@ -1,9 +1,9 @@
 # KDE Service Menus
 
 My personal KDE service menus collection, it includes the following scripts:
-- [Copy to Klipper](tree/master/copy_to_klipper): copy the selected filename name, or parts of it, in
+- [Copy to Klipper](https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper): copy the selected filename name, or parts of it, in
   the clipboard area using the Klipper D-Bus service;
-- [Open with gVIM](tree/master/open_with_gvim): displays all the selected files in different gVIM tabs
+- [Open with gVIM](https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim): displays all the selected files in different gVIM tabs
   instead of opening them in hidden buffers.
 
 ## Installation
