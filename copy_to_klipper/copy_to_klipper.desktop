@@ -20,6 +20,7 @@ X-KDE-Submenu=Copy to the clipboard
 X-KDE-Submenu[it]=Copia nella clipboard
 X-KDE-Submenu[es]=Copiar en el portapapeles
 X-KDE-Submenu[fr]=Copier dans la presse-papier
+X-KDE-Submenu[nl]=Kopiëren naar klembord
 X-KDE-Priority=TopLevel
 
 [Desktop Action copy_full_filename]
@@ -27,6 +28,7 @@ Name=Copy the full filename
 Name[it]=Copia il nome del file completo
 Name[es]=Copiar el nombre de fichero completo
 Name[fr]=Copier le nom de fichier complet
+Name[nl]=Volledige bestandsnaam kopiëren
 Icon=klipper
 Exec=qdbus org.kde.klipper /klipper setClipboardContents '%f'
 
@@ -35,6 +37,7 @@ Name=Copy the filename
 Name[it]=Copia il nome del file
 Name[es]=Copiar el nombre de fichero
 Name[fr]=Copier le nom de fichier
+Name[nl]=Bestandsnaam kopiëren
 Icon=klipper
 Exec=qdbus org.kde.klipper /klipper setClipboardContents '%n'
 
@@ -43,6 +46,7 @@ Name=Copy only the path
 Name[it]=Copia solo il percorso del file
 Name[es]=Copiar solo la ruta de acceso
 Name[fr]=Copier le chemin d'accès
+Name[nl]=Alleen bestandslocatie kopiëren
 Icon=klipper
 Exec=qdbus org.kde.klipper /klipper setClipboardContents '%d'
 
@@ -51,5 +55,6 @@ Name=Copy the filename without extension
 Name[it]=Copia il nome del file senza estensione
 Name[es]=Copiar el nombre del fichero sin extension
 Name[fr]=Copier le nom de fichier sans extension
+Name[nl]=Bestandsnaam zonder extensie kopiëren
 Icon=klipper
 Exec=x=%n;qdbus org.kde.klipper /klipper setClipboardContents "${x%.*}"
