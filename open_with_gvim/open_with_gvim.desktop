@@ -23,5 +23,6 @@ Name=Open with gVIM
 Name[it]=Apri con gVIM
 Name[fr]=Ouvrir avec gVIM
 Name[es]=Abrir con gVIM
+Name[nl]=Openen men gVIM
 Icon=gvim
 Exec=gvim -p %F
