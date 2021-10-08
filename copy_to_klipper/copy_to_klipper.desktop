@@ -15,7 +15,7 @@ Type=Service
 MimeType=all/all
 X-KDE-ServiceTypes=KonqPopupMenu/Plugin
 Icon=klipper
-Actions=copy_full_filename;copy_filename;copy_only_path;copy_only_name
+Actions=copy_full_filename;copy_filename;copy_only_path;copy_only_name;copy_md5;copy_sha256;copy_sha512
 X-KDE-Submenu=Copy to the clipboard
 X-KDE-Submenu[it]=Copia nella clipboard
 X-KDE-Submenu[es]=Copiar en el portapapeles
@@ -58,3 +58,30 @@ Name[fr]=Copier le nom de fichier sans extension
 Name[nl]=Bestandsnaam zonder extensie kopiëren
 Icon=klipper
 Exec=x=%n;qdbus org.kde.klipper /klipper setClipboardContents "${x%.*}"
+
+[Desktop Action copy_md5]
+Name=Copy the md5 checksum
+Name[it]=Copia l'hash md5
+Name[es]=Copiar el hash md5
+Name[fr]=Copier l'hachage md5
+Name[nl]=
+Icon=checkmark
+Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`md5sum '%f'|cut -f 1 -d ' '`"
+
+[Desktop Action copy_sha256]
+Name=Copy the sha256 checksum
+Name[it]=Copia l'hash sha256
+Name[es]=Copiar el hash sha256
+Name[fr]=Copier l'hachage sha256
+Name[nl]=
+Icon=checkmark
+Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
+
+[Desktop Action copy_sha512]
+Name=Copy the sha512 checksum
+Name[it]=Copia l'hash sha512
+Name[es]=Copiar el hash sha512
+Name[fr]=Copier l'hachage sha512
+Name[nl]=
+Icon=checkmark
+Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
