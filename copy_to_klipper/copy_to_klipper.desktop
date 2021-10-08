@@ -15,7 +15,7 @@ Type=Service
 MimeType=all/all
 X-KDE-ServiceTypes=KonqPopupMenu/Plugin
 Icon=klipper
-Actions=copy_full_filename;copy_filename;copy_only_path;copy_only_name;copy_md5;copy_sha256;copy_sha512
+Actions=copy_full_filename;copy_filename;copy_only_path;copy_only_name;copy_md5;copy_sha256;copy_sha512;copy_mimetype;copy_filetype
 X-KDE-Submenu=Copy to the clipboard
 X-KDE-Submenu[it]=Copia nella clipboard
 X-KDE-Submenu[es]=Copiar en el portapapeles
@@ -85,3 +85,21 @@ Name[fr]=Copier l'hachage sha512
 Name[nl]=
 Icon=checkmark
 Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
+
+[Desktop Action copy_mimetype]
+Name=Copy the mime type
+Name[it]=Copia il mime type
+Name[es]=
+Name[fr]=
+Name[nl]=
+Icon=application-x-mimearchive
+Exec=x=`file --mime-type '%f'`;qdbus org.kde.klipper /klipper setClipboardContents "${x#*:}"
+
+[Desktop Action copy_filetype]
+Name=Copy the file type
+Name[it]=Copia il tipo di file
+Name[es]=
+Name[fr]=
+Name[nl]=
+Icon=application-x-mimearchive
+Exec=x=`file '%f'`;qdbus org.kde.klipper /klipper setClipboardContents "${x#*:}"
