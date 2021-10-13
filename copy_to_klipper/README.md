@@ -40,3 +40,7 @@ $ make uninstall
 ## Get Help
 
 - [Freeaptitude blog - Download section](https://freeaptitude.altervista.org/downloads/copy-to-klipper.html)
+
+## Acknowledgements
+
+Thanks to Heimen Stoffels (@Vistaus on Github) for the Dutch translation

@@ -20,7 +20,10 @@ To remove the installed file, just type from within the subfolder:
 $ make uninstall
 ```
 
-
 ## Get Help
 
 - [FreeAptitude blog - Download section](https://freeaptitude.altervista.org/downloads/open-with-gvim.html)
+
+## Acknowledgements
+
+Thanks to Heimen Stoffels (@Vistaus on Github) for the Dutch translation
