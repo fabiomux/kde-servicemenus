@@ -6,6 +6,21 @@ to copy in the clipboard the details of the selected file:
 - Path only
 - Filename only
 - Filename without extension
+- md5 checksum
+- sha256 checksum
+- sha512 checksum
+- mime type
+- file type
+- file size in bytes
+- file permissions (octal format)
+- file permissions (humain-readable format)
+- group id
+- group name
+- file user id
+- file user name
+- last access
+- last modification
+- mount point
 
 ## Install
 
