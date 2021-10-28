@@ -21,6 +21,7 @@ X-KDE-Submenu[it]=Copia nella clipboard
 X-KDE-Submenu[es]=Copiar en el portapapeles
 X-KDE-Submenu[fr]=Copier dans la presse-papier
 X-KDE-Submenu[nl]=Kopiëren naar klembord
+X-KDE-Submenu[de]=In die Zwischenablage kopieren
 X-KDE-Priority=TopLevel
 
 [Desktop Action copy_filename_full]
@@ -29,6 +30,7 @@ Name[it]=Copia il nome del file completo
 Name[es]=Copiar el nombre de fichero completo
 Name[fr]=Copier le nom de fichier complet
 Name[nl]=Volledige bestandsnaam kopiëren
+Name[de]=Vollen Dateinamen kopieren
 Icon=klipper
 Exec=qdbus org.kde.klipper /klipper setClipboardContents '%f'
 
@@ -38,6 +40,7 @@ Name[it]=Copia il nome del file
 Name[es]=Copiar el nombre de fichero
 Name[fr]=Copier le nom de fichier
 Name[nl]=Bestandsnaam kopiëren
+Name[de]=Dateinamen kopieren
 Icon=klipper
 Exec=qdbus org.kde.klipper /klipper setClipboardContents '%n'
 
@@ -47,6 +50,7 @@ Name[it]=Copia solo il percorso del file
 Name[es]=Copiar solo la ruta de acceso
 Name[fr]=Copier le chemin d'accès
 Name[nl]=Alleen bestandslocatie kopiëren
+Name[de]=Nur den Pfad kopieren
 Icon=klipper
 Exec=qdbus org.kde.klipper /klipper setClipboardContents '%d'
 
@@ -56,6 +60,7 @@ Name[it]=Copia il nome del file senza estensione
 Name[es]=Copiar el nombre del fichero sin extension
 Name[fr]=Copier le nom de fichier sans extension
 Name[nl]=Bestandsnaam zonder extensie kopiëren
+Name[de]=Dateiname ohne Datienendung kopieren
 Icon=klipper
 Exec=x=%n;qdbus org.kde.klipper /klipper setClipboardContents "${x%.*}"
 
@@ -65,6 +70,7 @@ Name[it]=Copia l'hash md5
 Name[es]=Copiar el hash md5
 Name[fr]=Copier l'hachage md5
 Name[nl]=MD5-controlesom kopiëren
+Name[de]=MD5-Checksumme kopieren
 Icon=checkmark
 Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`md5sum '%f'|cut -f 1 -d ' '`"
 
@@ -74,6 +80,7 @@ Name[it]=Copia l'hash sha256
 Name[es]=Copiar el hash sha256
 Name[fr]=Copier l'hachage sha256
 Name[nl]=SHA256-controlesom kopiëren
+Name[de]=SHA256-Checksumme kopieren
 Icon=checkmark
 Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
 
@@ -83,6 +90,7 @@ Name[it]=Copia l'hash sha512
 Name[es]=Copiar el hash sha512
 Name[fr]=Copier l'hachage sha512
 Name[nl]=SHA512-controlesom kopiëren
+Name[de]=SHA512-Checksumme kopieren
 Icon=checkmark
 Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
 
@@ -92,6 +100,7 @@ Name[it]=Copia il mime type
 Name[es]=Copiar el mime type
 Name[fr]=Copier le type mime
 Name[nl]=Mimetype kopiëren
+Name[de]=MIME-Typ kopieren
 Icon=application-x-mimearchive
 Exec=x=`file --mime-type '%f'`;qdbus org.kde.klipper /klipper setClipboardContents "${x#*:}"
 
@@ -101,6 +110,7 @@ Name[it]=Copia il tipo di file
 Name[es]=Copiar el tipo de fichero
 Name[fr]=Copier le type de fichier
 Name[nl]=Bestandstype kopiëren
+Name[de]=Dateityp kopieren
 Icon=application-x-mimearchive
 Exec=x=`file '%f'`;qdbus org.kde.klipper /klipper setClipboardContents "${x#*:}"
 
@@ -110,6 +120,7 @@ Name[it]=Copia la dimensione del file in byte
 Name[es]=Copiar el tamaño del archivo en bytes
 Name[fr]=Copier la taille du fichier en octets
 Name[nl]=Bestandsgrootte (in bytes) kopiëren
+Name[de]=Größe in Byte kopieren
 Icon=format-number-percent
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'`"
 
@@ -119,6 +130,7 @@ Name[it]=Copia i diritti di accesso (ottale)
 Name[es]=Copie los derechos de acceso al archivo (octal)
 Name[fr]=Copiez les droits d'accès au fichier (octal)
 Name[nl]=Toegangsrechten kopiëren (octaal)
+Name[de]=Zugriffsrechte (octal) kopieren
 Icon=key-single
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %a '%f'`"
 
@@ -128,6 +140,7 @@ Name[it]=Copia i diritti di accesso (human-readable)
 Name[es]=Copie los derechos de acceso al archivo (legible)
 Name[fr]=Copiez les droits d'accès au fichier (lisible)
 Name[nl]=Toegangsrechten kopiëren (leesbaar)
+Name[de]=Zugriffsrechte (lesbar) kopieren
 Icon=key-single
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %A '%f'`"
 
@@ -137,6 +150,7 @@ Name[it]=Copia l'id del gruppo
 Name[es]=Copiar la identificación del grupo
 Name[fr]=Copiez l'identifiant du groupe
 Name[nl]=Groepsid kopiëren
+Name[de]=Gruppen-ID kopieren
 Icon=group
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %g '%f'`"
 
@@ -146,6 +160,7 @@ Name[it]=Copia il nome del gruppo
 Name[es]=Copiar el nombre del grupo
 Name[fr]=Copiez le nom du groupe
 Name[nl]=Groepsnaam kopiëren
+Name[de]=Gruppen-Name kopieren
 Icon=group
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %G '%f'`"
 
@@ -155,6 +170,7 @@ Name[it]=Copia l'id utente
 Name[es]=Copiar la identificación de usuario
 Name[fr]=Copiez l'identifiant de l'utilisateur
 Name[nl]=Gebruikersid kopiëren
+Name[de]=Benutzer-ID kopieren
 Icon=user
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %\\u '%f'`"
 
@@ -164,6 +180,7 @@ Name[it]=Copia il nome utente
 Name[es]=Copiar el nombre de usuario
 Name[fr]=Copiez le nom d'utilisateur
 Name[nl]=Gebruikersnaam kopiëren
+Name[de]=Benutzernamen kopieren
 Icon=user
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %\\U '%f'`"
 
@@ -173,6 +190,7 @@ Name[it]=Copia l'ultimo accesso
 Name[es]=Copiar la hora del último acceso
 Name[fr]=Copier l'heure du dernier accès
 Name[nl]=Bezoekdatum kopiëren
+Name[de]=Letzte Zugriffszeit kopieren
 Icon=change-date-symbolic
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %x '%f'`"
 
@@ -182,6 +200,7 @@ Name[it]=Copia l'ora dell'ultima modifica
 Name[es]=Copiar la hora de la última modificación
 Name[fr]=Copier l'heure de la dernière modification
 Name[nl]=Wijzigingsdatum kopiëren
+Name[de]=Letzte Änderungszeit kopieren
 Icon=change-date-symbolic
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %y '%f'`"
 
@@ -191,5 +210,6 @@ Name[it]=Copia il punto di mount
 Name[es]=Copiar el punto de montaje
 Name[fr]=Copier le point de montage
 Name[nl]=Aankoppelpunt kopiëren
+Name[de]=Einhängepunkt kopieren
 Icon=folder-root-symbolic
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %m '%f'`"
