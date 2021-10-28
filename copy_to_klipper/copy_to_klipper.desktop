@@ -15,7 +15,7 @@ Type=Service
 MimeType=all/all
 X-KDE-ServiceTypes=KonqPopupMenu/Plugin
 Icon=klipper
-Actions=copy_filename_full;copy_filename_name;copy_filename_path;copy_filename_name_noext;copy_hash_md5;copy_hash_sha256;copy_hash_sha512;copy_type_mime;copy_type_filetype;copy_size_bytes;copy_perm_oct;copy_perm_hr;copy_owner_groupid;copy_owner_groupname;copy_owner_userid;copy_owner_username;copy_mount_point;copy_last_access;copy_last_modification
+Actions=copy_filename_full;copy_filename_name;copy_filename_path;copy_filename_name_noext;copy_hash_md5;copy_hash_sha256;copy_hash_sha512;copy_type_mime;copy_type_filetype;copy_size_bytes;copy_size_hr;copy_perm_oct;copy_perm_hr;copy_owner_groupid;copy_owner_groupname;copy_owner_userid;copy_owner_username;copy_mount_point;copy_last_access;copy_last_modification
 X-KDE-Submenu=Copy to the clipboard
 X-KDE-Submenu[it]=Copia nella clipboard
 X-KDE-Submenu[es]=Copiar en el portapapeles
@@ -112,6 +112,15 @@ Name[fr]=Copier la taille du fichier en octets
 Name[nl]=Bestandsgrootte (in bytes) kopiëren
 Icon=format-number-percent
 Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'`"
+
+[Desktop Action copy_size_hr]
+Name=Copy the file size (human-readable)
+Name[it]=Copia la dimensione del file (human-readable)
+Name[es]=Copiar el tamaño del archivo (legible)
+Name[fr]=Copier la taille du fichier (lisible)
+Name[nl]=Bestandsgrootte (leesbaar) kopiëren
+Icon=format-number-percent
+Exec=if [ -d '%f' ]; then qdbus org.kde.klipper /klipper setClipboardContents "`ls -hs '%f'|head -n 1|cut -f 2 -d ' '`"; else qdbus org.kde.klipper /klipper setClipboardContents "`ls -hs '%f'|cut -f 1 -d ' '`"; fi
 
 [Desktop Action copy_perm_oct]
 Name=Copy the file access rights (octal)
