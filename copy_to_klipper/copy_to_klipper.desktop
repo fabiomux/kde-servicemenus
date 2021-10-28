@@ -105,13 +105,13 @@ Icon=application-x-mimearchive
 Exec=x=`file '%f'`;qdbus org.kde.klipper /klipper setClipboardContents "${x#*:}"
 
 [Desktop Action copy_size_bytes]
-Name=Copy the file size in bytes
-Name[it]=Copia la dimensione del file in byte
-Name[es]=Copiar el tamaño del archivo en bytes
-Name[fr]=Copier la taille du fichier en octets
+Name=Copy the file size (in bytes)
+Name[it]=Copia la dimensione del file (in bytes)
+Name[es]=Copiar el tamaño del archivo (en bytes)
+Name[fr]=Copier la taille du fichier (en octets)
 Name[nl]=Bestandsgrootte (in bytes) kopiëren
 Icon=format-number-percent
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'`"
+Exec=if [ -d '%f' ]; then qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'/*|awk '{c+=$1} END {printf "%s",c}'`"; else qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'`"; fi
 
 [Desktop Action copy_size_hr]
 Name=Copy the file size (human-readable)
