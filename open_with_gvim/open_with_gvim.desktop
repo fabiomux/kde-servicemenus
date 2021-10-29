@@ -16,7 +16,7 @@ ServiceTypes=KonqPopupMenu/Plugin
 Icon=gvim
 MimeType=all/allfiles
 X-KDE-Priority=TopLevel
-Actions=open_with_gvim
+Actions=open_with_gvim;open_with_vim
 
 [Desktop Action open_with_gvim]
 Name=Open with gVIM
@@ -27,3 +27,13 @@ Name[nl]=Openen men gVIM
 Name[de]=Mit gVIM öffnen
 Icon=gvim
 Exec=gvim -p %F
+
+[Desktop Action open_with_vim]
+Name=Open with VIM (Konsole)
+Name[it]=Apri con VIM (Konsole)
+Name[fr]=Ouvrir avec VIM (Konsole)
+Name[es]=Abrir con VIM (Konsole)
+Name[nl]=Openen men VIM (Konsole)
+Name[de]=Mit VIM öffnen (Konsole)
+Icon=gvim
+Exec=konsole -e vim -p %F
