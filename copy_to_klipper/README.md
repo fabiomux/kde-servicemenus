@@ -11,9 +11,10 @@ to copy in the clipboard the details of the selected file:
 - sha512 checksum
 - mime type
 - file type
-- file size in bytes
+- file size (bytes format)
+- file size (human-readable format)
 - file permissions (octal format)
-- file permissions (humain-readable format)
+- file permissions (human-readable format)
 - group id
 - group name
 - file user id
@@ -39,8 +40,9 @@ $ make uninstall
 
 ## Get Help
 
-- [Freeaptitude blog - Download section](https://freeaptitude.altervista.org/downloads/copy-to-klipper.html)
+- [Freeaptitude blog - Download section - Copy To Klipper](https://freeaptitude.altervista.org/downloads/copy-to-klipper.html)
 
 ## Acknowledgements
 
-Thanks to Heimen Stoffels (@Vistaus on Github) for the Dutch translation
+- Thanks to Heimen Stoffels (@Vistaus on Github) for the Dutch translation;
+- Thanks to Termuellinator (@Termuellinator on Github) for the German translation.

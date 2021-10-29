@@ -1,6 +1,6 @@
 # Author: Fabio Mucciante
-# Last Update: 2021/10/28
-# Version: 1.1.1
+# Last Update: 2021/10/29
+# Version: 1.2.0
 #
 # Manual Install:
 #   - KDE 4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
@@ -130,6 +130,7 @@ Name[it]=Copia la dimensione del file (human-readable)
 Name[es]=Copiar el tamaño del archivo (legible)
 Name[fr]=Copier la taille du fichier (lisible)
 Name[nl]=Bestandsgrootte (leesbaar) kopiëren
+Name[de]=Größe (lesbar) kopieren
 Icon=format-number-percent
 Exec=if [ -d '%f' ]; then qdbus org.kde.klipper /klipper setClipboardContents "`ls -hs '%f'|head -n 1|cut -f 2 -d ' '`"; else qdbus org.kde.klipper /klipper setClipboardContents "`ls -hs '%f'|cut -f 1 -d ' '`"; fi
 
