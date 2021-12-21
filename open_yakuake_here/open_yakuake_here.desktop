@@ -1,0 +1,79 @@
+# Author: Fabio Mucciante
+# Last Update: 2021/12/21
+# Version: 1.0.0
+#
+# Manual Install:
+#   - KDE 4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
+#   - KDE 5: Copy this file under: ~/.local/share/kservices5/ServiceMenus/
+#
+# References:
+#   - https://freeaptitude.altervista.org/downloads/open-yakuake-here.html
+#   - https://github.com/fabiomux/kde-servicemenus
+
+[Desktop Entry]
+Type=Service
+MimeType=inode/directory;
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+Icon=yakuake
+Actions=yakuake_current_session;yakuake_current_session_hsplit_bottom_terminal;yakuake_current_session_hsplit_top_terminal;yakuake_current_session_vsplit_left_terminal;yakuake_current_session_vsplit_right_terminal;yakuake_new_session;yakuake_new_session_hsplit_bottom_terminal;yakuake_new_session_hsplit_top_terminal;yakuake_new_session_vsplit_left_terminal;yakuake_new_session_vsplit_right_terminal
+X-KDE-Submenu=Open Yakuake here
+X-KDE-Submenu[it]=Apri Yakuake qui
+X-KDE-Submenu[es]=Abra Yakuake aquí
+X-KDE-Submenu[fr]=Ouvrez Yakuake ici
+X-KDE-Priority=TopLevel
+
+[Desktop Action yakuake_current_session]
+Name=Current session
+Name[it]=Sessione Corrente
+Name[es]=Sesión actual
+Name[fr]=Session actuelle
+Icon=yakuake
+Exec=qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_current_session_hsplit_bottom_terminal]
+Name=Current session - Bottom terminal
+Icon=view-split-top-bottom
+Exec=tid=`qdbus org.kde.yakuake /yakuake/sessions activeTerminalId`;qdbus org.kde.yakuake /yakuake/sessions splitTerminalTopBottom $tid && qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_current_session_hsplit_top_terminal]
+Name=Current session - Top terminal
+Icon=view-split-top-bottom
+Exec=tid=`qdbus org.kde.yakuake /yakuake/sessions activeTerminalId`; qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/sessions splitTerminalTopBottom $tid && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_current_session_vsplit_left_terminal]
+Name=Current session - Left terminal
+Icon=view-split-left-right
+Exec=tid=`qdbus org.kde.yakuake /yakuake/sessions activeTerminalId`; qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/sessions splitTerminalLeftRight $tid && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_current_session_vsplit_right_terminal]
+Name=Current session - Right terminal
+Icon=view-split-left-right
+Exec=tid=`qdbus org.kde.yakuake /yakuake/sessions activeTerminalId`;qdbus org.kde.yakuake /yakuake/sessions splitTerminalLeftRight $tid && qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_new_session]
+Name=New session
+Name[it]=Nuova sessione
+Icon=window-new
+Exec=qdbus org.kde.yakuake /yakuake/sessions addSession && qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_new_session_hsplit_bottom_terminal]
+Name=New session - Bottom terminal
+Icon=view-split-top-bottom
+Exec=qdbus org.kde.yakuake /yakuake/sessions addSession;tid=`qdbus org.kde.yakuake /yakuake/sessions activeTerminalId`;qdbus org.kde.yakuake /yakuake/sessions splitTerminalTopBottom $tid && qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_new_session_hsplit_top_terminal]
+Name=New session - Top terminal
+Icon=view-split-top-bottom
+Exec=qdbus org.kde.yakuake /yakuake/sessions addSession;tid=`qdbus org.kde.yakuake /yakuake/sessions activeTerminalId`;qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/sessions splitTerminalTopBottom $tid && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_new_session_vsplit_left_terminal]
+Name=New session - Left terminal
+Icon=view-split-left-right
+Exec=qdbus org.kde.yakuake /yakuake/sessions addSession;tid=`qdbus org.kde.yakuake /yakuake/sessions activeTerminalId`;qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/sessions splitTerminalLeftRight $tid && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action yakuake_new_session_vsplit_right_terminal]
+Name=New session - Right terminal
+Icon=view-split-left-right
+Exec=qdbus org.kde.yakuake /yakuake/sessions addSession;tid=`qdbus org.kde.yakuake /yakuake/sessions activeTerminalId`;qdbus org.kde.yakuake /yakuake/sessions splitTerminalLeftRight $tid && qdbus org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && qdbus org.kde.yakuake /yakuake/window toggleWindowState
+
+
