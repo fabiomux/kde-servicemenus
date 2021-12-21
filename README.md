@@ -1,14 +1,19 @@
 # KDE Service Menus
 
 My personal KDE service menus collection, it includes the following scripts:
-- [Copy to Klipper](https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper): copy the selected filename name, or parts of it, in
-  the clipboard area using the Klipper D-Bus service;
-- [Open with gVIM](https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim): displays all the selected files in different gVIM tabs
-  instead of opening them in hidden buffers.
+- [Copy to Klipper](https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper): copy the
+  selected filename name, or parts of it, in the clipboard area using the Klipper D-Bus service;
+- [Open Konsole Here](https://github.com/fabiomux/kde-servicemenus/tree/master/open_konsole_here): open the
+  selected path in the first or last Konsole window, current or new session;
+- [Open with gVIM](https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim): displays all the
+  selected files in different gVIM tabs instead of opening them in hidden buffers;
+- [Open Yakuake Here](https://github.com/fabiomux/kde-servicemenus/tree/master/open_yakuake_here): open the
+  selected path in the current or new Yakuake   session, within the current terminal with or without splitting
+  it horizontally or vertically.
 
 ## Installation
 
-These Services Menus are also loaded in the [KDE store](https://store.kde.org) and connected sites
+These Services Menus are also loaded in the [KDE store](https://store.kde.org) and in the connected sites
 ([Opendesktop](https://opendesktop.org), [Pling](https://pling.com)), that way the installation can be
 easily performed using the proper Dolphin interface available among the settings:
 

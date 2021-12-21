@@ -19,3 +19,15 @@ open_with_gvim: --prepare-tgz
 	     --transform "s|tmp|open_with_gvim|" \
 	     -czf open_with_gvim-$(shell grep 'Version:' './open_with_gvim/open_with_gvim.desktop' | cut -f 3 -d ' ').tgz ./open_with_gvim ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive ready!'
+open_konsole_here: --prepare-tgz
+	@sed -i 's@__project_name__@open_konsole_here@g' ./tmp/install.sh
+	@tar --transform "s|common|open_konsole_here|" \
+	     --transform "s|tmp|open_konsole_here|" \
+	     -czf open_konsole_here-$(shell grep 'Version:' './open_konsole_here/open_konsole_here.desktop' | cut -f 3 -d ' ').tgz ./open_konsole_here ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive ready!'
+open_yakuake_here: --prepare-tgz
+	@sed -i 's@__project_name__@open_yakuake_here@g' ./tmp/install.sh
+	@tar --transform "s|common|open_yakuake_here|" \
+	     --transform "s|tmp|open_yakuake_here|" \
+	     -czf open_yakuake_here-$(shell grep 'Version:' './open_yakuake_here/open_yakuake_here.desktop' | cut -f 3 -d ' ').tgz ./open_yakuake_here ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive ready!'
