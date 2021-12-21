@@ -1,0 +1,56 @@
+# Author: Fabio Mucciante
+# Last Update: 2021/12/21
+# Version: 1.0.0
+#
+# Manual Install:
+#   - KDE 4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
+#   - KDE 5: Copy this file under: ~/.local/share/kservices5/ServiceMenus/
+#
+# References:
+#   - https://freeaptitude.altervista.org/downloads/open-konsole-here.html
+#   - https://github.com/fabiomux/kde-servicemenus
+
+[Desktop Entry]
+Type=Service
+MimeType=inode/directory;
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+Icon=utilities-terminal
+Actions=konsole_first_instance_current_session;konsole_first_instance_new_session;konsole_last_instance_current_session;konsole_last_instance_new_session;
+X-KDE-Submenu=Open Konsole here
+X-KDE-Submenu[it]=Apri Konsole qui
+X-KDE-Submenu[es]=Abra Konsole aquí
+X-KDE-Submenu[fr]=Ouvrez Konsole ici
+X-KDE-Priority=TopLevel
+
+[Desktop Action konsole_last_instance_current_session]
+Name=Current session (last instance)
+Name[it]=Sessione Corrente (ultima istanza)
+Name[es]=Sesión actual (última instancia)
+Name[fr]=Session actuelle (dernière instance)
+Icon=utilities-terminal
+Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;pid=`pgrep konsole|sort -rn|head -n 1` && sid=`qdbus org.kde.konsole-$pid /Windows/1 currentSession`;qdbus org.kde.konsole-$pid /Sessions/$sid runCommand "cd '%f'" && qdbus org.kde.konsole-$pid /konsole/MainWindow_1 hide && qdbus org.kde.konsole-$pid /konsole/MainWindow_1 show
+
+[Desktop Action konsole_last_instance_new_session]
+Name=New session (last instance)
+Name[it]=Nuova sessione (ultima istanza)
+Name[es]=Nueva Sesión (última instancia)
+Name[fr]=Nouvelle session (dernière instance)
+Icon=window-new
+Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;pid=`pgrep konsole|sort -rn|head -n 1` && sid=`qdbus org.kde.konsole-$pid /Windows/1 newSession` && sleep 1 && qdbus org.kde.konsole-$pid /Sessions/$sid runCommand "cd '%f'" && qdbus org.kde.konsole-$pid /konsole/MainWindow_1 hide && qdbus org.kde.konsole-$pid /konsole/MainWindow_1 show
+
+[Desktop Action konsole_first_instance_current_session]
+Name=Current session (first instance)
+Name[it]=Sessione Corrente (prima istanza)
+Name[es]=Sesión actual (primera instancia)
+Name[fr]=Session actuelle (première instance)
+Icon=utilities-terminal
+Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;pid=`pgrep konsole|sort -n|head -n 1` && sid=`qdbus org.kde.konsole-$pid /Windows/1 currentSession`;qdbus org.kde.konsole-$pid /Sessions/$sid runCommand "cd '%f'" && qdbus org.kde.konsole-$pid /konsole/MainWindow_1 hide && qdbus org.kde.konsole-$pid /konsole/MainWindow_1 show
+
+[Desktop Action konsole_first_instance_new_session]
+Name=New session (first instance)
+Name[it]=Nuova sessione (prima istanza)
+Name[es]=Nueva Sesión (primera instancia)
+Name[fr]=Nouvelle session (première instance)
+Icon=window-new
+Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;pid=`pgrep konsole|sort -n|head -n 1` && sid=`qdbus org.kde.konsole-$pid /Windows/1 newSession` && sleep 1 && qdbus org.kde.konsole-$pid /Sessions/$sid runCommand "cd '%f'" && qdbus org.kde.konsole-$pid /konsole/MainWindow_1 hide && qdbus org.kde.konsole-$pid /konsole/MainWindow_1 show
+
