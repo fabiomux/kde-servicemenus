@@ -4,7 +4,10 @@
 clean-archives:
 	@rm -f *.tgz || true
 	@echo 'Archives removed!'
-clean: clean-archives
+clean-uncompressed-dirs:
+	@rm -fR *.tgz-dir || true
+	@echo 'Installing folders removed!'
+clean: clean-archives clean-uncompressed-dirs
 	@rm -rf ./tmp || true
 	@echo 'Cleanup done!'
 copy_to_klipper: --prepare-tgz
