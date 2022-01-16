@@ -1,16 +1,17 @@
-#!/bin/sh
+#!/bin/bash
+
 log_file='./log'
 dest_folder=''
 desktop_filename='__project_name__.desktop'
 
 echo 'Starting procedure from install.sh' | tee $log_file
-if [[ $# -eq 0 ]]; then
+if [ $# -eq 0 ]; then
   echo 'No parameters, try --install or --uninstall' | tee -a $log_file
   exit 1
 fi
 echo "Parameters: $#" | tee -a $log_file
 kf5-config &> /dev/null
-if [[ $? -eq 0 ]]; then
+if [ $? -eq 0 ]; then
   dest_folder=`kf5-config --path services | cut -f 1 -d ':'`ServiceMenus
 else
   dest_folder=`kde4-config --path services | cut -f 1 -d ':'`ServiceMenus
@@ -31,7 +32,7 @@ case "$1" in
 ;;
 '--uninstall'|'--remove'|'--delete'|'--deinstall')
   echo "Uninstalling $desktop_filename" | tee -a $log_file
-  if [[ -f "$dest_folder/$desktop_filename" ]]; then
+  if [ -f "$dest_folder/$desktop_filename" ]; then
     rm "$dest_folder/$desktop_filename"
     echo "Service Menu '$desktop_filename' removed!" | tee -a $log_file
   else
