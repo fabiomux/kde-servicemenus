@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 log_file='./log'
 dest_folder=''
