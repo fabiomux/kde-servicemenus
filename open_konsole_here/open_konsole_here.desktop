@@ -1,6 +1,6 @@
 # Author: Fabio Mucciante
 # Last Update: 2021/12/21
-# Version: 1.1.0
+# Version: 1.1.1
 #
 # Manual Install:
 #   - KDE 4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
@@ -28,7 +28,7 @@ Name[it]=Sessione Corrente (ultima istanza)
 Name[es]=Sesión actual (última instancia)
 Name[fr]=Session actuelle (dernière instance)
 Icon=utilities-terminal
-Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if [[ `qdbus org.kde.konsol*` =~ '-' ]]; then pid=`pgrep konsole|sort -rn|head -n 1` && sname="org.kde.konsole-$pid" && sid=`qdbus $sname /Windows/1 currentSession` && wid=1; else sname='org.kde.konsole' && for i in `qdbus $sname | grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`;do r="$r\\n`qdbus $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -rn|head -n 1|cut -f 2 -d '.'` && sid=`qdbus $sname "/Windows/$wid" currentSession`;fi;qdbus $sname /Sessions/$sid runCommand "cd '%f'" && qdbus $sname /konsole/MainWindow_$wid hide && qdbus $sname /konsole/MainWindow_$wid show
+Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`qdbus org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -rn|head -n 1` && sname="org.kde.konsole-$pid" && sid=`qdbus $sname /Windows/1 currentSession` && wid=1; else sname='org.kde.konsole' && for i in `qdbus $sname | grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`;do r="$r\\n`qdbus $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -rn|head -n 1|cut -f 2 -d '.'` && sid=`qdbus $sname "/Windows/$wid" currentSession`;fi;qdbus $sname /Sessions/$sid runCommand "cd '%f'" && qdbus $sname /konsole/MainWindow_$wid hide && qdbus $sname /konsole/MainWindow_$wid show
 
 [Desktop Action konsole_last_instance_new_session]
 Name=New session (last instance)
@@ -36,7 +36,7 @@ Name[it]=Nuova sessione (ultima istanza)
 Name[es]=Nueva Sesión (última instancia)
 Name[fr]=Nouvelle session (dernière instance)
 Icon=window-new
-Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if [[ `qdbus org.kde.konsol*` =~ '-' ]]; then pid=`pgrep konsole|sort -rn|head -n 1` && sname="org.kde.konsole-$pid" && sid=`qdbus $sname /Windows/1 newSession` && wid=1; else sname='org.kde.konsole' && for i in `qdbus $sname|grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`; do r="$r\\n`qdbus $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -rn|head -n 1|cut -f 2 -d '.'` && sid=`qdbus $sname "/Windows/$wid" newSession`;fi; sleep 1 && qdbus $sname /Sessions/$sid runCommand "cd '%f'" && qdbus $sname /konsole/MainWindow_$wid hide && qdbus $sname /konsole/MainWindow_$wid show
+Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`qdbus org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -rn|head -n 1` && sname="org.kde.konsole-$pid" && sid=`qdbus $sname /Windows/1 newSession` && wid=1; else sname='org.kde.konsole' && for i in `qdbus $sname|grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`; do r="$r\\n`qdbus $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -rn|head -n 1|cut -f 2 -d '.'` && sid=`qdbus $sname "/Windows/$wid" newSession`;fi; sleep 1 && qdbus $sname /Sessions/$sid runCommand "cd '%f'" && qdbus $sname /konsole/MainWindow_$wid hide && qdbus $sname /konsole/MainWindow_$wid show
 
 [Desktop Action konsole_first_instance_current_session]
 Name=Current session (first instance)
@@ -44,7 +44,7 @@ Name[it]=Sessione Corrente (prima istanza)
 Name[es]=Sesión actual (primera instancia)
 Name[fr]=Session actuelle (première instance)
 Icon=utilities-terminal
-Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if [[ `qdbus org.kde.konsol*` =~ '-' ]]; then pid=`pgrep konsole|sort -n|grep "^[0-9]"|head -n 1` && sname="org.kde.konsole-$pid" && sid=`qdbus $sname /Windows/1 currentSession` && wid=1; else sname='org.kde.konsole' && for i in `qdbus $sname | grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`;do r="$r\\n`qdbus $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -n|grep "^[0-9]"|head -n 1|cut -f 2 -d '.'` && sid=`qdbus $sname "/Windows/$wid" currentSession`;fi;qdbus $sname /Sessions/$sid runCommand "cd '%f'" && qdbus $sname /konsole/MainWindow_$wid hide && qdbus $sname /konsole/MainWindow_$wid show
+Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`qdbus org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -n|grep "^[0-9]"|head -n 1` && sname="org.kde.konsole-$pid" && sid=`qdbus $sname /Windows/1 currentSession` && wid=1; else sname='org.kde.konsole' && for i in `qdbus $sname | grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`;do r="$r\\n`qdbus $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -n|grep "^[0-9]"|head -n 1|cut -f 2 -d '.'` && sid=`qdbus $sname "/Windows/$wid" currentSession`;fi;qdbus $sname /Sessions/$sid runCommand "cd '%f'" && qdbus $sname /konsole/MainWindow_$wid hide && qdbus $sname /konsole/MainWindow_$wid show
 
 [Desktop Action konsole_first_instance_new_session]
 Name=New session (first instance)
@@ -52,5 +52,5 @@ Name[it]=Nuova sessione (prima istanza)
 Name[es]=Nueva Sesión (primera instancia)
 Name[fr]=Nouvelle session (première instance)
 Icon=window-new
-Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if [[ `qdbus org.kde.konsol*` =~ '-' ]]; then pid=`pgrep konsole|sort -n|grep "^[0-9]"|head -n 1` && sname="org.kde.konsole-$pid" && sid=`qdbus $sname /Windows/1 newSession` && wid=1; else sname='org.kde.konsole' && for i in `qdbus $sname|grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`; do r="$r\\n`qdbus $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -n|grep "^[0-9]"|head -n 1|cut -f 2 -d '.'` && sid=`qdbus $sname "/Windows/$wid" newSession`;fi; sleep 1 && qdbus $sname /Sessions/$sid runCommand "cd '%f'" && qdbus $sname /konsole/MainWindow_$wid hide && qdbus $sname /konsole/MainWindow_$wid show
+Exec=(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`qdbus org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -n|grep "^[0-9]"|head -n 1` && sname="org.kde.konsole-$pid" && sid=`qdbus $sname /Windows/1 newSession` && wid=1; else sname='org.kde.konsole' && for i in `qdbus $sname|grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`; do r="$r\\n`qdbus $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -n|grep "^[0-9]"|head -n 1|cut -f 2 -d '.'` && sid=`qdbus $sname "/Windows/$wid" newSession`;fi; sleep 1 && qdbus $sname /Sessions/$sid runCommand "cd '%f'" && qdbus $sname /konsole/MainWindow_$wid hide && qdbus $sname /konsole/MainWindow_$wid show
 
