@@ -1,6 +1,6 @@
 # Author: Fabio Mucciante
 # Last Update: 2021/10/29
-# Version: 1.2.1
+# Version: 1.2.2
 #
 # Manual Install:
 #   - KDE 4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
@@ -32,7 +32,7 @@ Name[fr]=Copier le nom de fichier complet
 Name[nl]=Volledige bestandsnaam kopiëren
 Name[de]=Vollen Dateinamen kopieren
 Icon=klipper
-Exec=qdbus org.kde.klipper /klipper setClipboardContents '%f'
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents '%f'
 
 [Desktop Action copy_filename_name]
 Name=Copy the filename
@@ -42,7 +42,7 @@ Name[fr]=Copier le nom de fichier
 Name[nl]=Bestandsnaam kopiëren
 Name[de]=Dateinamen kopieren
 Icon=klipper
-Exec=qdbus org.kde.klipper /klipper setClipboardContents '%n'
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents '%n'
 
 [Desktop Action copy_filename_path]
 Name=Copy only the path
@@ -52,7 +52,7 @@ Name[fr]=Copier le chemin d'accès
 Name[nl]=Alleen bestandslocatie kopiëren
 Name[de]=Nur den Pfad kopieren
 Icon=klipper
-Exec=qdbus org.kde.klipper /klipper setClipboardContents '%d'
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents '%d'
 
 [Desktop Action copy_filename_name_noext]
 Name=Copy the filename without extension
@@ -62,7 +62,7 @@ Name[fr]=Copier le nom de fichier sans extension
 Name[nl]=Bestandsnaam zonder extensie kopiëren
 Name[de]=Dateiname ohne Datienendung kopieren
 Icon=klipper
-Exec=x=%n;qdbus org.kde.klipper /klipper setClipboardContents "${x%.*}"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;x=%n;$exe org.kde.klipper /klipper setClipboardContents "${x%.*}"
 
 [Desktop Action copy_hash_md5]
 Name=Copy the md5 checksum
@@ -72,7 +72,7 @@ Name[fr]=Copier l'hachage md5
 Name[nl]=MD5-controlesom kopiëren
 Name[de]=MD5-Checksumme kopieren
 Icon=checkmark
-Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`md5sum '%f'|cut -f 1 -d ' '`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi;$exe org.kde.klipper /klipper setClipboardContents "`md5sum '%f'|cut -f 1 -d ' '`"
 
 [Desktop Action copy_hash_sha256]
 Name=Copy the sha256 checksum
@@ -82,7 +82,7 @@ Name[fr]=Copier l'hachage sha256
 Name[nl]=SHA256-controlesom kopiëren
 Name[de]=SHA256-Checksumme kopieren
 Icon=checkmark
-Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi;$exe org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
 
 [Desktop Action copy_hash_sha512]
 Name=Copy the sha512 checksum
@@ -92,7 +92,7 @@ Name[fr]=Copier l'hachage sha512
 Name[nl]=SHA512-controlesom kopiëren
 Name[de]=SHA512-Checksumme kopieren
 Icon=checkmark
-Exec=if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi; qdbus org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;if [ -d '%f' ]; then kdialog --error 'The hash cannot be calculated for a directory' --title 'Directory'; exit; fi;$exe org.kde.klipper /klipper setClipboardContents "`sha256sum '%f'|cut -f 1 -d ' '`"
 
 [Desktop Action copy_type_mime]
 Name=Copy the mime type
@@ -102,7 +102,7 @@ Name[fr]=Copier le type mime
 Name[nl]=Mimetype kopiëren
 Name[de]=MIME-Typ kopieren
 Icon=application-x-mimearchive
-Exec=x=`file --mime-type '%f'`;qdbus org.kde.klipper /klipper setClipboardContents "${x#*:}"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;x=`file --mime-type '%f'`;$exe org.kde.klipper /klipper setClipboardContents "${x#*:}"
 
 [Desktop Action copy_type_filetype]
 Name=Copy the file type
@@ -112,7 +112,7 @@ Name[fr]=Copier le type de fichier
 Name[nl]=Bestandstype kopiëren
 Name[de]=Dateityp kopieren
 Icon=application-x-mimearchive
-Exec=x=`file '%f'`;qdbus org.kde.klipper /klipper setClipboardContents "${x#*:}"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;x=`file '%f'`;$exe org.kde.klipper /klipper setClipboardContents "${x#*:}"
 
 [Desktop Action copy_size_bytes]
 Name=Copy the file size (in bytes)
@@ -122,7 +122,7 @@ Name[fr]=Copier la taille du fichier (en octets)
 Name[nl]=Bestandsgrootte (in bytes) kopiëren
 Name[de]=Größe in Byte kopieren
 Icon=format-number-percent
-Exec=if [ -d '%f' ]; then qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'/*|awk '{c+=$1} END {printf "%s",c}'`"; else qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'`"; fi
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;if [ -d '%f' ]; then $exe org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'/*|awk '{c+=$1} END {printf "%s",c}'`"; else $exe org.kde.klipper /klipper setClipboardContents "`stat -c %s '%f'`"; fi
 
 [Desktop Action copy_size_hr]
 Name=Copy the file size (human-readable)
@@ -132,7 +132,7 @@ Name[fr]=Copier la taille du fichier (lisible)
 Name[nl]=Bestandsgrootte (leesbaar) kopiëren
 Name[de]=Größe (lesbar) kopieren
 Icon=format-number-percent
-Exec=if [ -d '%f' ]; then qdbus org.kde.klipper /klipper setClipboardContents "`ls -hs '%f'|head -n 1|cut -f 2 -d ' '`"; else qdbus org.kde.klipper /klipper setClipboardContents "`ls -hs '%f'|cut -f 1 -d ' '`"; fi
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;if [ -d '%f' ]; then $exe org.kde.klipper /klipper setClipboardContents "`ls -hs '%f'|head -n 1|cut -f 2 -d ' '`"; else $exe org.kde.klipper /klipper setClipboardContents "`ls -hs '%f'|cut -f 1 -d ' '`"; fi
 
 [Desktop Action copy_perm_oct]
 Name=Copy the file access rights (octal)
@@ -142,7 +142,7 @@ Name[fr]=Copiez les droits d'accès au fichier (octal)
 Name[nl]=Toegangsrechten kopiëren (octaal)
 Name[de]=Zugriffsrechte (octal) kopieren
 Icon=key-single
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %a '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %a '%f'`"
 
 [Desktop Action copy_perm_hr]
 Name=Copy the file access rights (human-readable)
@@ -152,7 +152,7 @@ Name[fr]=Copiez les droits d'accès au fichier (lisible)
 Name[nl]=Toegangsrechten kopiëren (leesbaar)
 Name[de]=Zugriffsrechte (lesbar) kopieren
 Icon=key-single
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %A '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %A '%f'`"
 
 [Desktop Action copy_owner_groupid]
 Name=Copy the group id
@@ -162,7 +162,7 @@ Name[fr]=Copiez l'identifiant du groupe
 Name[nl]=Groepsid kopiëren
 Name[de]=Gruppen-ID kopieren
 Icon=group
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %g '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %g '%f'`"
 
 [Desktop Action copy_owner_groupname]
 Name=Copy the group name
@@ -172,7 +172,7 @@ Name[fr]=Copiez le nom du groupe
 Name[nl]=Groepsnaam kopiëren
 Name[de]=Gruppen-Name kopieren
 Icon=group
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %G '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %G '%f'`"
 
 [Desktop Action copy_owner_userid]
 Name=Copy the user id
@@ -182,7 +182,7 @@ Name[fr]=Copiez l'identifiant de l'utilisateur
 Name[nl]=Gebruikersid kopiëren
 Name[de]=Benutzer-ID kopieren
 Icon=user
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %\\u '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %\\u '%f'`"
 
 [Desktop Action copy_owner_username]
 Name=Copy the user name
@@ -192,7 +192,7 @@ Name[fr]=Copiez le nom d'utilisateur
 Name[nl]=Gebruikersnaam kopiëren
 Name[de]=Benutzernamen kopieren
 Icon=user
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %\\U '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %\\U '%f'`"
 
 [Desktop Action copy_last_access]
 Name=Copy the time of last access
@@ -202,7 +202,7 @@ Name[fr]=Copier l'heure du dernier accès
 Name[nl]=Bezoekdatum kopiëren
 Name[de]=Letzte Zugriffszeit kopieren
 Icon=change-date-symbolic
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %x '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %x '%f'`"
 
 [Desktop Action copy_last_modification]
 Name=Copy the time of last modification
@@ -212,7 +212,7 @@ Name[fr]=Copier l'heure de la dernière modification
 Name[nl]=Wijzigingsdatum kopiëren
 Name[de]=Letzte Änderungszeit kopieren
 Icon=change-date-symbolic
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %y '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %y '%f'`"
 
 [Desktop Action copy_mount_point]
 Name=Copy the mount point
@@ -222,4 +222,4 @@ Name[fr]=Copier le point de montage
 Name[nl]=Aankoppelpunt kopiëren
 Name[de]=Einhängepunkt kopieren
 Icon=folder-root-symbolic
-Exec=qdbus org.kde.klipper /klipper setClipboardContents "`stat -c %m '%f'`"
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.klipper /klipper setClipboardContents "`stat -c %m '%f'`"
