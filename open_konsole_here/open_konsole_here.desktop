@@ -20,6 +20,7 @@ X-KDE-Submenu=Open Konsole here
 X-KDE-Submenu[it]=Apri Konsole qui
 X-KDE-Submenu[es]=Abra Konsole aquí
 X-KDE-Submenu[fr]=Ouvrez Konsole ici
+X-KDE-Submenu[nl]=Openen in Konsole
 X-KDE-Priority=TopLevel
 
 [Desktop Action konsole_last_instance_current_session]
@@ -27,6 +28,7 @@ Name=Current session (last instance)
 Name[it]=Sessione Corrente (ultima istanza)
 Name[es]=Sesión actual (última instancia)
 Name[fr]=Session actuelle (dernière instance)
+Name[nl]=Huidige sessie (recentste venster)
 Icon=utilities-terminal
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`$exe org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -rn|head -n 1` && sname="org.kde.konsole-$pid" && sid=`$exe $sname /Windows/1 currentSession` && wid=1; else sname='org.kde.konsole' && for i in `$exe $sname | grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`;do r="$r\\n`$exe $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -rn|head -n 1|cut -f 2 -d '.'` && sid=`$exe $sname "/Windows/$wid" currentSession`;fi;$exe $sname /Sessions/$sid runCommand "cd '%f'" && $exe $sname /konsole/MainWindow_$wid hide && $exe $sname /konsole/MainWindow_$wid show
 
@@ -35,6 +37,7 @@ Name=New session (last instance)
 Name[it]=Nuova sessione (ultima istanza)
 Name[es]=Nueva Sesión (última instancia)
 Name[fr]=Nouvelle session (dernière instance)
+Name[nl]=Nieuwe sessie (recentste venster)
 Icon=window-new
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`$exe org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -rn|head -n 1` && sname="org.kde.konsole-$pid" && sid=`$exe $sname /Windows/1 newSession` && wid=1; else sname='org.kde.konsole' && for i in `$exe $sname|grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`; do r="$r\\n`$exe $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -rn|head -n 1|cut -f 2 -d '.'` && sid=`$exe $sname "/Windows/$wid" newSession`;fi; sleep 1 && $exe $sname /Sessions/$sid runCommand "cd '%f'" && $exe $sname /konsole/MainWindow_$wid hide && $exe $sname /konsole/MainWindow_$wid show
 
@@ -43,6 +46,7 @@ Name=Current session (first instance)
 Name[it]=Sessione Corrente (prima istanza)
 Name[es]=Sesión actual (primera instancia)
 Name[fr]=Session actuelle (première instance)
+Name[nl]=Huidige sessie (eerste venster)
 Icon=utilities-terminal
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`$exe org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -n|grep "^[0-9]"|head -n 1` && sname="org.kde.konsole-$pid" && sid=`$exe $sname /Windows/1 currentSession` && wid=1; else sname='org.kde.konsole' && for i in `$exe $sname | grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`;do r="$r\\n`$exe $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -n|grep "^[0-9]"|head -n 1|cut -f 2 -d '.'` && sid=`$exe $sname "/Windows/$wid" currentSession`;fi;$exe $sname /Sessions/$sid runCommand "cd '%f'" && $exe $sname /konsole/MainWindow_$wid hide && $exe $sname /konsole/MainWindow_$wid show
 
@@ -51,6 +55,7 @@ Name=New session (first instance)
 Name[it]=Nuova sessione (prima istanza)
 Name[es]=Nueva Sesión (primera instancia)
 Name[fr]=Nouvelle session (première instance)
+Name[nl]=Nieuwe sessie (eerste venster)
 Icon=window-new
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`$exe org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -n|grep "^[0-9]"|head -n 1` && sname="org.kde.konsole-$pid" && sid=`$exe $sname /Windows/1 newSession` && wid=1; else sname='org.kde.konsole' && for i in `$exe $sname|grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`; do r="$r\\n`$exe $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -n|grep "^[0-9]"|head -n 1|cut -f 2 -d '.'` && sid=`$exe $sname "/Windows/$wid" newSession`;fi; sleep 1 && $exe $sname /Sessions/$sid runCommand "cd '%f'" && $exe $sname /konsole/MainWindow_$wid hide && $exe $sname /konsole/MainWindow_$wid show
 
