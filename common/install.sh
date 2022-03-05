@@ -3,11 +3,12 @@
 log_file='./log'
 dest_folder=''
 desktop_filename='__project_name__.desktop'
+action=$1
 
 echo 'Starting procedure from install.sh' | tee $log_file
 if [ $# -eq 0 ]; then
-  echo 'No parameters, try --install or --uninstall' | tee -a $log_file
-  exit 1
+  echo 'No --install or --uninstall parameter given, default to --install' | tee -a $log_file
+  action='--install'
 fi
 echo "Parameters: $#" | tee -a $log_file
 kf5-config &> /dev/null
@@ -17,8 +18,8 @@ else
   dest_folder=`kde4-config --path services | cut -f 1 -d ':'`ServiceMenus
 fi
 
-echo "Parameter: $1" | tee -a $log_file
-case "$1" in
+echo "Parameter: $action" | tee -a $log_file
+case "$action" in
 '--install'|'--local'|'--local-install')
   echo "Installing: $desktop_filename" | tee -a $log_file
   if [ -f "$dest_folder/$desktop_filename" ]; then
