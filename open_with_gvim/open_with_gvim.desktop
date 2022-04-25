@@ -1,6 +1,6 @@
 # Author: Fabio Mucciante
-# Last Update: 2021/10/29
-# Version: 1.2.3
+# Last Update: 2022/04/25
+# Version: 1.3.0
 #
 # Manual Install:
 #   - KDE4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
@@ -16,7 +16,7 @@ ServiceTypes=KonqPopupMenu/Plugin
 Icon=gvim
 MimeType=all/allfiles
 X-KDE-Priority=TopLevel
-Actions=open_with_gvim;open_with_vim
+Actions=open_with_gvim;open_with_vim;open_with_gvimdiff;open_with_vimdiff
 
 [Desktop Action open_with_gvim]
 Name=Open with gVIM
@@ -37,3 +37,23 @@ Name[nl]=Openen met VIM (Konsole)
 Name[de]=Mit VIM öffnen (Konsole)
 Icon=gvim
 Exec=konsole -e vim -p %F
+
+[Desktop Action open_with_gvimdiff]
+Name=Open with gVIMdiff
+Name[it]=Apri con gVIMdiff
+Name[fr]=Ouvrir avec gVIMdiff
+Name[es]=Abrir con gVIMdiff
+Name[nl]=Openen met gVIMdiff
+Name[de]=Mit gVIMdiff öffnen
+Icon=gvim
+Exec=gvimdiff %F
+
+[Desktop Action open_with_vimdiff]
+Name=Open with VIMdiff (Konsole)
+Name[it]=Apri con VIMdiff (Konsole)
+Name[fr]=Ouvrir avec VIMdiff (Konsole)
+Name[es]=Abrir con VIMdiff (Konsole)
+Name[nl]=Openen met VIMdiff (Konsole)
+Name[de]=Mit VIMdiff öffnen (Konsole)
+Icon=gvim
+Exec=konsole -e vimdiff %F
