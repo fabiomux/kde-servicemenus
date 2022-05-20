@@ -4,7 +4,9 @@ KDE service menu which opens the selected folder path in the Konsole terminal
 as a new session or within the current session, bringing to front the window itself.
 
 The selected window will be the latest or the first among the all Konsole opened windows,
-in case none exists a new terminal will be open.
+in case none of them exist a new terminal will be open.
+
+A new menu item allows to select among the opened sessions through a Kdialog dialog.
 
 ## Install
 
