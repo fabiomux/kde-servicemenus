@@ -1,6 +1,9 @@
 # KDE Service Menus
 
 My personal KDE service menus collection, it includes the following scripts:
+- [Copy Filelist to Klipper](https://github.com/fabiomux/kde-servicemenus/tree/master/copy_filelist_to_klipper): 
+  copy the result of a finding, accomplished through the *find* command, in the clipboard area using the Klipper
+  D-Bus service
 - [Copy to Klipper](https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper): copy the
   selected filename name, or parts of it, in the clipboard area using the Klipper D-Bus service;
 - [Open Konsole Here](https://github.com/fabiomux/kde-servicemenus/tree/master/open_konsole_here): open the

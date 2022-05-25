@@ -1,0 +1,105 @@
+# Author: Fabio Mucciante
+# Last Update: 2022/05/20
+# Version: 1.0.0
+#
+# Manual Install:
+#   - KDE 4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
+#   - KDE 5: Copy this file under: ~/.local/share/kservices5/ServiceMenus/
+#
+# References:
+#   - https://freeaptitude.altervista.org/downloads/copy-filelist-to-klipper.html
+#   - https://github.com/fabiomux/kde-servicemenus
+
+[Desktop Entry]
+Type=Service
+MimeType=inode/directory
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+Icon=klipper
+Actions=copy_filelist_all_nosubf;copy_filelist_all_subf;_SEPARATOR_;copy_filelist_filter_nosubf;copy_filelist_filter_subf;_SEPARATOR_;copy_filelist_older_nosubf;copy_filelist_older_subf;_SEPARATOR_;copy_filelist_newer_nosubf;copy_filelist_newer_subf;_SEPARATOR_;copy_filelist_bigger_nosubf;copy_filelist_bigger_subf;_SEPARATOR_;copy_filelist_smaller_nosubf;copy_filelist_smaller_subf;_SEPARATOR_;copy_filelist_empty_nosubf;copy_filelist_empty_subf;_SEPARATOR_
+X-KDE-Submenu=Copy file list to the clipboard
+X-KDE-Submenu[it]=Copia la lista file nella clipboard
+X-KDE-Priority=TopLevel
+
+[Desktop Action copy_filelist_all_nosubf]
+Name=Copy the list of all files (no subfolders)
+Name[it]=Copia la lista di tutti i file (no sottocartelle)
+Icon=klipper
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';l=`find %f -maxdepth 1 -exec realpath '{}' \;`;$exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_all_subf]
+Name=Copy the list of all files (with subfolders)
+Name[it]=Copia la lista di tutti i file (con sottocartelle)
+Icon=klipper
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';l=`find %f -exec realpath '{}' \;`;$exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_filter_nosubf]
+Name=Copy the list of filtered files (no subfolders)
+Name[it]=Copia la lista dei file filtrati (no sottocartelle)
+Icon=folder-txt
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Insert the filter' '*.txt'` && l=`find %f -name "$n" -maxdepth 1 -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_filter_subf]
+Name=Copy the list of filtered files (with subfolders)
+Name[it]=Copia la lista dei file filtrati (con sottocartelle)
+Icon=folder-txt
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Insert the filter' '*.txt'` && l=`find %f -name "$n" -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_older_nosubf]
+Name=Copy the list of files modified more than... days ago (no subfolders)
+Name[it]=Copia la lista dei file modificati più di... giorni fa (no sottocartelle)
+Icon=folder-recent
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Insert the days' '1'` && l=`find %f -mtime "+$n" -maxdepth 1 -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_older_subf]
+Name=Copy the list of files modified more than... days ago (with subfolders)
+Name[it]=Copia la lista dei file modificati più di... giorni fa (con sottocartelle)
+Icon=folder-recent
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Insert the days' '1'` && l=`find %f -mtime "+$n" -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_newer_nosubf]
+Name=Copy the list of files modified less than... days ago (no subfolders)
+Name[it]=Copia la lista dei file modificati meno di... giorni fa (no sottocartelle)
+Icon=folder-recent
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Insert the days' '1'` && l=`find %f -mtime "-$n" -maxdepth 1 -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_newer_subf]
+Name=Copy the list of files modified less than... days ago (with subfolders)
+Name[it]=Copia la lista dei file modificati meno di... giorni fa (con sottocartelle)
+Icon=folder-recent
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Insert the days' '1'` && l=`find %f -mtime "-$n" -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_bigger_nosubf]
+Name=Copy the list of files bigger than... (no subfolders)
+Name[it]=Copia la lista dei file più grandi di... (no sottocartelle)
+Icon=folder-script
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Files bigger than... (k = kilobytes, M = Megabytes, G = Gigabytes)' '100M'|tr -d ' '` && l=`find %f -size "+$n" -type f -maxdepth 1 -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_bigger_subf]
+Name=Copy the list of files bigger than... (with subfolders)
+Name[it]=Copia la lista dei file più grandi di... (con sottocartelle)
+Icon=folder-script
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Files bigger than... (k = kilobytes, M = Megabytes, G = Gigabytes)' '100M'|tr -d ' '` && l=`find %f -size "+$n" -type f -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_smaller_nosubf]
+Name=Copy the list of files smaller than... (no subfolders)
+Name[it]=Copia la lista dei file più piccoli di... (no sottocartelle)
+Icon=folder-script
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Files smaller than... (k = kilobytes, M = Megabytes, G = Gigabytes)' '100M'|tr -d ' '` && l=`find %f -size "-$n" -type f -maxdepth 1 -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_smaller_subf]
+Name=Copy the list of files smaller than... (with subfolders)
+Name[it]=Copia la lista dei file più piccoli di... byte (con sottocartelle)
+Icon=folder-script
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';n=`kdialog --inputbox 'Files smaller than... (k = kilobytes, M = Megabytes, G = Gigabytes)' '100M'|tr -d ' '` && l=`find %f -size "-$n" -type f -exec realpath '{}' \;` && $exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_empty_nosubf]
+Name=Copy the list of all empty files (no subfolders)
+Name[it]=Copia la lista di tutti i file vuoti (no sottocartelle)
+Icon=folder-open
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';l=`find %f -empty -maxdepth 1 -exec realpath '{}' \;`;$exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'
+
+[Desktop Action copy_filelist_empty_subf]
+Name=Copy the list of all empty files (with subfolders)
+Name[it]=Copia la lista di tutti i file vuoti (con sottocartelle)
+Icon=folder-open
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;IFS=$'\n';l=`find %f -empty -exec realpath '{}' \;`;$exe org.kde.klipper /klipper setClipboardContents "$l" && kdialog --passivepopup 'List copied!' 5 --icon klipper --title 'Copy Filelist to Klipper'

@@ -17,6 +17,12 @@ copy_to_klipper: --prepare-tgz
 	     --transform "s|tmp|copy_to_klipper|" \
 	     -czf copy_to_klipper-$(shell grep 'Version:' './copy_to_klipper/copy_to_klipper.desktop' | cut -f 3 -d ' ').tgz ./copy_to_klipper ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "copy_to_klipper" ready!'
+copy_filelist_to_klipper: --prepare-tgz
+	@sed -i 's@__project_name__@copy_filelist_to_klipper@g' ./tmp/install.sh
+	@tar --transform "s|common|copy_filelist_to_klipper|" \
+	     --transform "s|tmp|copy_filelist_to_klipper|" \
+	     -czf copy_filelist_to_klipper-$(shell grep 'Version:' './copy_filelist_to_klipper/copy_filelist_to_klipper.desktop' | cut -f 3 -d ' ').tgz ./copy_filelist_to_klipper ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "copy_to_klipper" ready!'
 open_with_gvim: --prepare-tgz
 	@sed -i 's@__project_name__@open_with_gvim@g' ./tmp/install.sh
 	@tar --transform "s|common|open_with_gvim|" \
@@ -37,6 +43,7 @@ open_yakuake_here: --prepare-tgz
 	@echo 'Archive "open_yakuake_here" ready!'
 all:
 	@make copy_to_klipper
+	@make copy_filelist_to_klipper
 	@make open_with_gvim
 	@make open_konsole_here
 	@make open_yakuake_here
