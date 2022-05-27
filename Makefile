@@ -22,7 +22,7 @@ copy_filelist_to_klipper: --prepare-tgz
 	@tar --transform "s|common|copy_filelist_to_klipper|" \
 	     --transform "s|tmp|copy_filelist_to_klipper|" \
 	     -czf copy_filelist_to_klipper-$(shell grep 'Version:' './copy_filelist_to_klipper/copy_filelist_to_klipper.desktop' | cut -f 3 -d ' ').tgz ./copy_filelist_to_klipper ./common/Makefile ./tmp/install.sh ./common/LICENSE
-	@echo 'Archive "copy_to_klipper" ready!'
+	@echo 'Archive "copy_filelist_to_klipper" ready!'
 open_with_gvim: --prepare-tgz
 	@sed -i 's@__project_name__@open_with_gvim@g' ./tmp/install.sh
 	@tar --transform "s|common|open_with_gvim|" \
