@@ -92,4 +92,4 @@ $ servicemenuinstaller uninstall <archive-name.tgz>
 
 ## Get Help
 
-Every project has an info page available at the [Freeaptitude blog - Download section](https://freeaptitude.altervista.org/downloads/).
+More info is available at the [Freeaptitude project page](https://freeaptitude.altervista.org/projects/kde-servicemenus.html "KDE ServiceMenus project page on Freeaptitude").
