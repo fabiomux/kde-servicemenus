@@ -6,6 +6,8 @@ My personal KDE service menus collection, it includes the following scripts:
   D-Bus service
 - [Copy to Klipper](https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper): copy the
   selected filename name, or parts of it, in the clipboard area using the Klipper D-Bus service;
+- [Download with youtube-dl here](https://github.com/fabiomux/kde-servicemenus/tree/master/download_with_youtube-dl_here):
+  Download a file in the current folder making use of the *youtube-dl* command line tool;
 - [Open Konsole Here](https://github.com/fabiomux/kde-servicemenus/tree/master/open_konsole_here): open the
   selected path in the first or last Konsole window, current or new session;
 - [Open with gVIM](https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim): displays all the

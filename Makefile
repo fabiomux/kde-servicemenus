@@ -23,6 +23,12 @@ copy_filelist_to_klipper: --prepare-tgz
 	     --transform "s|tmp|copy_filelist_to_klipper|" \
 	     -czf copy_filelist_to_klipper-$(shell grep 'Version:' './copy_filelist_to_klipper/copy_filelist_to_klipper.desktop' | cut -f 3 -d ' ').tgz ./copy_filelist_to_klipper ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "copy_filelist_to_klipper" ready!'
+download_with_youtube-dl_here: --prepare-tgz
+	@sed -i 's@__project_name__@download_with_youtube-dl_here@g' ./tmp/install.sh
+	@tar --transform "s|common|download_with_youtube-dl_here|" \
+	     --transform "s|tmp|download_with_youtube-dl_here|" \
+	     -czf download_with_youtube-dl_here-$(shell grep 'Version:' './download_with_youtube-dl_here/download_with_youtube-dl_here.desktop' | cut -f 3 -d ' ').tgz ./download_with_youtube-dl_here ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "download_with_youtube-dl_here" ready!'
 open_with_gvim: --prepare-tgz
 	@sed -i 's@__project_name__@open_with_gvim@g' ./tmp/install.sh
 	@tar --transform "s|common|open_with_gvim|" \
@@ -44,6 +50,7 @@ open_yakuake_here: --prepare-tgz
 all:
 	@make copy_to_klipper
 	@make copy_filelist_to_klipper
+	@make download_with_youtube-dl_here
 	@make open_with_gvim
 	@make open_konsole_here
 	@make open_yakuake_here
