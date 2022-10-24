@@ -15,6 +15,8 @@ My personal KDE service menus collection, it includes the following scripts:
 - [Open Yakuake Here][open_yakuake_here]:
   open the selected path in the current or new Yakuake session, within the current terminal with or without
   splitting it horizontally or vertically.
+- [Scan with ClamAV][scan_with_clamav]:
+  scan the current directory or selected folder/file with ClamAV using either Yakuake or Konsole
 
 ## Installation
 
@@ -118,6 +120,7 @@ More info is available at:
 [copy_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper "Copy to Klipper GitHub page"
 [download_with_youtubedl]: https://github.com/fabiomux/kde-servicemenus/tree/master/download_with_youtube-dl_here "Download with youtube-dl GitHub page"
 [open_konsole_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_konsole_here "Open Konsole Here GitHub page"
+[scan_with_clamav]: https://github.com/Sommerwiesel/kde-servicemenus/tree/main/scan_with_clamav "Open Konsole Here GitHub page"
 [open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim "Open with gVIM GitHub page"
 [open_yakuake_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_yakuake_here "Open Yakuake here GitHub page"
 
