@@ -47,6 +47,12 @@ open_yakuake_here: --prepare-tgz
 	     --transform "s|tmp|open_yakuake_here|" \
 	     -czf open_yakuake_here-$(shell grep 'Version:' './open_yakuake_here/open_yakuake_here.desktop' | cut -f 3 -d ' ').tgz ./open_yakuake_here ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "open_yakuake_here" ready!'
+scan_with_clamav: --prepare-tgz
+	@sed -i 's@__project_name__@scan_with_clamav@g' ./tmp/install.sh
+	@tar --transform "s|common|scan_with_clamav|" \
+	     --transform "s|tmp|scan_with_clamav|" \
+	     -czf scan_with_clamav-$(shell grep 'Version:' './scan_with_clamav/scan_with_clamav.desktop' | cut -f 3 -d ' ').tgz ./scan_with_clamav ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "scan_with_clamav" ready!'
 all:
 	@make copy_to_klipper
 	@make copy_filelist_to_klipper
@@ -54,3 +60,4 @@ all:
 	@make open_with_gvim
 	@make open_konsole_here
 	@make open_yakuake_here
+	@scan_with_clamav
