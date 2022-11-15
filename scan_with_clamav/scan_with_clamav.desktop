@@ -1,0 +1,65 @@
+# Author: Marvin Zurborg, Fabio Mucciante
+# Derived from: "Open Konsole Here" and "Open Yakuake Here"
+# Last Update: 2022/11/14
+# Version: 1.0.0
+#
+# Manual Install:
+#   - KDE 4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
+#   - KDE 5: Copy this file under: ~/.local/share/kservices5/ServiceMenus/
+#
+# References:
+#   - https://freeaptitude.altervista.org/downloads/scan-with-clamav.html
+#   - https://github.com/fabiomux/kde-servicemenus
+
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+Icon=preferences-security
+MimeType=inode/directory;all/allfiles
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=Scan with ClamAV
+X-KDE-Submenu[de]=Mit ClamAV scannen
+X-KDE-Submenu[it]=Scansiona con ClamAV
+Actions=clamav_yakuake_new_session;clamav_yakuake_current_session;clamav_konsole_last_instance_current_session;clamav_konsole_last_instance_new_session;clamav_konsole_first_instance_current_session;clamav_konsole_first_instance_new_session
+
+[Desktop Action clamav_yakuake_new_session]
+Name=In Yakuake (new session)
+Name[de]=In Yakuake (neue Session)
+Name[it]=In Yakuake (nuova sessione)
+Icon=preferences-security
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuake/sessions addSession && $exe org.kde.yakuake /yakuake/sessions runCommand "clamscan -r '%f'" && $exe org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action clamav_yakuake_current_session]
+Name=In Yakuake (current session)
+Name[de]=In Yakuake (aktuelle Session)
+Name[it]=In Yakuake (sessione corrente)
+Icon=preferences-security
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuake/sessions runCommand "clamscan -r '%f'" && $exe org.kde.yakuake /yakuake/window toggleWindowState
+
+[Desktop Action clamav_konsole_last_instance_current_session]
+Name=In Konsole
+Name[de]=In Konsole (letzte Instanz, aktuelle Session)
+Name[it]=In Konsole (ultima istanza, sessione corrente)
+Icon=preferences-security
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`$exe org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -rn|head -n 1` && sname="org.kde.konsole-$pid" && sid=`$exe $sname /Windows/1 currentSession` && wid=1; else sname='org.kde.konsole' && for i in `$exe $sname | grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`;do r="$r\\n`$exe $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -rn|head -n 1|cut -f 2 -d '.'` && sid=`$exe $sname "/Windows/$wid" currentSession`;fi;$exe $sname /Sessions/$sid runCommand "clamscan -r '%f'" && $exe $sname /konsole/MainWindow_$wid hide && $exe $sname /konsole/MainWindow_$wid show
+
+[Desktop Action clamav_konsole_last_instance_new_session]
+Name=In Konsole (last instance, new session)
+Name[de]=In Konsole (letzte Instanz, neue Session)
+Name[it]=In Konsole (ultima istanza, nuova sessione)
+Icon=preferences-security
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`$exe org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -rn|head -n 1` && sname="org.kde.konsole-$pid" && sid=`$exe $sname /Windows/1 newSession` && wid=1; else sname='org.kde.konsole' && for i in `$exe $sname|grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`; do r="$r\\n`$exe $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -rn|head -n 1|cut -f 2 -d '.'` && sid=`$exe $sname "/Windows/$wid" newSession`;fi; sleep 1 && $exe $sname /Sessions/$sid runCommand "clamscan -r '%f'" && $exe $sname /konsole/MainWindow_$wid hide && $exe $sname /konsole/MainWindow_$wid show
+
+[Desktop Action clamav_konsole_first_instance_current_session]
+Name=In Konsole (first instance, current session)
+Name[de]=In Konsole (erste Instanz, aktuelle Session)
+Name[it]=In Konsole (prima istanza, sessione corrente)
+Icon=preferences-security
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`$exe org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -n|grep "^[0-9]"|head -n 1` && sname="org.kde.konsole-$pid" && sid=`$exe $sname /Windows/1 currentSession` && wid=1; else sname='org.kde.konsole' && for i in `$exe $sname | grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`;do r="$r\\n`$exe $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -n|grep "^[0-9]"|head -n 1|cut -f 2 -d '.'` && sid=`$exe $sname "/Windows/$wid" currentSession`;fi;$exe $sname /Sessions/$sid runCommand "clamscan -r '%f'" && $exe $sname /konsole/MainWindow_$wid hide && $exe $sname /konsole/MainWindow_$wid show
+
+[Desktop Action clamav_konsole_first_instance_new_session]
+Name=In Konsole (first instance, new session)
+Name[de]=In Konsole (erste Instanz, neue Session)
+Name[it]=In Konsole (prima istanza, nuova sessione)
+Icon=preferences-security
+Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;(pgrep konsole || konsole &);while ! pgrep konsole;do sleep 1; done;if expr "`$exe org.kde.konsol*`" : '.*-.*'; then pid=`pgrep konsole|sort -n|grep "^[0-9]"|head -n 1` && sname="org.kde.konsole-$pid" && sid=`$exe $sname /Windows/1 newSession` && wid=1; else sname='org.kde.konsole' && for i in `$exe $sname|grep "/konsole/MainWindow_[0-9]\\+\\\\$"|cut -f 2 -d '_'`; do r="$r\\n`$exe $sname /konsole/MainWindow_$i winId`.$i";done && wid=`echo -e $r|sort -n|grep "^[0-9]"|head -n 1|cut -f 2 -d '.'` && sid=`$exe $sname "/Windows/$wid" newSession`;fi; sleep 1 && $exe $sname /Sessions/$sid runCommand "clamscan -r '%f'" && $exe $sname /konsole/MainWindow_$wid hide && $exe $sname /konsole/MainWindow_$wid show
