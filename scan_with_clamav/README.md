@@ -20,3 +20,7 @@ To remove the installed file, just type from within the subfolder:
 ```
 $ make uninstall
 ```
+
+## Get Help
+
+- [FreeAptitude blog - Download section](https://freeaptitude.altervista.org/downloads/scan-with-clamav.html)
