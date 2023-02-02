@@ -11,6 +11,12 @@ clean-uncompressed-dirs:
 clean: clean-archives clean-uncompressed-dirs
 	@rm -rf ./tmp || true
 	@echo 'Cleanup done!'
+compose_with_thunderbird: --prepare-tgz
+	@sed -i 's@__project_name__@compose_with_thunderbird@g' ./tmp/install.sh
+	@tar --transform "s|common|compose_with_thunderbird|" \
+	     --transform "s|tmp|compose_with_thunderbird|" \
+	     -czf compose_with_thunderbird-$(shell grep 'Version:' './compose_with_thunderbird/compose_with_thunderbird.desktop' | cut -f 3 -d ' ').tgz ./compose_with_thunderbird ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "compose_with_thunderbird" ready!'
 copy_to_klipper: --prepare-tgz
 	@sed -i 's@__project_name__@copy_to_klipper@g' ./tmp/install.sh
 	@tar --transform "s|common|copy_to_klipper|" \

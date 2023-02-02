@@ -1,22 +1,24 @@
 # KDE Service Menus
 
 My personal KDE service menus collection, it includes the following scripts:
+- [Compose with Thunderbird][compose_with_thunderbird]:
+  compose a new email with Thunderbird with the selected files as attachment;
 - [Copy Filelist to Klipper][copy_filelist_to_klipper]:
   copy the result of a several types of finding, accomplished through the *find* command, in the clipboard
   area using the Klipper D-Bus service;
 - [Copy to Klipper][copy_to_klipper]:
   copy the selected filename name, or parts of it, in the clipboard area using the Klipper D-Bus service;
 - [Download with youtube-dl here][download_with_youtubedl]:
-  Download a file in the current folder making use of the *youtube-dl* command line tool;
+  download a file in the current folder making use of the *youtube-dl* command line tool;
 - [Open Konsole Here][open_konsole_here]:
-  Open the selected path in the first or last Konsole window, current or new session;
+  open the selected path in the first or last Konsole window, current or new session;
 - [Open with gVIM][open_with_gvim]:
   displays all the selected files in different gVIM tabs instead of opening them in hidden buffers;
 - [Open Yakuake Here][open_yakuake_here]:
   open the selected path in the current or new Yakuake session, within the current terminal with or without
-  splitting it horizontally or vertically.
+  splitting it horizontally or vertically;
 - [Scan with ClamAV][scan_with_clamav]:
-  scan the current directory or selected folder/file with ClamAV using either Yakuake or Konsole
+  scan the current directory or selected folder/file with ClamAV using either Yakuake or Konsole.
 
 ## Installation
 
@@ -116,13 +118,14 @@ More info is available at:
 - the [project page][project_page] on Freeaptitude blog.
 
 
+[compose_with_thunderbird]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_thunderbird "Compose with Thunderbird GitHub page"
 [copy_filelist_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_filelist_to_klipper "Copy Filelist to Klipper GitHub page"
 [copy_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper "Copy to Klipper GitHub page"
 [download_with_youtubedl]: https://github.com/fabiomux/kde-servicemenus/tree/master/download_with_youtube-dl_here "Download with youtube-dl GitHub page"
 [open_konsole_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_konsole_here "Open Konsole Here GitHub page"
-[scan_with_clamav]: https://github.com/fabiomux/kde-servicemenus/tree/main/scan_with_clamav "Scan with ClamAV GitHub page"
 [open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim "Open with gVIM GitHub page"
 [open_yakuake_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_yakuake_here "Open Yakuake here GitHub page"
+[scan_with_clamav]: https://github.com/fabiomux/kde-servicemenus/tree/main/scan_with_clamav "Scan with ClamAV GitHub page"
 
 [kde_store]: https://store.kde.org "KDE store home page"
 [opendesktop]: https://opendesktop.org "Opendesktop home page"
