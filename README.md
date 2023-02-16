@@ -2,7 +2,9 @@
 
 My personal KDE service menus collection, it includes the following scripts:
 - [Compose with Thunderbird][compose_with_thunderbird]:
-  compose a new email with Thunderbird with the selected files as attachment;
+  compose a new email with Thunderbird email client using the selected files as attachment;
+- [Compose with Thunderbird (Flatpak edition)][compose_with_thunderbird_flatpak]:
+  compose a new email with Thunderbird email client using the selected files as attachment (Flatpak edition);
 - [Copy Filelist to Klipper][copy_filelist_to_klipper]:
   copy the result of a several types of finding, accomplished through the *find* command, in the clipboard
   area using the Klipper D-Bus service;
@@ -119,6 +121,7 @@ More info is available at:
 
 
 [compose_with_thunderbird]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_thunderbird "Compose with Thunderbird GitHub page"
+[compose_with_thunderbird_flatpak]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_thunderbird-flatpak "Compose with Thunderbird Flatpak edition GitHub page"
 [copy_filelist_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_filelist_to_klipper "Copy Filelist to Klipper GitHub page"
 [copy_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper "Copy to Klipper GitHub page"
 [download_with_youtubedl]: https://github.com/fabiomux/kde-servicemenus/tree/master/download_with_youtube-dl_here "Download with youtube-dl GitHub page"

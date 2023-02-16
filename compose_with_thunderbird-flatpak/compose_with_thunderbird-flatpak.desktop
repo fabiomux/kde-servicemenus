@@ -1,5 +1,6 @@
-# Author : Fabio Mucciante
-# Last Update: 2022/07/13
+# Author : trytomakeyouprivate@github.com, Fabio Mucciante
+# Derived from: "Compose with Thunderbird"
+# Last Update: 2022/07/16
 # Version: 1.0.0
 #
 # Manual Install:
@@ -43,7 +44,7 @@ Icon=mail-client
 Exec=b=%F;a='';IFS=$'\n';for i in `cat ~/.compose_with_thunderbird.cache`;do a="$a,$i";done;a=`echo "$a"|sed 's@^,@@'`;if [ -z "$a" ];then kdialog --passivepopup 'Empty cache' --icon thunderbird --title 'Compose with Thunderbird';exit;fi;t=`kdialog --inputbox 'To email(s)' 'dest@example.com'`;s=`kdialog --inputbox 'Subject' 'Email topic'`;flatpak run org.mozilla.Thunderbird --compose "to='$t',subject='$s',attachment='$a'"
 
 [Desktop Action cwt_compose_with_cached]
-Name=Compose with cached files
+Name=Compose with the cached files
 Name[it]=Componi con i file memorizzati
 Name[de]=Mit gespeicherten Dateien senden
 Icon=mail-client

@@ -18,6 +18,13 @@ compose_with_thunderbird: --prepare-tgz
 	     --transform "s|tmp|compose_with_thunderbird|" \
 	     -czf compose_with_thunderbird-$(shell grep 'Version:' './compose_with_thunderbird/compose_with_thunderbird.desktop' | cut -f 3 -d ' ').tgz ./compose_with_thunderbird ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "compose_with_thunderbird" ready!'
+compose_with_thunderbird-flatpak: --prepare-tgz
+	@sed -i 's@__project_name__@compose_with_thunderbird-flatpak@g' ./tmp/install.sh
+	@tar --exclude=*.swp \
+	     --transform "s|common|compose_with_thunderbird-flatpak|" \
+	     --transform "s|tmp|compose_with_thunderbird-flatpak|" \
+	     -czf compose_with_thunderbird-$(shell grep 'Version:' './compose_with_thunderbird-flatpak/compose_with_thunderbird-flatpak.desktop' | cut -f 3 -d ' ').tgz ./compose_with_thunderbird-flatpak ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "compose_with_thunderbird-flatpak" ready!'
 copy_to_klipper: --prepare-tgz
 	@sed -i 's@__project_name__@copy_to_klipper@g' ./tmp/install.sh
 	@tar --exclude=*.swp \
@@ -69,6 +76,7 @@ scan_with_clamav: --prepare-tgz
 	@echo 'Archive "scan_with_clamav" ready!'
 all:
 	@make compose_with_thunderbird
+	@make compose_with_thunderbird-flatpak
 	@make copy_to_klipper
 	@make copy_filelist_to_klipper
 	@make download_with_youtube-dl_here
