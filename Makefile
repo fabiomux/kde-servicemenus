@@ -11,6 +11,13 @@ clean-uncompressed-dirs:
 clean: clean-archives clean-uncompressed-dirs
 	@rm -rf ./tmp || true
 	@echo 'Cleanup done!'
+compose_with_betterbird: --prepare-tgz
+	@sed -i 's@__project_name__@compose_with_betterbird@g' ./tmp/install.sh
+	@tar --exclude=*.swp \
+	     --transform "s|common|compose_with_betterbird|" \
+	     --transform "s|tmp|compose_with_betterbird|" \
+	     -czf compose_with_betterbird-$(shell grep 'Version:' './compose_with_betterbird/compose_with_betterbird.desktop' | cut -f 3 -d ' ').tgz ./compose_with_betterbird ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "compose_with_betterbird" ready!'
 compose_with_thunderbird: --prepare-tgz
 	@sed -i 's@__project_name__@compose_with_thunderbird@g' ./tmp/install.sh
 	@tar --exclude=*.swp \
