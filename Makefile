@@ -30,7 +30,7 @@ compose_with_thunderbird-flatpak: --prepare-tgz
 	@tar --exclude=*.swp \
 	     --transform "s|common|compose_with_thunderbird-flatpak|" \
 	     --transform "s|tmp|compose_with_thunderbird-flatpak|" \
-	     -czf compose_with_thunderbird-$(shell grep 'Version:' './compose_with_thunderbird-flatpak/compose_with_thunderbird-flatpak.desktop' | cut -f 3 -d ' ').tgz ./compose_with_thunderbird-flatpak ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	     -czf compose_with_thunderbird-flatpak-$(shell grep 'Version:' './compose_with_thunderbird-flatpak/compose_with_thunderbird-flatpak.desktop' | cut -f 3 -d ' ').tgz ./compose_with_thunderbird-flatpak ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "compose_with_thunderbird-flatpak" ready!'
 copy_to_klipper: --prepare-tgz
 	@sed -i 's@__project_name__@copy_to_klipper@g' ./tmp/install.sh
