@@ -1,10 +1,15 @@
 # Scan with ClamAV
 
 KDE service menu available under the Dolphin contextual menu, which adds the ability
-to scan to current folder, selected folder or file with ClamAV, using:
-- Yakuake
-- Konsole
+to scan for the current or the selected folder, or a selected file with ClamAV, 
+using Yakuake or Konsole to output the results.
 
+It is a derived work of the *Open Konsole Here* and *Open Yakuake Here* service menus
+and provides similar abilities in the windows opening, in particular the results can
+be seen in the following:
+- Yakuake new session or current session;
+- Konsole first instance, new session, or current session;
+- Konsole last instance, new session, or current session.
 
 ## Install
 
@@ -24,3 +29,7 @@ $ make uninstall
 ## Get Help
 
 - [FreeAptitude blog - Download section](https://freeaptitude.altervista.org/downloads/scan-with-clamav.html)
+
+## Acknowledgements
+
+- Sommerwiesel@github.com for the initial commit.
