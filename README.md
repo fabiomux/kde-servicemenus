@@ -3,6 +3,8 @@
 My personal KDE service menus collection, it includes the following scripts:
 - [Compose with Betterbird][compose_with_betterbird]:
   compose a new email with the Betterbird email client using the selected files as attachment;
+- [Compose with Betterbird (Flatpak edition)][compose_with_betterbird_flatpak]:
+  compose a new email with the Betterbird email client using the selected files as attachment (Flatpak edition);
 - [Compose with Thunderbird][compose_with_thunderbird]:
   compose a new email with Thunderbird email client using the selected files as attachment;
 - [Compose with Thunderbird (Flatpak edition)][compose_with_thunderbird_flatpak]:
@@ -123,6 +125,7 @@ More info is available at:
 
 
 [compose_with_betterbird]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_betterbird "Compose with Betterbird GitHub page"
+[compose_with_betterbird_flatpak]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_betterbird-flatpak "Compose with Betterbird Flatpak edition GitHub page"
 [compose_with_thunderbird]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_thunderbird "Compose with Thunderbird GitHub page"
 [compose_with_thunderbird_flatpak]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_thunderbird-flatpak "Compose with Thunderbird Flatpak edition GitHub page"
 [copy_filelist_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_filelist_to_klipper "Copy Filelist to Klipper GitHub page"

@@ -18,6 +18,13 @@ compose_with_betterbird: --prepare-tgz
 	     --transform "s|tmp|compose_with_betterbird|" \
 	     -czf compose_with_betterbird-$(shell grep 'Version:' './compose_with_betterbird/compose_with_betterbird.desktop' | cut -f 3 -d ' ').tgz ./compose_with_betterbird ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "compose_with_betterbird" ready!'
+compose_with_betterbird-flatpak: --prepare-tgz
+	@sed -i 's@__project_name__@compose_with_betterbird-flatpak@g' ./tmp/install.sh
+	@tar --exclude=*.swp \
+	     --transform "s|common|compose_with_betterbird-flatpak|" \
+	     --transform "s|tmp|compose_with_betterbird-flatpak|" \
+	     -czf compose_with_betterbird-flatpak-$(shell grep 'Version:' './compose_with_betterbird-flatpak/compose_with_betterbird-flatpak.desktop' | cut -f 3 -d ' ').tgz ./compose_with_betterbird-flatpak ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "compose_with_betterbird-flatpak" ready!'
 compose_with_thunderbird: --prepare-tgz
 	@sed -i 's@__project_name__@compose_with_thunderbird@g' ./tmp/install.sh
 	@tar --exclude=*.swp \
