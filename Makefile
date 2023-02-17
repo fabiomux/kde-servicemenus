@@ -89,6 +89,8 @@ scan_with_clamav: --prepare-tgz
 	     -czf scan_with_clamav-$(shell grep 'Version:' './scan_with_clamav/scan_with_clamav.desktop' | cut -f 3 -d ' ').tgz ./scan_with_clamav ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "scan_with_clamav" ready!'
 all:
+	@make compose_with_betterbird
+	@make compose_with_betterbird-flatpak
 	@make compose_with_thunderbird
 	@make compose_with_thunderbird-flatpak
 	@make copy_to_klipper
