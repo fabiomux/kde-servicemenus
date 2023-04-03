@@ -16,6 +16,8 @@ My personal KDE service menus collection, it includes the following scripts:
   copy the selected filename name, or parts of it, in the clipboard area using the Klipper D-Bus service;
 - [Download with youtube-dl here][download_with_youtubedl]:
   download a file in the current folder making use of the *youtube-dl* command line tool;
+- [Download with yt-dlp here][download_with_ytdlp]:
+  download a file in the current folder making use of the *yt-dlp* command line tool;
 - [Open Konsole Here][open_konsole_here]:
   open the selected path in the first or last Konsole window, current or new session;
 - [Open with gVIM][open_with_gvim]:
@@ -131,6 +133,7 @@ More info is available at:
 [copy_filelist_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_filelist_to_klipper "Copy Filelist to Klipper GitHub page"
 [copy_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper "Copy to Klipper GitHub page"
 [download_with_youtubedl]: https://github.com/fabiomux/kde-servicemenus/tree/master/download_with_youtube-dl_here "Download with youtube-dl GitHub page"
+[download_with_ytdlp]: https://github.com/fabiomux/kde-servicemenus/tree/master/download_with_yt-dlp_here "Download with yt-dlp GitHub page"
 [open_konsole_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_konsole_here "Open Konsole Here GitHub page"
 [open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim "Open with gVIM GitHub page"
 [open_yakuake_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_yakuake_here "Open Yakuake here GitHub page"

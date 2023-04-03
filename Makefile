@@ -60,6 +60,13 @@ download_with_youtube-dl_here: --prepare-tgz
 	     --transform "s|tmp|download_with_youtube-dl_here|" \
 	     -czf download_with_youtube-dl_here-$(shell grep 'Version:' './download_with_youtube-dl_here/download_with_youtube-dl_here.desktop' | cut -f 3 -d ' ').tgz ./download_with_youtube-dl_here ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "download_with_youtube-dl_here" ready!'
+download_with_yt-dlp_here: --prepare-tgz
+	@sed -i 's@__project_name__@download_with_yt-dlp_here@g' ./tmp/install.sh
+	@tar --exclude=*.swp \
+	     --transform "s|common|download_with_yt-dlp_here|" \
+	     --transform "s|tmp|download_with_yt-dlp_here|" \
+	     -czf download_with_yt-dlp_here-$(shell grep 'Version:' './download_with_yt-dlp_here/download_with_yt-dlp_here.desktop' | cut -f 3 -d ' ').tgz ./download_with_yt-dlp_here ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "download_with_yt-dlp_here" ready!'
 open_with_gvim: --prepare-tgz
 	@sed -i 's@__project_name__@open_with_gvim@g' ./tmp/install.sh
 	@tar --exclude=*.swp \
@@ -96,7 +103,8 @@ all:
 	@make copy_to_klipper
 	@make copy_filelist_to_klipper
 	@make download_with_youtube-dl_here
+	@make download_with_yt-dlp_here
 	@make open_with_gvim
 	@make open_konsole_here
 	@make open_yakuake_here
-	@scan_with_clamav
+	@make scan_with_clamav

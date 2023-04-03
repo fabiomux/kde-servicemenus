@@ -1,0 +1,64 @@
+# Author: Fabio Mucciante
+# Last Update: 2023/04/03
+# Version: 1.0.0
+#
+# Manual Install:
+#   - KDE4: Copy this file under: ~/.kde4/share/kde4/services/ServiceMenus/
+#   - KDE5: Copy this file under: ~/.local/share/kservices5/ServiceMenus/
+#
+# References:
+#   - https://freeaptitude.altervista.org/downloads/download-with-yt-dlp-here.html
+#   - https://github.com/fabiomux/kde-servicemenus
+
+[Desktop Entry]
+Type=Service
+MimeType=inode/directory;
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+Icon=minitube
+Actions=download_with_ytdlp_select_all;download_with_ytdlp_select_audio_and_video;download_with_ytdlp_select_audio;download_with_ytdlp_select_video;download_with_ytdlp_best;download_with_ytdlp_best_audio;download_with_ytdlp_best_video;
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=Download with yt-dlp here
+X-KDE-Submenu[it]=Scarica con yt-dlp qui
+
+[Desktop Action download_with_ytdlp_select_all]
+Name=Select among all available formats
+Name[it]=Seleziona tra tutti i formati disponibili
+Icon=minitube
+Exec=c=`kdialog --title 'Insert the media URL to download' --inputbox 'Insert the URL:' ""`;if [ $? -gt 0 ];then exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Looking for formats...' 3 --icon minitube;f=`yt-dlp -F "$c" 2>&1`;if [ $? -gt 0 ];then kdialog --error "$f";exit;fi;f=`echo "$f"|grep -E '^[0-9]+ '|sed 's@\\([0-9]\+\\)\\ \\+\\(.*\\)@\\1 "\\2" off@'|tr -d "|"|tr "\\n" ' '`;eval set -- "${f[@]}";s=`kdialog --radiolist 'Select the format' "$@"` && kdialog --title 'Download with yt-dlp' --passivepopup 'Starting the download...' 3 --icon minitube && yt-dlp -o "%f/%(title)s.%(ext)s" -f $s "$c" && kdialog --title 'Download with yt-dlp' --passivepopup 'Download Completed' 5 --icon minitube
+
+[Desktop Action download_with_ytdlp_select_audio_and_video]
+Name=Select among the audio + video formats
+Name[it]=Seleziona tra i formati audio + video
+Icon=minitube
+Exec=c=`kdialog --title 'Insert the media URL to download' --inputbox 'Insert the URL:' ""`;if [ $? -gt 0 ];then exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Looking for formats...' 3 --icon minitube;f=`yt-dlp -F "$c" 2>&1`;if [ $? -gt 0 ];then kdialog --error "$f";exit;fi;f=`echo "$f"|grep -E '^[0-9]+ '|grep -Ev "audio|video only"|sed 's@\\([0-9]\+\\)\\ \\+\\(.*\\)@\\1 "\\2" off@'|tr -d "|"|tr "\\n" ' '`;eval set -- "${f[@]}";if [ -z "$1" ]; then kdialog --error 'No audio and video format provided';exit;fi;s=`kdialog --radiolist 'Select the format' "$@"` && kdialog --title 'Download with yt-dlp' --passivepopup 'Starting the download...' 3 --icon minitube && yt-dlp -o "%f/%(title)s.%(ext)s" -f $s "$c" && kdialog --title 'Download with yt-dlp' --passivepopup 'Download Completed' 5 --icon minitube
+
+[Desktop Action download_with_ytdlp_select_audio]
+Name=Select among the only audio formats
+Name[it]=Seleziona tra i formati solo audio
+Icon=emblem-music-symbolic
+Exec=c=`kdialog --title 'Insert the media URL to download' --inputbox 'Insert the URL:' ""`;if [ $? -gt 0 ];then exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Looking for formats...' 3 --icon minitube;f=`yt-dlp -F "$c" 2>&1`;if [ $? -gt 0 ];then kdialog --error "$f";exit;fi;f=`echo "$f"|grep -E '^[0-9]+ '|grep "audio only"|sed 's@\\([0-9]\+\\)\\ \\+\\(.*\\)@\\1 "\\2" off@'|tr -d "|"|tr "\\n" ' '`;eval set -- "${f[@]}";if [ -z "$1" ]; then kdialog --error 'No audio-only format provided';exit;fi;s=`kdialog --radiolist 'Select the format' "$@"` && kdialog --title 'Download with yt-dlp' --passivepopup 'Starting  the download...' 3 --icon minitube && yt-dlp -o "%f/%(title)s.%(ext)s" -f $s "$c" && kdialog --title 'Download with yt-dlp' --passivepopup 'Download Completed' 5 --icon minitube
+
+[Desktop Action download_with_ytdlp_select_video]
+Name=Select among the only video formats
+Name[it]=Seleziona tra i formati solo video
+Icon=folder-videos-symbolic
+Exec=c=`kdialog --title 'Insert the media URL to download' --inputbox 'Insert the URL:' ""`;if [ $? -gt 0 ];then exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Looking for formats...' 3 --icon minitube;f=`yt-dlp -F "$c" 2>&1`;if [ $? -gt 0 ];then kdialog --error "$f";exit;fi;f=`echo "$f"|grep -E '^[0-9]+ '|grep "video only"|sed 's@\\([0-9]\+\\)\\ \\+\\(.*\\)@\\1 "\\2" off@'|tr -d "|"|tr "\\n" ' '`;eval set -- "${f[@]}";if [ -z "$1" ]; then kdialog --error 'No video-only format provided';exit;fi;s=`kdialog --radiolist 'Select the format' "$@"` && kdialog --title 'Download with yt-dlp' --passivepopup 'Starting the download...' 3 --icon minitube && yt-dlp -o "%f/%(title)s.%(ext)s" -f $s "$c" && kdialog --title 'Download with yt-dlp' --passivepopup 'Download Completed' 5 --icon minitube
+
+[Desktop Action download_with_ytdlp_best]
+Name=Autoselect the best audio + video format
+Name[it]=Seleziona automaticamente il miglior formato audio + video
+Icon=minitube
+Exec=c=`kdialog --title 'Insert the media URL to download' --inputbox 'Insert the URL:' ""`;if [ $? -gt 0 ];then exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Looking for the best format...' 3 --icon minitube;f=`yt-dlp -s --get-format -f best "$c" 2>&1`;if [ $? -gt 0 ];then kdialog --error "$f";exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Starting the download...' 3 --icon minitube && yt-dlp -o "%f/%(title)s.%(ext)s" -f best "$c" && kdialog --title 'Download with yt-dlp' --passivepopup 'Download Completed' 5 --icon minitube
+
+[Desktop Action download_with_ytdlp_best_audio]
+Name=Autoselect the best audio format
+Name[it]=Seleziona automaticamente il miglior formato audio
+Icon=emblem-music-symbolic
+Exec=c=`kdialog --title 'Insert the media URL to download' --inputbox 'Insert the URL:' ""`;if [ $? -gt 0 ];then exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Looking for the best format...' 3 --icon minitube;f=`yt-dlp -s --get-format -f bestaudio "$c" 2>&1`;if [ $? -gt 0 ];then kdialog --error "$f";exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Starting the download...' 3 --icon minitube && yt-dlp -o "%f/%(title)s.%(ext)s" -f bestaudio "$c" && kdialog --title 'Download with yt-dlp' --passivepopup 'Download Completed' 5 --icon minitube
+
+[Desktop Action download_with_ytdlp_best_video]
+Name=Autoselect the best video format
+Name[it]=Seleziona automaticamente il miglior formato video
+Icon=folder-videos-symbolic
+Exec=c=`kdialog --title 'Insert the media URL to download' --inputbox 'Insert the URL:' ""`;if [ $? -gt 0 ];then exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Looking for the best format...' 3 --icon minitube;f=`yt-dlp -s --get-format -f bestvideo "$c" 2>&1`;if [ $? -gt 0 ];then kdialog --error "$f";exit;fi;kdialog --title 'Download with yt-dlp' --passivepopup 'Starting the download...' 3 --icon minitube && yt-dlp -o "%f/%(title)s.%(ext)s" -f bestvideo "$c" && kdialog --title 'Download with yt-dlp' --passivepopup 'Download Completed' 5 --icon minitube
+
