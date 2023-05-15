@@ -38,6 +38,7 @@ Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuak
 Name=Current session - Bottom terminal
 Name[es]=Sesión actual - Terminal inferior
 Name[ca]=Sessió actual - Terminal inferior
+Name[it]=Sessione Corrente - Terminale inferiore
 Name[nl]=Huidige sessie (onderaan)
 Icon=view-split-top-bottom
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;tid=`$exe org.kde.yakuake /yakuake/sessions activeTerminalId`;$exe org.kde.yakuake /yakuake/sessions splitTerminalTopBottom $tid && $exe org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && $exe org.kde.yakuake /yakuake/window toggleWindowState
@@ -46,6 +47,7 @@ Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;tid=`$exe org.kde.yakuake /y
 Name=Current session - Top terminal
 Name[es]=Sesión actual - Terminal superior
 Name[ca]=Sessió actual - Terminal superior
+Name[it]=Sessione Corrente - Terminale superiore
 Name[nl]=Huidige sessie (bovenaan)
 Icon=view-split-top-bottom
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;tid=`$exe org.kde.yakuake /yakuake/sessions activeTerminalId`;$exe org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && $exe org.kde.yakuake /yakuake/sessions splitTerminalTopBottom $tid && $exe org.kde.yakuake /yakuake/window toggleWindowState
@@ -54,6 +56,7 @@ Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;tid=`$exe org.kde.yakuake /y
 Name=Current session - Left terminal
 Name[es]=Sesión actual - Terminal a la izquierda
 Name[ca]=Sessió actual - Terminal a l'esquerra
+Name[it]=Sessione Corrente - Terminale a sinistra
 Name[nl]=Huidige sessie (linkerkant)
 Icon=view-split-left-right
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;tid=`$exe org.kde.yakuake /yakuake/sessions activeTerminalId`;$exe org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && $exe org.kde.yakuake /yakuake/sessions splitTerminalLeftRight $tid && $exe org.kde.yakuake /yakuake/window toggleWindowState
@@ -62,6 +65,7 @@ Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;tid=`$exe org.kde.yakuake /y
 Name=Current session - Right terminal
 Name[es]=Sesión actual - Terminal a la derecha
 Name[ca]=Sessió actual - Terminal a la dreta
+Name[it]=Sessione Corrente - Terminale a destra
 Name[nl]=Huidige sessie (rechterkant)
 Icon=view-split-left-right
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;tid=`$exe org.kde.yakuake /yakuake/sessions activeTerminalId`;$exe org.kde.yakuake /yakuake/sessions splitTerminalLeftRight $tid && $exe org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && $exe org.kde.yakuake /yakuake/window toggleWindowState
@@ -79,6 +83,7 @@ Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuak
 Name=New session - Bottom terminal
 Name[es]=Sesión nueva - Terminal inferior
 Name[ca]=Sessió nova - Terminal inferior
+Name[it]=Nuova sessione - Terminale inferiore
 Name[nl]=Nieuwe sessie (onderaan)
 Icon=view-split-top-bottom
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuake/sessions addSession;tid=`$exe org.kde.yakuake /yakuake/sessions activeTerminalId`;$exe org.kde.yakuake /yakuake/sessions splitTerminalTopBottom $tid && $exe org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && $exe org.kde.yakuake /yakuake/window toggleWindowState
@@ -87,6 +92,7 @@ Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuak
 Name=New session - Top terminal
 Name[es]=Sesión nueva - Terminal superior
 Name[ca]=Sessió nova - Terminal superior
+Name[it]=Nuova sessione - Terminale superiore
 Name[nl]=Nieuwe sessie (bovenaan)
 Icon=view-split-top-bottom
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuake/sessions addSession;tid=`$exe org.kde.yakuake /yakuake/sessions activeTerminalId`;$exe org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && $exe org.kde.yakuake /yakuake/sessions splitTerminalTopBottom $tid && $exe org.kde.yakuake /yakuake/window toggleWindowState
@@ -95,6 +101,7 @@ Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuak
 Name=New session - Left terminal
 Name[es]=Sesión nueva - Terminal a la izquierda
 Name[ca]=Sessió nova - Terminal a l'esquerra
+Name[it]=Nuova sessione - Terminale a sinistra
 Name[nl]=Nieuwe sessie (linkerkant)
 Icon=view-split-left-right
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuake/sessions addSession;tid=`$exe org.kde.yakuake /yakuake/sessions activeTerminalId`;$exe org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && $exe org.kde.yakuake /yakuake/sessions splitTerminalLeftRight $tid && $exe org.kde.yakuake /yakuake/window toggleWindowState
@@ -103,8 +110,8 @@ Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuak
 Name=New session - Right terminal
 Name[es]=Sesión nueva - Terminal a la derecha
 Name[ca]=Sessió nova - Terminal a la dreta
+Name[it]=Nuova sessione - Terminale a destra
 Name[nl]=Nieuwe sessie (rechterkant)
 Icon=view-split-left-right
 Exec=exe=`command -v qdbus-qt5 || command -v qdbus`;$exe org.kde.yakuake /yakuake/sessions addSession;tid=`$exe org.kde.yakuake /yakuake/sessions activeTerminalId`;$exe org.kde.yakuake /yakuake/sessions splitTerminalLeftRight $tid && $exe org.kde.yakuake /yakuake/sessions runCommand "cd '%f'" && $exe org.kde.yakuake /yakuake/window toggleWindowState
-
 
