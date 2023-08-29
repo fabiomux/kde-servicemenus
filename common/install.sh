@@ -4,6 +4,7 @@ log_file='./log'
 dest_folder=''
 desktop_filename='__project_name__.desktop'
 action=$1
+src_folder=$(dirname "$0")
 
 echo 'Starting procedure from install.sh' | tee $log_file
 if [ $# -eq 0 ]; then
@@ -22,13 +23,20 @@ echo "Parameter: $action" | tee -a $log_file
 case "$action" in
 '--install'|'--local'|'--local-install')
   echo "Installing: $desktop_filename" | tee -a $log_file
+  echo "Source path: $src_folder" | tee -a $log_file
+  echo "Destination path: $dest_folder" | tee -a $log_file
+
   if [ -f "$dest_folder/$desktop_filename" ]; then
     echo 'An old version has been detect, a backup will be performed!' | tee -a $log_file
-    cp -b --suffix '.old' "$desktop_filename" "$dest_folder/"
+    cp -b --suffix '.old' "$src_folder/$desktop_filename" "$dest_folder/"
+  else
+    cp "$src_folder/$desktop_filename" "$dest_folder/"
+  fi
+
+  if [ -f "$dest_folder/$desktop_filename" ]; then
     echo 'Service Menu installed!' | tee -a $log_file
   else
-    cp $desktop_filename "$dest_folder/"
-    echo 'Service Menu installed!' | tee -a $log_file
+    echo "Something went wrong installing $desktop_filename" | tee -a $log_file
   fi
 ;;
 '--uninstall'|'--remove'|'--delete'|'--deinstall')
