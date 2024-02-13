@@ -1,0 +1,53 @@
+---
+:service_menu: sqlite_tools
+:entry:
+  :submenu: Herramientas SQLite
+:actions:
+  odbc_register:
+    :name: Registrar como fuente de datos ODBC
+    title: Hierramentas SQLite - Registrar
+    no_odbc: ¡El paquete ODBC no está instalado!
+    no_driver: No hay ningún controlador ODBC instalado para la base de datos SQLite
+    description: Descripción
+    installed: Base de datos $(basename '%f') instalada
+  odbc_unregister:
+    :name: Eliminar del registro ODBC
+    title: Herramientas SQLite - Eliminar
+    not_registered: El archivo $(basename '%f') no fue registrado
+    unregistered: Base de datos $(basename '%f') eliminada del registro!
+  odbc_config:
+    :name: Información de configuración de ODBC
+    title: Herramientas SQLite - Configuración
+    config: Configuración ODBC
+  db_tables:
+    :name: Lista de tablas
+    title: Herramientas SQLite - Tablas
+    tables: Tablas
+  db_table_schema:
+    :name: Obtener el esquema de la tabla
+    title: Herramientas SQLite - Esquema
+    select: Seleccionar una tabla
+    schema_for: Esquema SQL para
+  db_table_content:
+    :name: exporta el contenido de la tabla
+    title: Herramientas SQLite - Exportar
+    select_table: Seleccione una o más tablas
+    content: Contenido de la tabla de
+    select_mode: Seleccione el formato de salida
+    box: Tablas que utilizan caracteres de dibujo de cuadro Unicode
+    column: Salida en columnas
+    html: Código de tabla HTML
+    insert: Sentencias de inserción SQL
+    líne: Un valor por línea
+    list: Valores delimitados por una tubería
+    table: Tabla de arte ASCII
+    tabs: Valores separados por tabulaciones
+    tcl: Elementos de la lista TCL
+    file_exist: ¡El archivo existe y no se sobrescribirá!
+    exported: ¡El contenido de la tabla ha sido exportado!
+  db_dump:
+    :name: Dump de base de datos
+    títle: Herramientas SQL - Dump
+    file_exist: ¡El archivo existe y no se sobrescribirá!
+    include_schema: ¿Quieres incluir los esquemas de la tabla?
+    dumped: El contenido de la base de datos ha sido exportado

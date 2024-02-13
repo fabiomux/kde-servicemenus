@@ -26,7 +26,9 @@ My personal KDE service menus collection, it includes the following scripts:
   open the selected path in the current or new Yakuake session, within the current terminal with or without
   splitting it horizontally or vertically;
 - [Scan with ClamAV][scan_with_clamav]:
-  scan the current directory or selected folder/file with ClamAV using either Yakuake or Konsole.
+  scan the current directory or selected folder/file with ClamAV using either Yakuake or Konsole;
+- [SQLite Tools][sqlite_tools]:
+  useful commands to perform on SQLite database files.
 
 ## Installation
 
@@ -75,7 +77,7 @@ $ make uninstall
 
 #### Servicemenuinstaller
 
-This is a Dolphin utility which automatically install the archives downloaded by Pling.
+This is a Dolphin utility which automatically install the archives downloaded from Pling/KDE-store.
 ```shell
 $ servicemenuinstaller install <archive-name.tgz>
 ```
@@ -120,6 +122,20 @@ You can use the same archive to uninstall the service if not needed:
 $ servicemenuinstaller uninstall <archive-name.tgz>
 ```
 
+## Contributing
+
+Besides reporting bugs or asking for new features, another way to lend your help to the project is
+translating the strings used within the service menus.
+
+To make the services full compliant to a particular language, I created a system to embed the strings
+directly within the command and generate the packages for each of them.
+
+It is still at an early stage and the old services should be re-converted to take advantage of this
+system, so from time to time can find the addings under the `_locale` folder.
+
+For each language will be created a file having as filename the proper code and the `yaml` extension,
+the further translations should be based on the `en.yaml` file and respect the YAML format.
+
 ## Get Help
 
 More info is available at:
@@ -138,6 +154,7 @@ More info is available at:
 [open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim "Open with gVIM GitHub page"
 [open_yakuake_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_yakuake_here "Open Yakuake here GitHub page"
 [scan_with_clamav]: https://github.com/fabiomux/kde-servicemenus/tree/main/scan_with_clamav "Scan with ClamAV GitHub page"
+[sqlite_tools]: https://github.com/fabiomux/kde-servicemenus/tree/main/sqlite_tools "SQLite Tools GitHub page"
 
 [kde_store]: https://store.kde.org "KDE store home page"
 [opendesktop]: https://opendesktop.org "Opendesktop home page"

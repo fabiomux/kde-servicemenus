@@ -1,0 +1,53 @@
+---
+:service_menu: sqlite_tools
+:entry:
+  :submenu: SQLite-Tools
+:actions:
+  odbc_register:
+    :name: Registrieren Sie sich als ODBC-Datenquelle
+    title: SQLite-Tools - Registrieren
+    no_odbc: Das ODBC-Paket ist nicht installiert!
+    no_driver: Kein ODBC-Treiber für die SQLite-Datenbank installiert
+    description: Beschreibung
+    installed: Datenbank $(basename '%f') installiert
+  odbc_unregister:
+    :name: Aus dem ODBC-Register entfernen
+    title: SQLite-Tools - Entfernen
+    not_registered: Die Datei $(basename '%f') wurde nicht registriert
+    unregistered: Datenbank $(basename '%f') aus der Registry entfernt!
+  odbc_config:
+    :name: ODBC-Konfigurationsinformationen
+    title: SQLite-Tools - Konfiguration
+    config: ODBC-Konfiguration
+  db_tables:
+    :name: Liste der Tabellen
+    title: SQLite-Tools - Tabellen
+    tables: Tabellen
+  db_table_schema:
+    :name: Tabellenschema abrufen
+    title: SQLite-Tools – Schema
+    select: Wählen Sie eine Tabelle aus
+    schema_for: SQL-Schema für
+  db_table_content:
+    :name: Tabelleninhalt exportieren
+    title: SQLite-Tools – Exportieren
+    select_table: Wählen Sie eine oder mehrere Tabellen aus
+    content: Tabelleninhalt von
+    select_mode: Wählen Sie das Ausgabeformat
+    box: Tabellen mit Unicode-Boxzeichenzeichen
+    column: Ausgabe in Spalten
+    html: HTML-Tabellencode
+    insert: SQL-Einfügeanweisungen
+    line: Ein Wert pro Zeile
+    list: Durch einen senkrechten Strich getrennte Werte
+    table: ASCII-Art-Tabelle
+    tabs: Durch Tabulatoren getrennte Werte
+    tcl: TCL-Listenelemente
+    file_exist: Die Datei existiert und wird nicht überschrieben!
+    exported: Der Tabelleninhalt wurde exportiert!
+  db_dump:
+    :name: Datenbank-Dump
+    title: SQL Tools – Dump
+    file_exist: Die Datei existiert und wird nicht überschrieben!
+    include_schema: Möchten Sie die Schemata der Tabelle einschließen?
+    dumped: Der Datenbankinhalt wurde exportiert

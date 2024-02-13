@@ -1,0 +1,53 @@
+---
+:service_menu: sqlite_tools
+:entry:
+  :submenu: Strumenti SQLite
+:actions:
+  odbc_register:
+    :name: Registra come Data Source ODBC
+    title: Strumenti SQLite - Registra
+    no_odbc: Il pacchetto ODBC non è installato
+    no_driver: Nessun driver ODBC installato per SQLite
+    description: Descrizione
+    installed: Il database $(basename '%f') è stato installato
+  odbc_unregister:
+    :name: Rimuovi dal registro ODBC
+    title: Strumenti SQLite - Rimuovi
+    not_registered: Il file $(basename '%f') non era stato registrato
+    unregistered: Il database $(basename '%f') è stato rimosso dal registro!
+  odbc_config:
+    :name: Informazioni sulla configurazione ODBC
+    title: Strumenti SQLite - Configurazione
+    config: Configurazione ODBC
+  db_tables:
+     :name: Elenco delle tabelle
+     title: Strumenti SQLite - Tabelle
+     tables: tavoli
+  db_table_schema:
+    :name: Schema della tabella
+    title: Strumenti SQLite - Schema
+    select: Seleziona una tabella
+    schema_for: Schema SQL per
+  db_table_content:
+    :name: Esporta il contenuto della tabella
+    title: Strumenti SQLite - Esporta
+    select_table: Seleziona una o più tabelle
+    content: Contenuto della tabella
+    select_mode: Seleziona il formato dell'output
+    box: Tabella disegnata con caratteri unicode
+    column: In colonne
+    html: Tabella HTML
+    insert: Istruzioni SQL INSERT
+    line: Un valore per riga
+    list: Valori delimitati da un simbolo pipe
+    table: Tabella in ASCII-art
+    tabs: Valori tabulati
+    tcl: Lista in TCL
+    file_exist: Il file esiste e non sarà sovrascritto!
+    exported: Il contenuto delle tabelle è stato esportato!
+  db_dump:
+    :name: Dump del database
+    title: SQL Tools - Dump
+    file_exist: Il file esiste e non sarà sovrascritto!
+    include_schema: Vuoi includere gli schemi delle tabelle?
+    dumped: Il contenuto del database è stato esportato

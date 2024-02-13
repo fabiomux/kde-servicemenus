@@ -1,0 +1,53 @@
+---
+:service_menu: sqlite_tools
+:entry:
+  :submenu: Outils SQLite
+:actions:
+  odbc_register:
+    :name: S'inscrire en tant que source de données ODBC
+    title: Outils SQLite - Inscrire
+    no_odbc: Le package ODBC n'est pas installé
+    no_driver: Aucun pilote ODBC installé pour la base de données SQLite
+    description: Descriptif
+    installed: Base de données $(basename '%f') installée
+  odbc_unregister:
+    :name: Supprimer du registre ODBC
+    title: Outils SQLite - Supprimer
+    not_registered: Le fichier $(basename '%f') n'a pas été enregistré
+    unregistered: Base de données $(basename '%f') supprimée du registre!
+  odbc_config:
+    :name: Informations de configuration ODBC
+    title: Outils SQLite - Configuration
+    config: Configuration ODBC
+  db_tables:
+    :name: Liste des tables
+    title: Outils SQLite - Tables
+    tables: Tableaux
+  db_table_schema:
+    :name: Récupère le schéma de la table
+    title: Outils SQLite - Schéma
+    select: Sélectionnez une table
+    schema_for: Schéma SQL pour
+  db_table_content:
+    :name: Exporter le contenu de la table
+    title: Outils SQLite - Exporter
+    select_table: Sélectionnez une ou plusieurs tables
+    content: Contenu de la table de
+    select_mode: Sélectionnez le format de sortie
+    box: Tableaux utilisant des caractères de dessin de boîte Unicode
+    column: Sortie en colonnes
+    html: Code du tableau HTML
+    insert: Instructions d'insertion SQL
+    line: Une valeur par ligne
+    list: Valeurs délimitées par un tube
+    table: Table d'art ASCII
+    tabs: Valeurs séparées par des tabulations
+    tcl: Éléments de la liste TCL
+    file_exist: Le fichier existe et ne sera pas écrasé!
+    exported: Le contenu de la table a été exporté !
+  db_dump:
+    :name: Dump de la base de données
+    title: Outils SQL - Dump
+    file_exist: Le fichier existe et ne sera pas écrasé!
+    include_schema: Voulez-vous inclure les schémas de la table?
+    dumped: Le contenu de la base de données a été exporté
