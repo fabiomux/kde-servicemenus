@@ -124,17 +124,20 @@ $ servicemenuinstaller uninstall <archive-name.tgz>
 
 ## Contributing
 
-Besides reporting bugs or asking for new features, another way to lend your help to the project is
-translating the strings used within the service menus.
+Besides reporting bugs or asking for new features in the issue queue, another way to lend your help to
+the project is translating the strings used within the service menus.
 
 To make the services full compliant to a particular language, I created a system to embed the strings
-directly within the command and generate the packages for each of them.
+directly within the exec line and generate a different package for each of them.
 
 It is still at an early stage and the old services should be re-converted to take advantage of this
-system, so from time to time can find the addings under the `_locale` folder.
+system, but can follow the progress looking at the `_locale` subfolder that hosts the translations with
+the following structure:
 
-For each language will be created a file having as filename the proper code and the `yaml` extension,
-the further translations should be based on the `en.yaml` file and respect the YAML format.
+    _locale/<service_folder>/<language_code>.yaml
+
+The placeholders are quite self-explanatory, all the translations are based on the `en.yaml` file and
+respect the *YAML* format.
 
 ## Get Help
 
@@ -142,17 +145,17 @@ More info is available at:
 - the [project page][project_page] on Freeaptitude blog.
 
 
-[compose_with_betterbird]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_betterbird "Compose with Betterbird GitHub page"
-[compose_with_betterbird_flatpak]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_betterbird-flatpak "Compose with Betterbird Flatpak edition GitHub page"
-[compose_with_thunderbird]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_thunderbird "Compose with Thunderbird GitHub page"
-[compose_with_thunderbird_flatpak]: https://github.com/fabiomux/kde-servicemenus/tree/master/compose_with_thunderbird-flatpak "Compose with Thunderbird Flatpak edition GitHub page"
-[copy_filelist_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_filelist_to_klipper "Copy Filelist to Klipper GitHub page"
-[copy_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/master/copy_to_klipper "Copy to Klipper GitHub page"
-[download_with_youtubedl]: https://github.com/fabiomux/kde-servicemenus/tree/master/download_with_youtube-dl_here "Download with youtube-dl GitHub page"
-[download_with_ytdlp]: https://github.com/fabiomux/kde-servicemenus/tree/master/download_with_yt-dlp_here "Download with yt-dlp GitHub page"
-[open_konsole_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_konsole_here "Open Konsole Here GitHub page"
-[open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_with_gvim "Open with gVIM GitHub page"
-[open_yakuake_here]: https://github.com/fabiomux/kde-servicemenus/tree/master/open_yakuake_here "Open Yakuake here GitHub page"
+[compose_with_betterbird]: https://github.com/fabiomux/kde-servicemenus/tree/main/compose_with_betterbird "Compose with Betterbird GitHub page"
+[compose_with_betterbird_flatpak]: https://github.com/fabiomux/kde-servicemenus/tree/main/compose_with_betterbird-flatpak "Compose with Betterbird Flatpak edition GitHub page"
+[compose_with_thunderbird]: https://github.com/fabiomux/kde-servicemenus/tree/main/compose_with_thunderbird "Compose with Thunderbird GitHub page"
+[compose_with_thunderbird_flatpak]: https://github.com/fabiomux/kde-servicemenus/tree/main/compose_with_thunderbird-flatpak "Compose with Thunderbird Flatpak edition GitHub page"
+[copy_filelist_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/main/copy_filelist_to_klipper "Copy Filelist to Klipper GitHub page"
+[copy_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/main/copy_to_klipper "Copy to Klipper GitHub page"
+[download_with_youtubedl]: https://github.com/fabiomux/kde-servicemenus/tree/main/download_with_youtube-dl_here "Download with youtube-dl GitHub page"
+[download_with_ytdlp]: https://github.com/fabiomux/kde-servicemenus/tree/main/download_with_yt-dlp_here "Download with yt-dlp GitHub page"
+[open_konsole_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_konsole_here "Open Konsole Here GitHub page"
+[open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_with_gvim "Open with gVIM GitHub page"
+[open_yakuake_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_yakuake_here "Open Yakuake here GitHub page"
 [scan_with_clamav]: https://github.com/fabiomux/kde-servicemenus/tree/main/scan_with_clamav "Scan with ClamAV GitHub page"
 [sqlite_tools]: https://github.com/fabiomux/kde-servicemenus/tree/main/sqlite_tools "SQLite Tools GitHub page"
 
