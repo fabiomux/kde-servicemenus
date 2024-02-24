@@ -1,21 +1,22 @@
 # SQLite Tools service menu
 
-This service menu aims to facilitate SQLite files management for those basic operations
-or data presentation making them available in few clicks.
+This service menu aims to facilitate SQLite file management for those basic operations
+or data presentation making them available in a few clicks.
 
 ## Features
 
 These are the *SQLite Tools* service menu features:
-- Translated in 4 languages besides English (Italian, French, Spanish, German);
-- Works from within the Dolphin, Konqueror, Krusader, and KFind-results contextual menu;
+- Fully translated into 4 languages besides English
+  (French, German, Italian, Spanish);
+- Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
 - Register and unregister an SQLite file as ODBC data source to use it with software like LibreOffice;
 - Show the ODBC file configuration paths;
 - List the tables within the database in a Kdialog dialog;
 - Show the selected table schema within a Kdialog dialog;
-- Export the table in one of the supported format with or without schema -
+- Export the table in one of the supported formats with or without schema -
   CSV, JSON, HTML, Markdown, SQL INSERT, TCL,
   inline, list, box, column, ASCII table, tabs;
-- Database dump with or without table's schema in the SQL INSERT format.
+- Database dump with or without table schema in the SQL INSERT format.
 
 ## Install
 

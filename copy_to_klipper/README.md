@@ -6,7 +6,7 @@ D-Bus service, several details about the selected files.
 ## Features
 
 These are the *Copy to Klipper* service menu features:
-- Fully-translated in 5 languages besides English
+- Fully translated into 5 languages besides English
   (Dutch, French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
 - Supports the copy of distinct filename's parts as full filename, filename only,
