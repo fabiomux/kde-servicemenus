@@ -1,0 +1,88 @@
+---
+:service_menu: copy_to_klipper
+:entry:
+  :submenu: Copier dans le presse-papiers
+:actions:
+  filename_full:
+    :name: Copiez le nom complet du fichier
+    title: Copier vers Clipper - Complet
+    copied: Nom de fichier complet, copié!
+  filename_name:
+    :name: copiez uniquement le nom
+    title: Copier dans Clipper - Nom
+    copied: Seul le nom du fichier, copié!
+  filename_path:
+    :name: copiez uniquement le chemin
+    title: Copier vers Clipper - Chemin
+    copied: uniquement le chemin du fichier, copié!
+  filename_noext:
+    :name: Copiez le nom sans extension
+    title: Copier vers Clipper – Pas d'extension
+    copied: Seul le nom du fichier sans extension, copié!
+  hash_md5:
+    :name: Copiez la somme de contrôle md5
+    title: Copier vers Klipper - Hachage Md5
+    directory: Le hachage ne peut pas être calculé sur un répertoire
+    copied: hachage Md5, copié!
+  hash_sha256:
+    :name: Copiez la somme de contrôle sha256
+    title: Copier vers Klipper - Hachage Sha256
+    directory: Le hachage ne peut pas être calculé sur un répertoire
+    copied: hachage Sha256, copié!
+  hash_sha512:
+    :name: Copiez la somme de contrôle sha512
+    title: Copier vers Klipper - Hachage Sha512
+    directory: Le hachage ne peut pas être calculé sur un répertoire
+    copied: hachage Sha512, copié!
+  type_mime:
+    :name: Copiez le type Mime
+    title: Copier vers Klipper - Type MIME
+    copied: Type Mime, copié!
+  type_file:
+    :name: Copiez le type de fichier
+    title: Copier vers Clipper - Type de fichier
+    copied: Type de fichier, copié!
+  size_bytes:
+    :name: copie la taille du fichier en octets
+    title: Copier vers Klipper - Taille en octets
+    copied: taille du fichier en octets, copié!
+  size_hr:
+    :name: Copiez la taille du fichier dans un format lisible par l'homme
+    title: Copier vers Klipper - Lisible par l'homme
+    copied: Taille du fichier dans un format lisible par l'homme, copié!
+  perm_octal:
+    :name: Copiez les autorisations du fichier au format octal
+    title: Copier vers Klipper - Autorisations octales
+    copied: autorisations de fichier au format octal, copiées!
+  perm_hr:
+    :name: copiez les autorisations du fichier dans un format lisible par l'homme
+    title: Copier vers Klipper – Autorisations lisibles par l'homme
+    copied: autorisations de fichier dans un format lisible par l'homme, copiées!
+  group_id:
+    :name: copiez l'identifiant du groupe
+    title: Copier vers Klipper – ID de groupe
+    copied: ID du groupe de fichiers, copié!
+  group_name:
+    :name: Copiez le nom du groupe
+    title: Copier vers Klipper - Nom du groupe
+    copied: Nom du groupe de fichiers, copié!
+  user_id:
+    :name: copiez l'identifiant de l'utilisateur
+    title: Copier vers Klipper – ID utilisateur
+    copied: ID utilisateur du fichier, copié!
+  user_name:
+    :name: Copiez le nom d'utilisateur
+    title: Copier vers Klipper - Nom d'utilisateur
+    copied: Nom d'utilisateur du fichier, copié!
+  last_access:
+    :name: copie l'heure du dernier accès
+    title: Copier vers Klipper - Dernier accès
+    copied: Heure du dernier accès, copié!
+  last_mod:
+    :name: copie l'heure de la dernière modification
+    title: Copier vers Klipper - Dernière modification
+    copied: Heure de la dernière modification, copié!
+  mount_point:
+    :name: Copiez le point de montage
+    title: Copier vers Clipper - Point de montage
+    copied: Point de montage, copié!

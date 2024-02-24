@@ -1,0 +1,88 @@
+---
+:service_menu: copy_to_klipper
+:entry:
+  :submenu: Copy to the clipboard
+:actions:
+  filename_full:
+    :name: Copy the full filename
+    title: Copy to Klipper - Full
+    copied: Full filename, copied!
+  filename_name:
+    :name: Copy the name only
+    title: Copy to Klipper - Name
+    copied: Only the file name, copied!
+  filename_path:
+    :name: Copy the path only
+    title: Copy to Klipper - Path
+    copied: Only the file path, copied!
+  filename_noext:
+    :name: Copy the name without extension
+    title: Copy to Klipper - No extension
+    copied: Only the file name without extension, copied!
+  hash_md5:
+    :name: Copy the md5 checksum
+    title: Copy to Klipper - Md5 hash
+    directory: The hash cannot be calculated on a directory
+    copied: Md5 hash, copied!
+  hash_sha256:
+    :name: Copy the sha256 checksum
+    title: Copy to Klipper - Sha256 hash
+    directory: The hash cannot be calculated on a directory
+    copied: Sha256 hash, copied!
+  hash_sha512:
+    :name: Copy the sha512 checksum
+    title: Copy to Klipper - Sha512 hash
+    directory: The hash cannot be calculated on a directory
+    copied: Sha512 hash, copied!
+  type_mime:
+    :name: Copy the Mime type
+    title: Copy to Klipper - Mime type
+    copied: Mime type, copied!
+  type_file:
+    :name: Copy the file type
+    title: Copy to Klipper - File type
+    copied: File type, copied!
+  size_bytes:
+    :name: Copy the file size in bytes
+    title: Copy to Klipper - Bytes size
+    copied: File size in bytes, copied!
+  size_hr:
+    :name: Copy the file size in human-readable format
+    title: Copy to Klipper - Human-readable
+    copied: File size in human-readable format, copied!
+  perm_octal:
+    :name: Copy the file permissions in octal format
+    title: Copy to Klipper - Octal permissions
+    copied: File permissions in octal format, copied!
+  perm_hr:
+    :name: Copy the file permissions in humain-readable format
+    title: Copy to Klipper - Human-readable permissions
+    copied: File permissions in human-readable format, copied!
+  group_id:
+    :name: Copy the group id
+    title: Copy to Klipper - Group Id
+    copied: File group id, copied!
+  group_name:
+    :name: Copy the group name
+    title: Copy to Klipper - Group name
+    copied: File group name, copied!
+  user_id:
+    :name: Copy the user id
+    title: Copy to Klipper - User Id
+    copied: File user id, copied!
+  user_name:
+    :name: Copy the user name
+    title: Copy to Klipper - User name
+    copied: File user name, copied!
+  last_access:
+    :name: Copy the last access time
+    title: Copy to Klipper - Last access
+    copied: Last access time, copied!
+  last_mod:
+    :name: Copy the last modification time
+    title: Copy to Klipper - Last modification
+    copied: Last modification time, copied!
+  mount_point:
+    :name: Copy the mount point
+    title: Copy to Klipper - Mount point
+    copied: Mount point, copied!

@@ -1,0 +1,88 @@
+---
+:service_menu: copy_to_klipper
+:entry:
+  :submenu: Copia negli appunti
+:actions:
+  filename_full:
+    :name: Copia il nome del file completo
+    title: Copia su Klipper - Completo
+    copied: Nome del file completo, copiato!
+  filename_name:
+    :name: Copia solo il nome del file
+    title: Copia su Klipper - Nome
+    copied: Solo il nome del file, copiato!
+  filename_path:
+    :name: Copia solo il percorso
+    title: Copia su Klipper - Percorso
+    copied: Solo il percorso del file, copiato!
+  filename_noext:
+    :name: Copia il nome del file senza estensione
+    title: Copia su Klipper - No estensione
+    copied: Solo il nome del file senza estensione, copiato!
+  hash_md5:
+    :name: Copia l'hash md5
+    title: Copia su Klipper - Hash Md5
+    directory: L'hash non può essere calcolato su una directory
+    copied: Hash Md5, copiato!
+  hash_sha256:
+    :name: Copia l'hash sha256
+    title: Copia su Klipper - Hash Sha256
+    directory: L'hash non può essere calcolato su una directory
+    copied: Hash Sha256, copiato!
+  hash_sha512:
+    :name: Copia l'hash sha512
+    title: Copia su Klipper - Hash Sha512
+    directory: L'hash non può essere calcolato su una directory
+    copied: Hash Sha512, copiato!
+  type_mime:
+    :name: Copia il modello Mime
+    title: Copia su Klipper - Modello Mime
+    copied: Modello Mime, copiato!
+  type_file:
+    :name: Copia il tipo del file
+    title: Copia su Klipper - Tipo file
+    copied: Tipo del file, copiato!
+  size_bytes:
+    :name: Copia la dimensione del file in byte
+    title: Copia su Klipper - Dimensione in byte
+    copied: Dimensione in byte del file, copiato!
+  size_hr:
+    :name: Copia la dimensione del file in formato leggibile
+    title: Copia su Klipper - Dimensione leggibile
+    copied: Dimensione leggibile del file, copiato!
+  perm_octal:
+    :name: Copia i permessi dei file in formato ottale
+    title: Copia su Klipper - Permessi ottali
+    copied: Permessi del file in formato ottale, copiato!
+  perm_hr:
+    :name: Copia i permessi dei file in formato leggibile
+    title: Copia su Klipper - Permessi leggibili
+    copied: Permessi del file in formato leggibile, copiato!
+  group_id:
+    :name: Copia l'id del gruppo
+    title: Copia su Klipper - Id gruppo
+    copied: Id di gruppo del file, copiato!
+  group_name:
+    :name: Copia il nome del gruppo
+    title: Copia su Klipper - Nome del gruppo
+    copied: Nome di gruppo del file, copiato!
+  user_id:
+    :name: Copia l'id utente
+    title: Copia su Klipper - Id utente
+    copied: Id utente del file, copiato!
+  user_name:
+    :name: Copia il nome utente
+    title: Copia su Klipper - Nome utente
+    copied: Nome utente del file, copiato!
+  last_access:
+    :name: Copia l'orario di ultimo accesso
+    title: Copia su Klipper - Ultimo accesso
+    copied: Orario di ultimo accesso, copiato!
+  last_mod:
+    :name: Copia l'orario dell'ultima modifica
+    title: Copia su Klipper - Ultima modifica
+    copied: Orario di ultima modifica, copiata!
+  mount_point:
+    :name: Copia il punto di mount
+    title: Copia su Klipper - Punto di mount
+    copied: Punto di mount, copiato!

@@ -1,0 +1,88 @@
+---
+:service_menu: copy_to_klipper
+:entry:
+  :submenu: Copiar al portapapeles
+:actions:
+  filename_full:
+    :name: Copia el nombre completo del archivo
+    title: Copiar a Klipper - Completo
+    copied: Nombre de archivo completo, copiado!
+  filename_name:
+    :name: Copia solo el nombre
+    title: Copiar a Klipper - Nombre
+    copied: ¡Solo el nombre del archivo, copiado!
+  filename_path:
+    :name: Copia solo la ruta
+    title: Copiar a Klipper - Ruta
+    copied: ¡Solo la ruta del archivo, ¡copiada!
+  filename_noext:
+    :name: Copia el nombre sin extensión
+    title: Copiar a Klipper - Sin extensión
+    copied: Sólo el nombre del archivo sin extensión, ¡copiado!
+  hash_md5:
+    :name: Copia la suma de comprobación md5
+    title: Copiar a Klipper - hash Md5
+    directory: El hash no se puede calcular en un directorio
+    copied: Hash Md5, ¡copiado!
+  hash_sha256:
+    :name: Copia la suma de comprobación sha256
+    title: Copiar a Klipper - hash Sha256
+    directory: El hash no se puede calcular en un directorio
+    copied: Hash Sha256, ¡copiado!
+  hash_sha512:
+    :name: Copia la suma de comprobación sha512
+    title: Copiar a Klipper - hash Sha512
+    directory: El hash no se puede calcular en un directorio
+    copied: Hash Sha512, ¡copiado!
+  type_mime:
+    :name: Copia el tipo Mime
+    title: Copiar a Klipper - Tipo Mime
+    copied: Tipo Mime, ¡copiado!
+  type_file:
+    :name: Copia el tipo de archivo
+    title: Copiar a Klipper - Tipo de archivo
+    copied: Tipo de archivo, ¡copiado!
+  size_bytes:
+    :name: Copia el tamaño del archivo en bytes
+    title: Copiar a Klipper - Tamaño de bytes
+    copied: Tamaño del archivo en bytes, ¡copiado!
+  size_hr:
+    :name: Copia el tamaño del archivo en formato legible por humanos
+    title: Copiar a Klipper - Legible por humanos
+    copied: Tamaño del archivo en formato legible por humanos, ¡copiado!
+  perm_octal:
+    :name: Copia los permisos del archivo en formato octal
+    title: Copiar a Klipper - Permisos octales
+    copied: Permisos de archivo en formato octal, ¡copiado!
+  perm_hr:
+    :name: Copie los permisos del archivo en formato legible para humanos
+    title: Copiar a Klipper - Permisos legibles por humanos
+    copied: Permisos de archivo en formato legible por humanos, ¡copiado!
+  group_id:
+    :name: Copia la identificación del grupo
+    title: Copiar a Klipper - ID de grupo
+    copied: ID del grupo de archivos, ¡copiado!
+  group_name:
+    :name: Copia el nombre del grupo
+    title: Copiar a Klipper - Nombre del grupo
+    copied: nombre del grupo de archivos, ¡copiado!
+  user_id:
+    :name: Copia la identificación del usuario
+    title: Copiar a Klipper - ID de usuario
+    copied: ID de usuario del archivo, ¡copiado!
+  user_name:
+    :name: Copia el nombre de usuario
+    title: Copiar a Klipper - Nombre de usuario
+    copied: Nombre de usuario del archivo, ¡copiado!
+  last_access:
+    :name: Copia la hora del último acceso
+    title: Copiar a Klipper - Último acceso
+    copied: Hora del último acceso, ¡copiado!
+  last_mod:
+    :name: Copia la hora de la última modificación
+    title: Copiar a Klipper - Última modificación
+    copied: Hora de la última modificación, ¡copiado!
+  mount_point:
+    :name: Copia el punto de montaje
+    title: Copiar a Klipper - Punto de montaje
+    copied: Punto de montaje, ¡copiado! 

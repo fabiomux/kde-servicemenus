@@ -1,0 +1,88 @@
+---
+:service_menu: copy_to_klipper
+:entry:
+  :submenu: Kopiëren naar klembord
+:actions:
+  filename_full:
+    :name: Volledige bestandsnaam kopiëren
+    title: Kopiëren naar Klipper - Volledig
+    copied: Volledige bestandsnaam, gekopieerd!
+  filename_name:
+    :name: Bestandsnaam kopiëren
+    title: Kopiëren naar Klipper - Naam
+    copied: Alleen de bestandsnaam, gekopieerd!
+  filename_path:
+    :name: Alleen bestandslocatie kopiëren
+    title: Kopiëren naar Klipper - Pad
+    copied: alleen het bestandspad, gekopieerd!
+  filename_noext:
+    :name: Bestandsnaam zonder extensie kopiëren
+    title: Kopiëren naar Klipper - Geen extensie
+    copied: Alleen de bestandsnaam zonder extensie, gekopieerd!
+  hash_md5:
+    :name: MD5-controlesom kopiëren
+    title: Kopiëren naar Klipper - Md5-hash
+    directory: De hash kan niet worden berekend voor een map
+    copied: Md5-hash, gekopieerd!
+  hash_sha256:
+    :name: SHA256-controlesom kopiëren
+    title: Kopiëren naar Klipper - Sha256-hash
+    directory: De hash kan niet worden berekend voor een map
+    copied: Sha256 hash, gekopieerd!
+  hash_sha512:
+    :name: SHA512-controlesom kopiëren
+    title: Kopiëren naar Klipper - Sha512-hash
+    directory: De hash kan niet worden berekend voor een map
+    copied: Sha512 hash, gekopieerd!
+  type_mime:
+    :name: Mimetype kopiëren
+    title: Kopiëren naar Klipper - Mime-type
+    copied: Mime-type, gekopieerd!
+  type_file:
+    :name: Bestandstype kopiëren
+    title: Kopiëren naar Klipper - Bestandstype
+    copied: Bestandstype, gekopieerd!
+  size_bytes:
+    :name: Bestandsgrootte (in bytes) kopiëren
+    title: Kopiëren naar Klipper - Bytesgrootte
+    copied: Bestandsgrootte in bytes, gekopieerd!
+  size_hr:
+    :name: Bestandsgrootte (leesbaar) kopiëren
+    title: Kopiëren naar Klipper - Voor mensen leesbaar
+    copied: Bestandsgrootte in voor mensen leesbaar formaat, gekopieerd!
+  perm_octal:
+    :name: Toegangsrechten kopiëren (octaal)
+    title: Kopiëren naar Klipper - Octale machtigingen
+    copied: Bestandsrechten in octaal formaat, gekopieerd!
+  perm_hr:
+    :name: Toegangsrechten kopiëren (leesbaar)
+    title: Kopiëren naar Klipper - Voor mensen leesbare machtigingen
+    copied: Bestandsrechten in voor mensen leesbaar formaat, gekopieerd!
+  group_id:
+    :name: Groepsid kopiëren
+    title: Kopiëren naar Klipper - Groeps-ID
+    copied: Bestandsgroep-ID, gekopieerd!
+  group_name:
+    :name: Groepsnaam kopiëren
+    title: Kopiëren naar Klipper - Groepsnaam
+    copied: Bestandsgroepnaam, gekopieerd!
+  user_id:
+    :name: Gebruikersid kopiëren
+    title: Kopiëren naar Klipper - Gebruikers-ID
+    copied: Bestand gebruikers-ID, gekopieerd!
+  user_name:
+    :name: Gebruikersnaam kopiëren
+    title: Kopiëren naar Klipper - Gebruikersnaam
+    copied: Bestand gebruikersnaam, gekopieerd!
+  last_access:
+    :name: Bezoekdatum kopiëren
+    title: Kopiëren naar Klipper - Laatste toegang
+    copied: Laatste toegangstijd, gekopieerd!
+  last_mod:
+    :name: Wijzigingsdatum kopiëren
+    title: Kopiëren naar Klipper - Laatste wijziging
+    copied: Laatste wijzigingstijd, gekopieerd!
+  mount_point:
+    :name: Aankoppelpunt kopiëren
+    title: Kopieer naar Klipper - Mount point
+    copied: Mount-punt, gekopieerd!

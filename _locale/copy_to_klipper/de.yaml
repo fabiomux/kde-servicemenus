@@ -1,0 +1,88 @@
+---
+:service_menu: copy_to_klipper
+:entry:
+  :submenu: In die Zwischenablage kopieren
+:actions:
+  filename_full:
+    :name: Vollen Dateinamen kopieren
+    title: Nach Klipper kopieren – Vollständig
+    copied: Vollständiger Dateiname, kopiert!
+  filename_name:
+    :name: Dateinamen kopieren
+    title: Nach Klipper kopieren – Name
+    copied: Nur der Dateiname, kopiert!
+  filename_path:
+    :name: Nur den Pfad kopieren
+    title: Nach Klipper kopieren – Pfad
+    copied: Nur der Dateipfad, kopiert!
+  filename_noext:
+    :name: Dateiname ohne Datienendung kopieren
+    title: Nach Klipper kopieren – Keine Erweiterung
+    copied: Nur der Dateiname ohne Erweiterung, kopiert!
+  hash_md5:
+    :name: MD5-Checksumme kopieren
+    title: Nach Klipper kopieren – Md5-Hash
+    directory: Der Hash kann nicht für ein Verzeichnis berechnet werden
+    copied: Md5-Hash, kopiert!
+  hash_sha256:
+    :name: SHA256-Checksumme kopieren
+    title: Nach Klipper kopieren – Sha256-Hash
+    directory: Der Hash kann nicht für ein Verzeichnis berechnet werden
+    copied: Sha256-Hash, kopiert!
+  hash_sha512:
+    :name: SHA512-Checksumme kopieren
+    title: Nach Klipper kopieren – Sha512-Hash
+    directory: Der Hash kann nicht für ein Verzeichnis berechnet werden
+    copied: Sha512-Hash, kopiert!
+  type_mime:
+    :name: MIME-Typ kopieren
+    title: Nach Klipper kopieren – Mime-Typ
+    copied: Mime-Typ, kopiert!
+  type_file:
+    :name: Dateityp kopieren
+    title: Nach Klipper kopieren – Dateityp
+    copied: Dateityp, kopiert!
+  size_bytes:
+    :name: Größe in Byte kopieren
+    title: Nach Klipper kopieren – Bytegröße
+    copied: Dateigröße in Bytes, kopiert!
+  size_hr:
+    :name: Größe (lesbar) kopieren
+    title: Nach Klipper kopieren – für Menschen lesbar
+    copied: Dateigröße im menschenlesbaren Format, kopiert!
+  perm_octal:
+    :name: Zugriffsrechte (octal) kopieren
+    title: Nach Klipper kopieren – Oktalberechtigungen
+    copied: Dateiberechtigungen im Oktalformat, kopiert!
+  perm_hr:
+    :name: Zugriffsrechte (lesbar) kopieren
+    title: Nach Klipper kopieren – Für Menschen lesbare Berechtigungen
+    copied: Dateiberechtigungen in menschenlesbarem Format, kopiert!
+  group_id:
+    :name: Gruppen-ID kopieren
+    title: Nach Klipper kopieren – Gruppen-ID
+    copied: Dateigruppen-ID, kopiert!
+  group_name:
+    :name: Gruppen-Name kopieren
+    title: Nach Klipper kopieren – Gruppenname
+    copied: Dateigruppenname, kopiert!
+  user_id:
+    :name: Benutzer-ID kopieren
+    title: Nach Klipper kopieren – Benutzer-ID
+    copied: Benutzer-ID der Datei, kopiert!
+  user_name:
+    :name: Benutzernamen kopieren
+    title: Nach Klipper kopieren – Benutzername
+    copied: Benutzername der Datei, kopiert!
+  last_access:
+    :name: Letzte Zugriffszeit kopieren
+    title: Nach Klipper kopieren – Letzter Zugriff
+    copied: Letzter Zugriffszeitpunkt, kopiert!
+  last_mod:
+    :name: Letzte Änderungszeit kopieren
+    title: Nach Klipper kopieren – Letzte Änderung
+    copied: Letzte Änderungszeit, kopiert!
+  mount_point:
+    :name: Einhängepunkt kopieren
+    title: Nach Klipper kopieren – Einhängepunkt
+    copied: Mountpunkt, kopiert! 
