@@ -38,7 +38,7 @@
     column: Salida en columnas
     html: Código de tabla HTML
     insert: Sentencias de inserción SQL
-    líne: Un valor por línea
+    line: Un valor por línea
     list: Valores delimitados por una tubería
     table: Tabla de arte ASCII
     tabs: Valores separados por tabulaciones
@@ -47,7 +47,7 @@
     exported: ¡El contenido de la tabla ha sido exportado!
   db_dump:
     :name: Dump de base de datos
-    títle: Herramientas SQL - Dump
+    title: Herramientas SQL - Dump
     file_exist: ¡El archivo existe y no se sobrescribirá!
     include_schema: ¿Quieres incluir los esquemas de la tabla?
     dumped: El contenido de la base de datos ha sido exportado
