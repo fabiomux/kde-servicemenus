@@ -20,9 +20,10 @@
     title: Strumenti SQLite - Configurazione
     config: Configurazione ODBC
   db_tables:
-     :name: Elenco delle tabelle
-     title: Strumenti SQLite - Tabelle
-     tables: tavoli
+    :name: Elenco delle tabelle
+    title: Strumenti SQLite - Tabelle
+    tables: Tabelle
+    no_tables: Non ci sono tabelle nel database!
   db_table_schema:
     :name: Schema della tabella
     title: Strumenti SQLite - Schema
