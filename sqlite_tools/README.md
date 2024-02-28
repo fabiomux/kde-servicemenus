@@ -12,11 +12,16 @@ These are the *SQLite Tools* service menu features:
 - Register and unregister an SQLite file as ODBC data source to use it with software like LibreOffice;
 - Show the ODBC file configuration paths;
 - List the tables within the database in a Kdialog dialog;
+- List the views within the database in a Kdialog dialog;
 - Show the selected table schema within a Kdialog dialog;
-- Export the table in one of the supported formats with or without schema -
+- Export the table content in one of the supported formats -
   CSV, JSON, HTML, Markdown, SQL INSERT, TCL,
   inline, list, box, column, ASCII table, tabs;
-- Database dump with or without table schema in the SQL INSERT format.
+- Export the table content for selected columns in one of the
+  supported formats -
+  CSV, JSON, HTML, Markdown, SQL INSERT, TCL,
+  inline, list, box, column, ASCII table, tabs;
+- Database dump with or without the table schema in the SQL INSERT format.
 
 ## Install
 

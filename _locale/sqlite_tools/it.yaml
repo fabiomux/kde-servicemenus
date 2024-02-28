@@ -13,17 +13,24 @@
   odbc_unregister:
     :name: Rimuovi dal registro ODBC
     title: Strumenti SQLite - Rimuovi
+    no_odbc: Il pacchetto ODBC non è installato
     not_registered: Il file $(basename '%f') non era stato registrato
     unregistered: Il database $(basename '%f') è stato rimosso dal registro!
   odbc_config:
     :name: Informazioni sulla configurazione ODBC
     title: Strumenti SQLite - Configurazione
+    no_odbc: Il pacchetto ODBC non è installato
     config: Configurazione ODBC
   db_tables:
     :name: Elenco delle tabelle
     title: Strumenti SQLite - Tabelle
     tables: Tabelle
     no_tables: Non ci sono tabelle nel database!
+  db_views:
+    :name: Elenco delle viste
+    title: Strumenti SQLite - Viste
+    tables: Viste
+    no_views: Non ci sono viste nel database!
   db_table_schema:
     :name: Schema della tabella
     title: Strumenti SQLite - Schema
@@ -33,6 +40,24 @@
     :name: Esporta il contenuto della tabella
     title: Strumenti SQLite - Esporta
     select_table: Seleziona una o più tabelle
+    content: Contenuto della tabella
+    select_mode: Seleziona il formato dell'output
+    box: Tabella disegnata con caratteri unicode
+    column: In colonne
+    html: Tabella HTML
+    insert: Istruzioni SQL INSERT
+    line: Un valore per riga
+    list: Valori delimitati da un simbolo pipe
+    table: Tabella in ASCII-art
+    tabs: Valori tabulati
+    tcl: Lista in TCL
+    file_exist: Il file esiste e non sarà sovrascritto!
+    exported: Il contenuto delle tabelle è stato esportato!
+  db_table_content_cols:
+    :name: Esporta il contenuto delle colonne della tabella
+    title: Strumenti SQLite - Esporta
+    select_table: Seleziona una tabella
+    select_cols: Seleziona una o più colonne
     content: Contenuto della tabella
     select_mode: Seleziona il formato dell'output
     box: Tabella disegnata con caratteri unicode

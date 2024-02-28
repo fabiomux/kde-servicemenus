@@ -13,16 +13,24 @@
   odbc_unregister:
     :name: Aus dem ODBC-Register entfernen
     title: SQLite-Tools - Entfernen
+    no_odbc: Das ODBC-Paket ist nicht installiert!
     not_registered: Die Datei $(basename '%f') wurde nicht registriert
     unregistered: Datenbank $(basename '%f') aus der Registry entfernt!
   odbc_config:
     :name: ODBC-Konfigurationsinformationen
     title: SQLite-Tools - Konfiguration
+    no_odbc: Das ODBC-Paket ist nicht installiert!
     config: ODBC-Konfiguration
   db_tables:
     :name: Liste der Tabellen
     title: SQLite-Tools - Tabellen
     tables: Tabellen
+    no_tables: Es sind keine Tabellen in der Datenbank vorhanden!
+  db_views:
+    :name: Liste der Views
+    title: SQLite-Tools - SQL-Views
+    tables: SQL-Views
+    no_views: Es sind keine SQL-Views in der Datenbank vorhanden!
   db_table_schema:
     :name: Tabellenschema abrufen
     title: SQLite-Tools – Schema
@@ -32,6 +40,24 @@
     :name: Tabelleninhalt exportieren
     title: SQLite-Tools – Exportieren
     select_table: Wählen Sie eine oder mehrere Tabellen aus
+    content: Tabelleninhalt von
+    select_mode: Wählen Sie das Ausgabeformat
+    box: Tabellen mit Unicode-Boxzeichenzeichen
+    column: Ausgabe in Spalten
+    html: HTML-Tabellencode
+    insert: SQL-Einfügeanweisungen
+    line: Ein Wert pro Zeile
+    list: Durch einen senkrechten Strich getrennte Werte
+    table: ASCII-Art-Tabelle
+    tabs: Durch Tabulatoren getrennte Werte
+    tcl: TCL-Listenelemente
+    file_exist: Die Datei existiert und wird nicht überschrieben!
+    exported: Der Tabelleninhalt wurde exportiert!
+  db_table_content_cols:
+    :name: Exportiert den Inhalt der Tabellenspalte
+    title: SQLite-Tools – Exportieren
+    select_table: Wählen Sie eine Tabelle aus
+    select_cols: Wählen Sie eine oder mehrere Spalten aus
     content: Tabelleninhalt von
     select_mode: Wählen Sie das Ausgabeformat
     box: Tabellen mit Unicode-Boxzeichenzeichen

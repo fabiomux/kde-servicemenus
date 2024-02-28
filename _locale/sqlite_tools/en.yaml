@@ -13,16 +13,24 @@
   odbc_unregister:
     :name: Remove from the ODBC registry
     title: SQLite Tools - Unregister
+    no_odbc: The ODBC package is not installed!
     not_registered: The file $(basename %f) was not registered
     unregistered: Database $(basename '%f') removed from the registry!
   odbc_config:
     :name: ODBC configuration info
     title: SQLite Tools - Configuration
+    no_odbc: The ODBC package is not installed!
     config: ODBC configuration
   db_tables:
     :name: List of tables
     title: SQLite Tools - Tables
     tables: Tables
+    no_tables: There are no tables in the database!
+  db_views:
+    :name: List of views
+    title: SQLite Tools - Views
+    tables: Views
+    no_views: There are no views in the database!
   db_table_schema:
     :name: Get the table schema
     title: SQLite Tools - Schema
@@ -32,6 +40,24 @@
     :name: Export the table content
     title: SQLite Tools - Export
     select_table: Select one or more tables
+    content: Table content of
+    select_mode: Select the output format
+    box: Tables using unicode box-drawing characters
+    column: Output in columns
+    html:  HTML table code
+    insert: SQL insert statements
+    line: One value per line
+    list: Values delimited by a pipe
+    table: ASCII-art table
+    tabs: Tab-separated values
+    tcl: TCL list elements
+    file_exist: The file exist and won't be overwritten!
+    exported: The table contents has been exported!
+  db_table_content_cols:
+    :name: Export the table column's content
+    title: SQLite Tools - Export
+    select_table: Select a table
+    select_cols: Select one ore more columns
     content: Table content of
     select_mode: Select the output format
     box: Tables using unicode box-drawing characters

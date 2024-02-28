@@ -13,16 +13,24 @@
   odbc_unregister:
     :name: Eliminar del registro ODBC
     title: Herramientas SQLite - Eliminar
+    no_odbc: ¡El paquete ODBC no está instalado!
     not_registered: El archivo $(basename '%f') no fue registrado
     unregistered: Base de datos $(basename '%f') eliminada del registro!
   odbc_config:
     :name: Información de configuración de ODBC
     title: Herramientas SQLite - Configuración
+    no_odbc: ¡El paquete ODBC no está instalado!
     config: Configuración ODBC
   db_tables:
     :name: Lista de tablas
     title: Herramientas SQLite - Tablas
     tables: Tablas
+    no_tables: ¡No hay tablas en la base de datos!
+  db_views:
+    :name: Lista de vistas
+    title: Herramientas SQLite - Vistas
+    tables: Vistas
+    no_views: ¡No hay vistas en la base de datos!
   db_table_schema:
     :name: Obtener el esquema de la tabla
     title: Herramientas SQLite - Esquema
@@ -43,6 +51,24 @@
     table: Tabla de arte ASCII
     tabs: Valores separados por tabulaciones
     tcl: Elementos de la lista TCL
+    file_exist: ¡El archivo existe y no se sobrescribirá!
+    exported: ¡El contenido de la tabla ha sido exportado!
+  db_table_content_cols:
+    :name: exporta el contenido de la columna de la tabla
+    title: Herramientas SQLite - Exportar
+    select_table: seleccione una tabla
+    select_cols: seleccione una o más columnas
+    content: contenido de la tabla de
+    select_mode: seleccione el formato de salida
+    box: tablas que utilizan caracteres de dibujo de cuadro Unicode
+    column: Salida en columnas
+    html: código de tabla HTML
+    insert: sentencias de inserción SQL
+    line: un valor por línea
+    list: Valores delimitados por una tubería
+    table: tabla de arte ASCII
+    tabs: valores separados por tabulaciones
+    tcl: elementos de la lista TCL
     file_exist: ¡El archivo existe y no se sobrescribirá!
     exported: ¡El contenido de la tabla ha sido exportado!
   db_dump:
