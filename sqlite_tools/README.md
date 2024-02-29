@@ -23,6 +23,13 @@ These are the *SQLite Tools* service menu features:
   inline, list, box, column, ASCII table, tabs;
 - Database dump with or without the table schema in the SQL INSERT format.
 
+## Requirements
+
+- KDE 4 or superior
+- sqlite3
+- unixODBC (only for ODBC-related actions)
+- sql-formatter (optional and only for DB table schema action)
+
 ## Install
 
 The archive contains a Makefile which can be used to install the content with ease,

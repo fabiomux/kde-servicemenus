@@ -19,6 +19,13 @@ These are the *Copy to Klipper* service menu features:
 - Supports the copy of the last access and the last modification time;
 - Supports the copy of the file mount point.
 
+## Requirements
+
+- KDE 4 or superior
+- Klipper
+- qdbus
+- md5sum, sha256sum, sha512sum (only for checksum-related actions)
+
 ## Install
 
 The archive contains a Makefile which can be used to install the content with ease,
