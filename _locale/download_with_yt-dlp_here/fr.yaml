@@ -1,0 +1,37 @@
+---
+:service_menu: download_with_yt-dlp_here
+:entry:
+  :submenu: Téléchargez avec yt-dlp ici
+:common:
+  insert_url: Insérez l'URL du fichier à télécharger
+  looking: Recherche des formats...
+  select_format: Sélectionnez le format
+  download: Démarrage du téléchargement...
+  downloading: Téléchargement de
+  canceled: Téléchargement de $n annulé
+  completed: Téléchargement terminé!
+:actions:
+  select_all:
+    :name: Sélectionnez parmi tous les formats disponibles
+    title: Télécharger avec yt-dlp - Tous les formats
+  select_audio_video:
+    :name: Sélectionnez parmi les formats audio + vidéo
+    title: Télécharger avec yt-dlp - Audio + Vidéo
+  select_audio:
+    :name: Sélectionnez parmi les seuls formats audio
+    title: Télécharger avec yt-dlp - Audio uniquement
+  select_video:
+    :name: Sélectionnez parmi les seuls formats vidéo
+    title: Télécharger avec yt-dlp - Vidéo uniquement
+  best:
+    :name: Sélection automatique du meilleur format audio + vidéo
+    title: Télécharger avec yt-dlp - Meilleur audio + vidéo
+    looking: Recherche du meilleur format audio et vidéo...
+  best_audio:
+    :name: Sélection automatique du meilleur format audio
+    title: Télécharger avec yt-dlp - Meilleur audio
+    looking: Recherche du meilleur format audio...
+  best_video:
+    :name: Sélection automatique du meilleur format vidéo
+    title: Télécharger avec yt-dlp - Meilleure vidéo
+    looking: Recherche du meilleur format vidéo...
