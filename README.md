@@ -1,6 +1,42 @@
 # KDE Service Menus
 
-My personal KDE service menus collection, it includes the following scripts:
+This project started after sharing my first service menu, which was a simple example created for a blog post,
+on the KDE-store website to make it available to everyone.
+
+It wasn't my first service menu but the first I publicly shared, and after getting the first interested
+comments by the community, I decided to publish other services that I use almost daily to speed up common
+tasks from the command line.
+
+As soon as I realized that they could be better integrated into the KDE/Plasma environment through the KDE
+store, I re-arranged the material to provide a better experience to everyone having the same needs.
+
+Growing them in number, I also worked release by release to optimize the whole process, making it easier
+to manage and allow me to quickly publish a new package in case of fixes.
+
+At the end I redacted my personal guidelines:
+- The services shouldn't require any script bundled within the archive, all the commands must be included
+  in the `Exec` key of the *desktop* file;
+- the archive must include the minimum number of files:
+  * The installer that is in charge of uninstalling the service too;
+  * the README file for documentation;
+  * a simple Makefile for those who don't like to README file for the basic commands;
+  * the LICENSE file;
+  * and, of course, the desktop file containing the service.
+- the service must be documented at different levels:
+  * in the desktop file itself;
+  * in the README file;
+  * in the KDE-store page;
+  * in the Blog page.
+- the list of commands must be as highly portable as possible for the two basic shells: Bash and Dash;
+- the services should offer a deeper integration at the localization level, without compromising the
+  previous requirements in terms of simplicity and *portability*.
+
+Although I have been able to achieve the last two points only lately (February, 2024), these are, or will
+be, the common features for of all the published services.
+
+## The available services
+
+My personal KDE service menus collection includes the following scripts:
 - [Compose with Betterbird][compose_with_betterbird]:
   compose a new email with the Betterbird email client using the selected files as attachment;
 - [Compose with Betterbird (Flatpak edition)][compose_with_betterbird_flatpak]:
