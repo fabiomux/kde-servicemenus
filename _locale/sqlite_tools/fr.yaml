@@ -52,7 +52,7 @@
     tabs: Valeurs séparées par des tabulations
     tcl: Éléments de la liste TCL
     file_exist: Le fichier existe et ne sera pas écrasé!
-    exported: Le contenu de la table a été exporté !
+    exported: Le contenu de la table a été exporté!
   db_table_content_cols:
     :name: Exporter le contenu de la colonne du tableau
     title: Outils SQLite - Exporter
@@ -69,8 +69,8 @@
     table: table d'art ASCII
     tabs: valeurs séparées par des tabulations
     tcl: éléments de la liste TCL
-    file_exist: Le fichier existe et ne sera pas écrasé !
-    exported: Le contenu de la table a été exporté !
+    file_exist: Le fichier existe et ne sera pas écrasé!
+    exported: Le contenu de la table a été exporté!
   db_dump:
     :name: Dump de la base de données
     title: Outils SQL - Dump

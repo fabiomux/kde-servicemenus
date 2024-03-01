@@ -17,7 +17,7 @@
     copied: uniquement le chemin du fichier, copié!
   filename_noext:
     :name: Copiez le nom sans extension
-    title: Copier vers Clipper – Pas d'extension
+    title: Copier vers Clipper – Pas d'extension
     copied: Seul le nom du fichier sans extension, copié!
   hash_md5:
     :name: Copiez la somme de contrôle md5
@@ -56,11 +56,11 @@
     copied: autorisations de fichier au format octal, copiées!
   perm_hr:
     :name: copiez les autorisations du fichier dans un format lisible par l'homme
-    title: Copier vers Klipper – Autorisations lisibles par l'homme
+    title: Copier vers Klipper – Autorisations lisibles par l'homme
     copied: autorisations de fichier dans un format lisible par l'homme, copiées!
   group_id:
     :name: copiez l'identifiant du groupe
-    title: Copier vers Klipper – ID de groupe
+    title: Copier vers Klipper – ID de groupe
     copied: ID du groupe de fichiers, copié!
   group_name:
     :name: Copiez le nom du groupe
@@ -68,7 +68,7 @@
     copied: Nom du groupe de fichiers, copié!
   user_id:
     :name: copiez l'identifiant de l'utilisateur
-    title: Copier vers Klipper – ID utilisateur
+    title: Copier vers Klipper – ID utilisateur
     copied: ID utilisateur du fichier, copié!
   user_name:
     :name: Copiez le nom d'utilisateur
