@@ -9,9 +9,11 @@ These are the *Copy to Klipper* service menu features:
 - Fully translated into 5 languages besides English
   (Dutch, French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
+- Support for KDE Plasma 6
+- Multiple file copy resulting in a list of items separated by a new-line character;
 - Supports the copy of distinct filename's parts as full filename, filename only,
   path only, filename without extension;
-- Supports the copy of the file checksum algorithms md5, sha256, sha512;
+- Supports the copy of the file checksum algorithms md5, sha256, and sha512;
 - Supports the copy of the mime-type and file type;
 - Supports the copy of the file size in bytes and human-readable format;
 - Supports the copy of the file permissions in octal or human-readable format;
@@ -22,9 +24,21 @@ These are the *Copy to Klipper* service menu features:
 ## Requirements
 
 - KDE 4 or superior
+- qtchooser (only for KDE Plasma 6 users)
 - Klipper
 - qdbus
 - md5sum, sha256sum, sha512sum (only for checksum-related actions)
+
+## KDE Plasma 6 support
+
+To make it work under KDE Plasma 6 complete the following steps:
+1. Install the `qtchooser` package
+2. Be sure to have `qmake6` installed
+3. Run in Konsole:
+       qtchooser -install qt6 $(which qmake6)
+4. In the .bashrc append the line:
+       export QT_SELECT=qt6
+5. Logout and login.
 
 ## Install
 
