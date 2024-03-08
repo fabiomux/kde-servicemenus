@@ -35,9 +35,13 @@ To make it work under KDE Plasma 6 complete the following steps:
 1. Install the `qtchooser` package
 2. Be sure to have `qmake6` installed
 3. Run in Konsole:
-       qtchooser -install qt6 $(which qmake6)
+    ```
+    qtchooser -install qt6 $(which qmake6)
+    ```
 4. In the .bashrc append the line:
-       export QT_SELECT=qt6
+    ```
+    export QT_SELECT=qt6
+    ```
 5. Logout and login.
 
 ## Install
