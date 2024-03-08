@@ -68,7 +68,32 @@ My personal KDE service menus collection includes the following scripts:
 
 ## Installation
 
-There are several options to install the service menus listed in this repository.
+There are several ways to install the service menus listed in this repository, the best option is always
+using the Pling service directly from *Dolphin* or *Discover*, but in case something goes wrong during
+the install, the manual procedure helps to identify a particular issue.
+
+### KDE Plasma 6 support
+
+To make it work under KDE Plasma 6 must complete the following steps first:
+1. Install the `qtchooser` package
+2. Be sure to have `qmake6` installed
+3. Run in Konsole:
+    ```
+    qtchooser -install qt6 $(which qmake6)
+    ```
+4. In the .bashrc append the line:
+    ```
+    export QT_SELECT=qt6
+    ```
+5. Logout and login.
+
+## Install
+
+The archive contains a Makefile which can be used to install the content with ease,
+just access the `{{service}}` subfolder with the terminal and type:
+```
+$ make install
+```
 
 ### From Dolphin
 
