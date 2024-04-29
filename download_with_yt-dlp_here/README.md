@@ -10,18 +10,38 @@ These are the *Download with yt-dlp here* service menu features:
 - Fully translated into 4 languages besides English
   (French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
+- Support for KDE Plasma 6;
 - Select the format among all the available formats;
 - Select the format among the only audio formats;
 - Select the format among the only video formats;
 - Select the format among the audio + video formats;
 - Automatically select the best audio format;
 - Automatically select the best video format;
-- Automatically select the best audio + video format.
+- Automatically select the best audio + video format;
+- A dialog shows the progress and allows to cancel the download;
+- The output file format can be overriden using the $KSM_DWYDH_OUTPUT variable.
 
 ## Requirements
 
-- KDE 4 or superior
-- yt-dlp
+- KDE 4 or superior;
+- KDialog;
+- qtchooser (only for KDE Plasma 6 users);
+- yt-dlp.
+
+## KDE Plasma 6 support
+
+To make it work under KDE Plasma 6 complete the following steps:
+1. Install the `qtchooser` package
+2. Be sure to have `qmake6` installed
+3. Run in Konsole:
+    ```
+    qtchooser -install qt6 $(which qmake6)
+    ```
+4. In the .bashrc append the line:
+    ```
+    export QT_SELECT=qt6
+    ```
+5. Logout and login.
 
 ## Install
 
