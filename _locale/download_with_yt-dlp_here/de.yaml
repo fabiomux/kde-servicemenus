@@ -9,7 +9,7 @@
   download: Download starten...
   downloading: Herunterladen von
   canceled: Download von $n abgebrochen
-  completed: Download abgeschlossen!
+  completed: Download von $n abgeschlossen!
 :actions:
   select_all:
     :name: Wählen Sie aus allen verfügbaren Formaten aus

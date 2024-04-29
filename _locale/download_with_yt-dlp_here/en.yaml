@@ -9,7 +9,7 @@
   download: Starting the download...
   downloading: Download of
   canceled: Download of $n Canceled
-  completed: Download Completed!
+  completed: Download of $n Completed!
 :actions:
   select_all:
     :name: Select among all available formats
