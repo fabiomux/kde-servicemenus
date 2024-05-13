@@ -2,7 +2,7 @@
 #
 # Authors: Fabio Mucciante
 # Created: 2021/08/31
-# Updated: 2024/02/10
+# Updated: 2024/05/13
 # Version: 1.2.0
 # License: GPL-v3
 #
@@ -10,14 +10,14 @@
 #   - https://freeaptitude.altervista.org/projects/kde-servicemenus.html
 #   - https://github.com/fabiomux/kde-servicemenus
 
-log_file='./log'
+log_file='./install.log'
 dest_folder=''
 desktop_filename='__project_name__.desktop'
 action=$1
 src_folder=$(dirname "$0")
 kde_version=''
 
-echo '[=] Starting procedure from install.sh' | tee $log_file
+echo '[=] Started to install __project_name__' | tee $log_file
 if [ $# -eq 0 ]; then
   echo '[>] No --install or --uninstall parameter given, default to --install' | tee -a $log_file
   action='--install'
@@ -33,7 +33,7 @@ elif [ -n "$(command -v kde4-config)" ]; then
 elif [ -n "$(command -v qtpaths6)" ]; then
   kde_version='Plasma 6'
 else
-  echo '[X] Unable to find the Service Menus path!'
+  echo '[X] Unable to find the Service Menus path!' | tee -a $log_file
   exit 1
 fi
 
@@ -50,12 +50,12 @@ case $kde_version in
   dest_folder=$(echo "$dest_folder" | sed "s@^/usr/share@$writable_path@g")
 ;;
 *)
-  echo '[X] Unknown Desktop Environment'
+  echo "[X] Unknown Desktop Environment: $kde_version" | tee -a $log_file
   exit 2
 ;;
 esac
 
-echo "[*] Desktop Environment: $kde_version"
+echo "[*] Desktop Environment: $kde_version" | tee -a $log_file
 
 echo "[*] Source path: $src_folder" | tee -a $log_file
 if [ -d "$dest_folder" ]; then
@@ -86,9 +86,9 @@ case "$action" in
   chmod +x "$dest_folder/$desktop_filename"
   verify=$(stat -c %A "$dest_folder/$desktop_filename" | grep -o 'x' | wc -l)
   if [ $verify -eq 3 ]; then
-    echo "[V] Permission correctly applied"
+    echo "[V] Permissions correctly applied" | tee -a $log_file
   else
-    echo "[X] Something went wrong applying the permissions"
+    echo "[X] Something went wrong applying the permissions" | tee -a $log_file
   fi
 ;;
 '--uninstall'|'--remove'|'--delete'|'--deinstall')
