@@ -1,0 +1,18 @@
+---
+:service_menu: open_with_gvim
+:entry:
+  :submenu:
+:common:
+:actions:
+  open_gvim:
+    :name: Ouvrir avec gVim
+    title: Ouvrir avec gVim - gVim
+  open_gvimdiff:
+    :name: Ouvrir avec gVimdiff
+    title: Ouvrir avec gVim - gVimdiff
+  open_vim:
+    :name: Ouvrir avec Vim (Konsole)
+    title: Ouvrir avec gVim - Vim
+  open_vimdiff:
+    :name: Ouvrir avec Vimdiff (Konsole)
+    title: Ouvrir avec gVim - Vimdiff
