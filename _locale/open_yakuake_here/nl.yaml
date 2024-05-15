@@ -1,0 +1,36 @@
+---
+:service_menu: open_yakuake_here
+:entry:
+  :submenu: Openen in Yakuake
+:common:
+:actions:
+  current_session:
+    :name: Huidige sessie
+    title: Openen in Yakuake - Huidige sessie
+  current_session_hsplit_bottom:
+    :name: Huidige sessie (onderaan)
+    title: Openen in Yakuake - (onderaan)
+  current_session_hsplit_top:
+    :name: Huidige sessie (bovenaan)
+    title: Openen in Yakuake - (bovenaan)
+  current_session_vsplit_left:
+    :name: Huidige sessie (linkerkant)
+    title: Openen in Yakuake - (linkerkant)
+  current_session_vsplit_right:
+    :name: Huidige sessie (rechterkant)
+    title: Openen in Yakuake - (rechterkant)
+  new_session:
+    :name: Nieuwe sessie
+    title: Openen in Yakuake - Nieuwe sessie
+  new_session_hsplit_bottom:
+    :name: Nieuwe sessie (onderaan)
+    title: Openen in Yakuake - (onderaan)
+  new_session_hsplit_top:
+    :name: Nieuwe sessie (bovenaan)
+    title: Openen in Yakuake - (bovenaan)
+  new_session_vsplit_left:
+    :name: Nieuwe sessie (linkerkant)
+    title: Openen in Yakuake - (linkerkant)
+  new_session_vsplit_right:
+    :name: Nieuwe sessie (rechterkant)
+    title: Openen in Yakuake - (rechterkant)

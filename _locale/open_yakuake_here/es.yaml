@@ -1,0 +1,36 @@
+---
+:service_menu: open_yakuake_here
+:entry:
+  :submenu: Abrir Yakuake aquí
+:common:
+:actions:
+  current_session:
+    :name: Sesión actual
+    title: Abrir Yakuake aquí - Sesión actual
+  current_session_hsplit_bottom:
+    :name: Sesión actual - Terminal inferior
+    title: Abrir Yakuake aquí - Terminal inferior
+  current_session_hsplit_top:
+    :name: Sesión actual - Terminal superior
+    title: Abrir Yakuake aquí - Terminal superior
+  current_session_vsplit_left:
+    :name: Sesión actual - Terminal a la izquierda
+    title: Abrir Yakuake aquí - Terminal a la izquierda
+  current_session_vsplit_right:
+    :name: Sesión actual - Terminal a la derecha
+    title: Abrir Yakuake aquí - Terminal a la derecha
+  new_session:
+    :name: Sesión nueva
+    title: Abrir Yakuake aquí - Sesión nueva
+  new_session_hsplit_bottom:
+    :name: Sesión nueva - Terminal inferior
+    title: Abrir Yakuake aquí - Terminal inferior
+  new_session_hsplit_top:
+    :name: Sesión nueva - Terminal superior
+    title: Abrir Yakuake aquí - Terminal superior
+  new_session_vsplit_left:
+    :name: Sesión nueva - Terminal a la izquierda
+    title: Abrir Yakuake aquí - Terminal a la izquierda
+  new_session_vsplit_right:
+    :name: Sesión nueva - Terminal a la derecha
+    title: Abrir Yakuake aquí - Terminal a la derecha
