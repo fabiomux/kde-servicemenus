@@ -1,0 +1,25 @@
+---
+:service_menu: open_konsole_here
+:entry:
+  :submenu: Konsole hier öffnen
+:common:
+  select_session: Wählen Sie die Konsole-Sitzung aus
+:actions:
+  last_inst_current_sess:
+    :name: Aktuelle Sitzung (letzte Instanz)
+    title:
+  last_inst_new_sess:
+    :name: Neue Sitzung (letzte Instanz)
+    title:
+  first_inst_current_sess:
+    :name: Aktuelle Sitzung (erste Instanz)
+    title:
+  first_inst_new_sess:
+    :name: Neue Sitzung (erste Instanz)
+    title:
+  select_inst_current_sess:
+    :name: Aktuelle Sitzung (Wählen Sie die Instanz aus)
+    title: Konsole hier öffnen – Aktuelle Sitzung
+  select_inst_new_sess:
+    :name: Neue Sitzung (wählen Sie die Instanz aus)
+    title: Konsole hier öffnen – Neue Sitzung

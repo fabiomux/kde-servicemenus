@@ -1,0 +1,25 @@
+---
+:service_menu: open_konsole_here
+:entry:
+  :submenu: Openen in Konsole
+:common:
+  select_session: Selecteer de Konsole-sessie
+:actions:
+  last_inst_current_sess:
+    :name: Huidige sessie (recentste venster)
+    title:
+  last_inst_new_sess:
+    :name: Nieuwe sessie (recentste venster)
+    title:
+  first_inst_current_sess:
+    :name: Huidige sessie (eerste venster)
+    title:
+  first_inst_new_sess:
+    :name: Nieuwe sessie (eerste venster)
+    title:
+  select_inst_current_sess:
+    :name: Huidige sessie (selecteer venster)
+    title: Openen in Konsole - Huidige sessie
+  select_inst_new_sess:
+    :name: Nieuwe sessie (selecteer venster)
+    title: Openen in Konsole - Nieuwe sessie

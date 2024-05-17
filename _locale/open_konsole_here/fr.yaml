@@ -1,0 +1,25 @@
+---
+:service_menu: open_konsole_here
+:entry:
+  :submenu: Ouvrez Konsole ici
+:common:
+  select_session: Sélectionnez la session Konsole
+:actions:
+  last_inst_current_sess:
+    :name: Session actuelle (dernière instance)
+    title:
+  last_inst_new_sess:
+    :name: Nouvelle session (dernière instance)
+    title:
+  first_inst_current_sess:
+    :name: Session actuelle (première instance)
+    title:
+  first_inst_new_sess:
+    :name: Nouvelle session (première instance)
+    title:
+  select_inst_current_sess:
+    :name: Session actuelle (choisir l'instance)
+    title: Ouvrez Konsole ici - Session actuelle
+  select_inst_new_sess:
+    :name: Nouvelle session (choisir l'instance)
+    title: Ouvrez Konsole ici - Nouvelle session
