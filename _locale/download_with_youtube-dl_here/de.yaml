@@ -1,0 +1,41 @@
+---
+:service_menu: download_with_youtube-dl_here
+:entry:
+  :submenu: Hier mit youtube-dl herunterladen
+:common:
+  insert_url: Geben Sie die URL der herunterzuladenden Datei ein
+  looking: Auf der Suche nach den Formaten...
+  no_content_available: Kein Inhalt verfügbar
+  select_format: Wählen Sie das Format aus
+  download: Download starten...
+  downloading: Herunterladen von
+  canceled: Download von $n abgebrochen
+  completed: Download von $n abgeschlossen!
+:actions:
+  select_all:
+    :name: Wählen Sie aus allen verfügbaren Formaten aus
+    title: Herunterladen mit youtube-dl – Alle Formate
+  select_audio_video:
+    :name: Wählen Sie zwischen den Audio- und Videoformaten aus
+    title: Download mit youtube-dl - Audio + Video
+    no_content_available: Kein Audio und Videoinhalt verfügbar
+  select_audio:
+    :name: Wählen Sie eines der einzigen Audioformate aus
+    title: Download mit youtube-dl – Nur Audio
+    no_content_available: Es sind keine reinen Audioinhalte verfügbar
+  select_video:
+    :name: Wählen Sie eines der einzigen Videoformate aus
+    title: Mit youtube-dl herunterladen – Nur Video
+    no_content_available: Kein reiner Videoinhalt verfügbar
+  best:
+    :name: Automatische Auswahl des besten Audio- und Videoformats
+    title: Mit youtube-dl herunterladen – Bestes Audio + Video
+    looking: Auf der Suche nach dem besten Audio- und Videoformat...
+  best_audio:
+    :name: Automatische Auswahl des besten Audioformats
+    title: Mit youtube-dl herunterladen – Bestes Audio
+    looking: Auf der Suche nach dem besten Audioformat...
+  best_video:
+    :name: Automatische Auswahl des besten Videoformats
+    title: Mit youtube-dl herunterladen – Bestes Video
+    looking: Auf der Suche nach dem besten Videoformat...
