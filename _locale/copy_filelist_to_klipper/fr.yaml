@@ -1,0 +1,65 @@
+---
+:service_menu: copy_filelist_to_klipper
+:entry:
+  :submenu: Copier la liste des fichiers dans Clipper
+:common:
+  copied: Liste copiée!
+:actions:
+  all_nosubf:
+    :name: copie la liste de tous les fichiers (pas de sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper–Tous
+  all_subf:
+    :name: Copiez la liste de tous les fichiers (avec sous-dossiers)
+    title: Copier la liste des fichiers dans Clipper–Tous
+  filter_nosubf:
+    :name: Copiez la liste des fichiers filtrés (pas de sous-dossiers)
+    title: Copier la liste des fichiers dans Clipper–Filtre
+    request: Filtrer avec des caractères génériques
+  filter_subf:
+    :name: Copiez la liste des fichiers filtrés (avec sous-dossiers)
+    title: Copier la liste des fichiers dans Clipper–Filtre
+    request: Filtrer avec des caractères génériques
+  older_nosubf:
+    :name: Copiez la liste des fichiers modifiés il y a plus de... jours (pas de sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper - Plus ancien
+    request: Plus ancienne que jours
+  older_subf:
+    :name: Copie la liste des fichiers modifiés il y a plus de... jours (avec sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper - Plus ancien
+    request: Plus ancienne que jours
+  newer_nosubf:
+    :name: Copiez la liste des fichiers modifiés il y a moins de... jours (pas de sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper - Plus récent
+    request: plus récente que jours
+  newer_subf:
+    :name: Copie la liste des fichiers modifiés il y a moins de... jours (avec sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper - Plus récent
+    request: plus récente que jours
+  bigger_nosubf:
+    :name: Copiez la liste des fichiers plus grands que... (pas de sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper - Plus grand
+    request: supérieure à (k = kilo-octets, M = mégaoctets, G = gigaoctets)
+  bigger_subf:
+    :name: Copiez la liste des fichiers plus grands que... (avec sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper - Plus grand
+    request: supérieure à (k = kilo-octets, M = mégaoctets, G = gigaoctets)
+  smaller_nosubf:
+    :name: copie la liste des fichiers plus petits que... (pas de sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper - Plus petit
+    request: inférieure à (k = kilo-octets, M = mégaoctets, G = gigaoctets)
+  smaller_subf:
+    :name: copie la liste des fichiers plus petits que... (avec sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper - Plus petit
+    request: inférieure à (k = kilo-octets, M = mégaoctets, G = gigaoctets)
+  empty_files_nosubf:
+    :name: Copiez la liste de tous les fichiers vides (pas de sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper–Fichiers vides
+  empty_files_subf:
+    :name: Copiez la liste de tous les fichiers vides (avec sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper–Fichiers vides
+  empty_folders_nosubf:
+    :name: Copiez la liste de tous les dossiers vides (pas de sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper–Dossiers vides
+  empty_folders_subf:
+    :name: Copiez la liste de tous les dossiers vides (avec sous-dossiers)
+    title: Copier la liste des fichiers dans Klipper–Dossiers vides

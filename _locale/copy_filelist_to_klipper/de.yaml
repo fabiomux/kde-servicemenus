@@ -1,0 +1,65 @@
+---
+:service_menu: copy_filelist_to_klipper
+:entry:
+  :submenu: Dateiliste nach Klipper kopieren
+:common:
+  copied: Liste kopiert!
+:actions:
+  all_nosubf:
+    :name: Liste aller Dateien kopieren (keine Unterordner)
+    title: Dateiliste nach Klipper kopieren – Alle
+  all_subf:
+    :name: Kopieren Sie die Liste aller Dateien (mit Unterordnern)
+    title: Dateiliste nach Klipper kopieren – Alle
+  filter_nosubf:
+    :name: Kopieren Sie die Liste der gefilterten Dateien (keine Unterordner)
+    title: Dateiliste nach Klipper kopieren – Filter
+    request: Mit Platzhaltern filtern
+  filter_subf:
+    :name: Kopieren Sie die Liste der gefilterten Dateien (mit Unterordnern)
+    title: Dateiliste nach Klipper kopieren – Filter
+    request: Mit Platzhaltern filtern
+  older_nosubf:
+    :name: Kopieren Sie die Liste der Dateien, die vor mehr als... Tagen geändert wurden (keine Unterordner)
+    title: Dateiliste nach Klipper kopieren – älter
+    request: Älter als Tage
+  older_subf:
+    :name: Kopieren Sie die Liste der Dateien, die vor mehr als... Tagen geändert wurden (mit Unterordnern)
+    title: Dateiliste nach Klipper kopieren – älter
+    request: Älter als Tage
+  newer_nosubf:
+    :name: Kopieren Sie die Liste der Dateien, die vor weniger als ... Tagen geändert wurden (keine Unterordner)
+    title: Dateiliste nach Klipper kopieren – neuer
+    request: Neuer als Tage
+  newer_subf:
+    :name: Kopieren Sie die Liste der Dateien, die vor weniger als ... Tagen geändert wurden (mit Unterordnern).
+    title: Dateiliste nach Klipper kopieren – neuer
+    request: Neuer als Tage
+  bigger_nosubf:
+    :name: Kopieren Sie die Liste der Dateien, die größer sind als... (keine Unterordner)
+    title: Dateiliste nach Klipper kopieren – Größer
+    request: Größer als (k = Kilobyte, M = Megabyte, G = Gigabyte)
+  bigger_subf:
+    :name: Kopieren Sie die Liste der Dateien, die größer sind als... (mit Unterordnern)
+    title: Dateiliste nach Klipper kopieren – Größer
+    request: Größer als (k = Kilobyte, M = Megabyte, G = Gigabyte)
+  smaller_nosubf:
+    :name: Kopieren Sie die Liste der Dateien, die kleiner sind als... (keine Unterordner)
+    title: Dateiliste nach Klipper kopieren – kleiner
+    request: Kleiner als (k = Kilobyte, M = Megabyte, G = Gigabyte)
+  smaller_subf:
+    :name: Kopieren Sie die Liste der Dateien, die kleiner sind als... (mit Unterordnern)
+    title: Dateiliste nach Klipper kopieren – kleiner
+    request: Kleiner als (k = Kilobyte, M = Megabyte, G = Gigabyte)
+  empty_files_nosubf:
+    :name: Kopieren Sie die Liste aller leeren Dateien (keine Unterordner)
+    title: Dateiliste nach Klipper kopieren – Leere Dateien
+  empty_files_subf:
+    :name: Kopieren Sie die Liste aller leeren Dateien (mit Unterordnern)
+    title: Dateiliste nach Klipper kopieren – Leere Dateien
+  empty_folders_nosubf:
+    :name: Kopieren Sie die Liste aller leeren Ordner (keine Unterordner)
+    title: Dateiliste nach Klipper kopieren – Ordner leeren
+  empty_folders_subf:
+    :name: Kopieren Sie die Liste aller leeren Ordner (mit Unterordnern)
+    title: Dateiliste nach Klipper kopieren – Ordner leeren

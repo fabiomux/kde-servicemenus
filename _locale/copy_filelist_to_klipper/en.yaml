@@ -1,0 +1,65 @@
+---
+:service_menu: copy_filelist_to_klipper
+:entry:
+  :submenu: Copy file list to Klipper
+:common:
+  copied: List copied!
+:actions:
+  all_nosubf:
+    :name: Copy the list of all files (no subfolders)
+    title: Copy file list to Klipper - All
+  all_subf:
+    :name: Copy the list of all files (with subfolders)
+    title: Copy file list to Klipper - All
+  filter_nosubf:
+    :name: Copy the list of filtered files (no subfolders)
+    title: Copy file list to Klipper - Filter
+    request: Filter with wildcards
+  filter_subf:
+    :name: Copy the list of filtered files (with subfolders)
+    title: Copy file list to Klipper - Filter
+    request: Filter with wildcards
+  older_nosubf:
+    :name: Copy the list of files modified more than... days ago (no subfolders)
+    title: Copy file list to Klipper - Older
+    request: Older than days
+  older_subf:
+    :name: Copy the list of files modified more than... days ago (with subfolders)
+    title: Copy file list to Klipper - Older
+    request: Older than days
+  newer_nosubf:
+    :name: Copy the list of files modified less than... days ago (no subfolders)
+    title: Copy file list to Klipper - Newer
+    request: Newer than days
+  newer_subf:
+    :name: Copy the list of files modified less than... days ago (with subfolders)
+    title: Copy file list to Klipper - Newer
+    request: Newer than days
+  bigger_nosubf:
+    :name: Copy the list of files bigger than... (no subfolders)
+    title: Copy file list to Klipper - Bigger
+    request: Bigger than (k = kilobytes, M = Megabytes, G = Gigabytes)
+  bigger_subf:
+    :name: Copy the list of files bigger than... (with subfolders)
+    title: Copy file list to Klipper - Bigger
+    request: Bigger than (k = kilobytes, M = Megabytes, G = Gigabytes)
+  smaller_nosubf:
+    :name: Copy the list of files smaller than... (no subfolders)
+    title: Copy file list to Klipper - Smaller
+    request: Smaller than (k = kilobytes, M = Megabytes, G = Gigabytes)
+  smaller_subf:
+    :name: Copy the list of files smaller than... (with subfolders)
+    title: Copy file list to Klipper - Smaller
+    request: Smaller than (k = kilobytes, M = Megabytes, G = Gigabytes)
+  empty_files_nosubf:
+    :name: Copy the list of all empty files (no subfolders)
+    title: Copy file list to Klipper - Empty files
+  empty_files_subf:
+    :name: Copy the list of all empty files (with subfolders)
+    title: Copy file list to Klipper - Empty files
+  empty_folders_nosubf:
+    :name: Copy the list of all empty folders (no subfolders)
+    title: Copy file list to Klipper - Empty folders
+  empty_folders_subf:
+    :name: Copy the list of all empty folders (with subfolders)
+    title: Copy file list to Klipper - Empty folders

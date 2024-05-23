@@ -1,0 +1,65 @@
+---
+:service_menu: copy_filelist_to_klipper
+:entry:
+  :submenu: Copia l'elenco dei file su Klipper
+:common:
+  copied: Elenco copiato!
+:actions:
+  all_nosubf:
+    :name: Copia l'elenco di tutti i file (nessuna sottocartella)
+    title: Copia l'elenco dei file su Klipper - Tutti
+  all_subf:
+    :name: Copia l'elenco di tutti i file (con le sottocartelle)
+    title: Copia l'elenco dei file su Klipper - Tutti
+  filter_nosubf:
+    :name: Copia l'elenco dei file filtrati (nessuna sottocartella)
+    title: Copia l'elenco dei file su Klipper - Filtro
+    request: filtra con caratteri jolly
+  filter_subf:
+    :name: Copia l'elenco dei file filtrati (con sottocartelle)
+    title: Copia l'elenco dei file su Klipper - Filtro
+    request: filtra con caratteri jolly
+  older_nosubf:
+    :name: Copia l'elenco dei file modificati più di... giorni fa (nessuna sottocartella)
+    title: Copia l'elenco dei file su Klipper - Più vecchi
+    request: Più vecchia di giorni
+  older_subf:
+    :name: Copia l'elenco dei file modificati più di... giorni fa (con sottocartelle)
+    title: Copia l'elenco dei file su Klipper - Più vecchi
+    request: Più vecchia di giorni
+  newer_nosubf:
+    :name: Copia l'elenco dei file modificati meno di... giorni fa (nessuna sottocartella)
+    title: Copia l'elenco dei file su Klipper - Più recente
+    request: Più recente di giorni
+  newer_subf:
+    :name: Copia l'elenco dei file modificati meno di... giorni fa (con sottocartelle)
+    title: Copia l'elenco dei file su Klipper - Più recente
+    request: Più recente di giorni
+  bigger_nosubf:
+    :name: Copia l'elenco dei file più grandi di... (nessuna sottocartella)
+    title: Copia l'elenco dei file su Klipper - Più grande
+    request: maggiore di (k = kilobyte, M = megabyte, G = gigabyte)
+  bigger_subf:
+    :name: Copia l'elenco dei file più grandi di... (con sottocartelle)
+    title: Copia l'elenco dei file su Klipper - Più grande
+    request: maggiore di (k = kilobyte, M = megabyte, G = gigabyte)
+  smaller_nosubf:
+    :name: Copia l'elenco dei file più piccoli di... (nessuna sottocartella)
+    title: Copia l'elenco dei file su Klipper - Più piccolo
+    request: inferiore a (k = kilobyte, M = megabyte, G = gigabyte)
+  smaller_subf:
+    :name: Copia l'elenco dei file più piccoli di... (con sottocartelle)
+    title: Copia l'elenco dei file su Klipper - Più piccolo
+    request: inferiore a (k = kilobyte, M = megabyte, G = gigabyte)
+  empty_files_nosubf:
+    :name: Copia l'elenco di tutti i file vuoti (nessuna sottocartella)
+    title: Copia l'elenco dei file su Klipper - File vuoti
+  empty_files_subf:
+    :name: Copia l'elenco di tutti i file vuoti (con sottocartelle)
+    title: Copia l'elenco dei file su Klipper - File vuoti
+  empty_folders_nosubf:
+    :name: Copia l'elenco di tutte le cartelle vuote (nessuna sottocartella)
+    title: Copia l'elenco dei file su Klipper - Cartelle vuote
+  empty_folders_subf:
+    :name: Copia l'elenco di tutte le cartelle vuote (con sottocartelle)
+    title: Copia l'elenco dei file su Klipper - Cartelle vuote

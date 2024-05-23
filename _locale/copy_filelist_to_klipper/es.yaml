@@ -1,0 +1,65 @@
+---
+:service_menu: copiar_lista_archivos_a_klipper
+:entry:
+  :submenu: Copiar lista de archivos a Klipper
+:common:
+  copied: Lista copiada!
+:actions:
+  all_nosubf:
+    :name: copia la lista de todos los archivos (sin subcarpetas)
+    title: Copiar lista de archivos a Klipper - Todo
+  all_subf:
+    :name: copia la lista de todos los archivos (con subcarpetas)
+    title: Copiar lista de archivos a Klipper - Todo
+  filter_nosubf:
+    :name: copia la lista de archivos filtrados (sin subcarpetas)
+    title: Copiar lista de archivos a Klipper - Filtro
+    request: Filtrar con comodines
+  filter_subf:
+    :name: Copia la lista de archivos filtrados (con subcarpetas)
+    title: Copiar lista de archivos a Klipper - Filtro
+    request: Filtrar con comodines
+  older_nosubf:
+    :name: Copia la lista de archivos modificados hace más de... días (sin subcarpetas)
+    title: Copiar lista de archivos a Klipper - Anterior
+    request: Más de días
+  older_subf:
+    :name: Copia la lista de archivos modificados hace más de... días (con subcarpetas)
+    title: Copiar lista de archivos a Klipper - Anterior
+    request: Más de días
+  newer_nosubf:
+    :name: Copia la lista de archivos modificados hace menos de... días (sin subcarpetas)
+    title: Copiar lista de archivos a Klipper - Más reciente
+    request: Más reciente que días
+  newer_subf:
+    :name: Copia la lista de archivos modificados hace menos de... días (con subcarpetas)
+    title: Copiar lista de archivos a Klipper - Más reciente
+    request: más reciente que días
+  bigger_nosubf:
+    :name: Copia la lista de archivos mayores que... (sin subcarpetas)
+    title: Copiar lista de archivos a Klipper - Más grande
+    request: Mayor que (k = kilobytes, M = Megabytes, G = Gigabytes)
+  bigger_subf:
+    :name: Copia la lista de archivos mayores que... (con subcarpetas)
+    title: Copiar lista de archivos a Klipper - Más grande
+    request: Mayor que (k = kilobytes, M = Megabytes, G = Gigabytes)
+  smaller_nosubf:
+    :name: Copia la lista de archivos más pequeños que... (sin subcarpetas)
+    title: Copiar lista de archivos a Klipper - Más pequeño
+    request: Menor que (k = kilobytes, M = Megabytes, G = Gigabytes)
+  smaller_subf:
+    :name: Copia la lista de archivos menores que... (con subcarpetas)
+    title: Copiar lista de archivos a Klipper - Más pequeño
+    request: Menor que (k = kilobytes, M = Megabytes, G = Gigabytes)
+  empty_files_nosubf:
+    :name: copia la lista de todos los archivos vacíos (sin subcarpetas)
+    title: Copiar lista de archivos a Klipper - Archivos vacíos
+  empty_files_subf:
+    :name: copia la lista de todos los archivos vacíos (con subcarpetas)
+    title: Copiar lista de archivos a Klipper - Archivos vacíos
+  empty_folders_nosubf:
+    :name: copia la lista de todas las carpetas vacías (sin subcarpetas)
+    title: Copiar lista de archivos a Klipper - Carpetas vacías
+  empty_folders_subf:
+    :name: copia la lista de todas las carpetas vacías (con subcarpetas)
+    title: Copiar lista de archivos a Klipper - Carpetas vacías
