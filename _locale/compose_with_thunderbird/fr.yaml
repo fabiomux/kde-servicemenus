@@ -4,8 +4,8 @@
   :submenu: Composer avec Thunderbird
 :common:
   comma_error: Le fichier contient une ou plusieurs virgules
-  comma_error_details: Les fichiers avec une virgule ne peuvent pas être inclus à cause d'un bug dans Thunderbird
-     commande.\n\nRenommer le fichier ou le joindre manuellement!
+  comma_error_details: Les fichiers avec une virgule ne peuvent pas être inclus à cause d'un bug dans le
+    commande de Thunderbird.\n\nRenommer le fichier ou le joindre manuellement!
   email: E-mail
   subject: Sujet
   topic: Sujet de l'e-mail

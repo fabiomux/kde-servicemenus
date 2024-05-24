@@ -1,12 +1,12 @@
 ---
-:service_menu: componer_con_thunderbird
+:service_menu: compose_with_thunderbird
 :entry:
   :submenu: Componer con Thunderbird
 :common:
-  comma_error: el archivo contiene uno o más caracteres de coma
-  comma_error_details: Los archivos con un carácter de coma no se pueden incluir debido a un error en Thunderbird
-     comando.\n\n¡Cambie el nombre del archivo o adjúntelo manualmente!
-  email: correo electrónico
+  comma_error: El archivo contiene uno o más caracteres de coma
+  comma_error_details: Los archivos con un carácter de coma no se pueden incluir debido a un error en el
+     comando de Thunderbird.\n\n¡Cambie el nombre del archivo o adjúntelo manualmente!
+  email: Correo electrónico
   subject: Asunto
   topic: Tema de correo electrónico
 :actions:
