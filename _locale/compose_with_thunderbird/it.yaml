@@ -1,0 +1,40 @@
+---
+:service_menu: compose_with_thunderbird
+:entry:
+  :submenu: Componi con Thunderbird
+:common:
+  comma_error: il file contiene uno o più caratteri virgola
+  comma_error_details: i file con un carattere virgola non possono essere inclusi a causa di un bug in Thunderbird
+     comando.\n\nRinomina il file o allegalo manualmente!
+  email: e-mail
+  subject: soggetto
+  topic: argomento dell'e-mail
+:actions:
+  1selected:
+    :name: File selezionati
+    title: Componi con Thunderbird - Selezionato
+  2with_cached:
+    :name: Con i file salvati
+    title: Scrivi con Thunderbird - Con file memorizzati nella cache
+  3only_cached:
+    :name: Solo i file salvati
+    title: Scrivi con Thunderbird - File memorizzati nella cache
+    empty: Cache vuota!
+  cache:
+    :name: Salva i file per dopo
+    title: Componi con Thunderbird - Cache
+    cached: File memorizzati nella cache!
+  erase_cache:
+    :name: Pulisci la cache
+    title: Componi con Thunderbird - Pulisci la cache
+    confirm: Vuoi cancellare la cache?
+    clean: Cache pulita!
+  remove_invalid:
+    :name: Rimuove gli elementi non validi dalla cache
+    title: Componi con Thunderbird - Rimuovi non valido
+    removed: Elementi non validi rimossi
+  show_cache:
+    :name: Mostra il file della cache
+    title: Scrivi con Thunderbird - Mostra cache
+    missing_editor: Nessun editor è stato configurato per aprire il file di cache
+    missing_editor_details: Configura la variabile di ambiente KSM_CWT_EDITOR con un nome di editor valido nel tuo file .bashrc
