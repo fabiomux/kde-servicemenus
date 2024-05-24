@@ -1,0 +1,40 @@
+---
+:service_menu: compose_with_betterbird
+:entry:
+  :submenu: Compose with Betterbird
+:common:
+  comma_error: The file contains one or more comma characters
+  comma_error_details: Files with a comma character can't be included because of a bug in the Betterbird
+    command.\n\nRename the file or attach it manually!
+  email: Email
+  subject: Subject
+  topic: Email topic
+:actions:
+  1selected:
+    :name: Selected files
+    title: Compose with Betterbird - Selected
+  2with_cached:
+    :name: With the saved files
+    title: Compose with Betterbird - With cached files
+  3only_cached:
+    :name: The saved files only
+    title: Compose with Betterbird - Cached files
+    empty: Empty cache!
+  cache:
+    :name: Save files for later
+    title: Compose with Betterbird - Cache
+    cached: Files cached!
+  erase_cache:
+    :name: Clean the cache
+    title: Compose with Betterbird - Cache clean
+    confirm: Do you want to erase the cache?
+    clean: Cache clean!
+  remove_invalid:
+    :name: Remove invalid items from the cache
+    title: Compose with Betterbird - Remove invalid
+    removed: Invalid items removed
+  show_cache:
+    :name: Show the cache file
+    title: Compose with Betterbird - Show cache
+    missing_editor: No editor has been configured to open the cache file
+    missing_editor_details: Configure the environment variable KSM_CWT_EDITOR with a valid editor name in your .bashrc file
