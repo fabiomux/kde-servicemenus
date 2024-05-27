@@ -1,0 +1,40 @@
+---
+:service_menu: compose_with_betterbird
+:entry:
+  :submenu: Mit Betterbird versenden
+:common:
+  comma_error: Die Datei enthält ein oder mehrere Kommazeichen
+  comma_error_details: Dateien mit einem Kommazeichen können aufgrund eines Fehlers im Betterbird nicht eingebunden werden
+    Befehl.\n\nBenennen Sie die Datei um oder hängen Sie sie manuell an!
+  email: Email
+  subject: Betreff
+  topic: E-Mail-Thema
+:actions:
+  1selected:
+    :name: Datei auswählen
+    title: Mit Betterbird komponieren – Ausgewählt
+  2with_cached:
+    :name: Mit gespeicherten Dateien senden
+    title: Mit Betterbird komponieren – Mit zwischengespeicherten Dateien
+  3only_cached:
+    :name: Gespeicherte Dateien senden
+    title: Mit Betterbird komponieren – Zwischengespeicherte Dateien
+    empty: Leerer Cache!
+  cache:
+    :name: Datei für später speichern
+    title: Komponieren mit Betterbird – Cache
+    cached: Dateien zwischengespeichert!
+  erase_cache:
+    :name: Cache leeren
+    title: Mit Betterbird komponieren – Cache bereinigen
+    confirm: Möchten Sie den Cache löschen?
+    clean: Cache sauber!
+  remove_invalid:
+    :name: Ungültige Elemente aus dem Cache entfernen
+    title: Mit Betterbird komponieren – Ungültiges entfernen
+    removed: Ungültige Elemente entfernt
+  show_cache:
+    :name: Zeigt die Cache-Datei an
+    title: Mit Betterbird komponieren – Cache anzeigen
+    missing_editor: Es wurde kein Editor zum Öffnen der Cache-Datei konfiguriert
+    missing_editor_details: Konfigurieren Sie die Umgebungsvariable KSM_CWT_EDITOR mit einem gültigen Editornamen in Ihrer .bashrc-Datei
