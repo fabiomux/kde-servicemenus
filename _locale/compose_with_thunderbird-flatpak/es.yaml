@@ -1,0 +1,40 @@
+---
+:service_menu: compose_with_thunderbird
+:entry:
+  :submenu: Componer con Thunderbird
+:common:
+  comma_error: El archivo contiene uno o más caracteres de coma
+  comma_error_details: Los archivos con un carácter de coma no se pueden incluir debido a un error en el
+     comando de Thunderbird.\n\n¡Cambie el nombre del archivo o adjúntelo manualmente!
+  email: Correo electrónico
+  subject: Asunto
+  topic: Tema de correo electrónico
+:actions:
+  1selected:
+    :name: Archivos seleccionados
+    title: Componer con Thunderbird - Seleccionado
+  2with_cached:
+    :name: Con los archivos guardados
+    title: Redactar con Thunderbird - Con archivos en caché
+  3only_cached:
+    :name: Solo los archivos guardados
+    title: Redactar con Thunderbird - Archivos en caché
+    empty: ¡Vaciar caché!
+  cache:
+    :name: Guardar archivos para más tarde
+    title: Redactar con Thunderbird - Caché
+    cached: ¡Archivos almacenados en caché!
+  erase_cache:
+    :name: Limpiar el caché
+    title: Redactar con Thunderbird - Limpieza de caché
+    confirm: ¿Quieres borrar el caché?
+    clean: ¡Caché limpio!
+  remove_invalid:
+    :name: Eliminar elementos no válidos del caché
+    title: Redactar con Thunderbird - Eliminar no válido
+    removed: Elementos no válidos eliminados
+  show_cache:
+    :name: Muestra el archivo de caché
+    title: Redactar con Thunderbird - Mostrar caché
+    missing_editor: No se ha configurado ningún editor para abrir el archivo de caché.
+    missing_editor_details: Configure la variable de entorno KSM_CWT_EDITOR con un nombre de editor válido en su archivo .bashrc.
