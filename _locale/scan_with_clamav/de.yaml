@@ -1,0 +1,19 @@
+---
+:service_menu: scan_with_clamav
+:entry:
+  :submenu: Mit ClamAV scannen
+:common:
+  title:
+:actions:
+  y_new_session:
+    :name: In Yakuake – Neue Sitzung
+  y_current_session:
+    :name: In Yakuake – Aktuelle Sitzung
+  k_last_inst_current_sess:
+    :name: In Konsole – Letzte Instanz, Aktuelle Sitzung
+  k_last_inst_new_sess:
+    :name: In Konsole – Letzte Instanz, Neue Sitzung
+  k_first_inst_current_sess:
+    :name: In Konsole – Erste Instanz, Aktuelle Sitzung
+  k_first_inst_new_sess:
+    :name: In Konsole – Erste Instanz, Neue Sitzung
