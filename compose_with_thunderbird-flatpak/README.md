@@ -33,11 +33,11 @@ These are the *Compose with Thunderbird* service menu features:
 
 The recommended methods are:
 - The settings interface from Dolphin:
-  * from Settings > Context Menu > Download new services;
-  * search for "compose_with_thunderbird-flatpak".
+  * From Settings > Context Menu > Download new services;
+  * Search for "compose_with_thunderbird".
 - The Discover application:
   * Under Application Addons > Servicemenu;
-  * Search for: "compose_with_thunderbird-flatpak".
+  * Search for: "compose_with_thunderbird".
 
 That way the latest stable version is installed and updated with ease,
 and also it easy to remove as well, still using the mentioned applications.
@@ -64,9 +64,9 @@ regularly updated, you can:
 Thanks to:
 - trytomakeyouprivate@GitHub for introducing the Flatpak version
 
-[download]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html "Compose with Thunderbird download page on FreeAptitude"
-[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html#changelog "Compose with Thunderbird changelog on FreeAptitude"
-[installation]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html#installation "Compose with Thunderbird installation on FreeAptitude"
+[download]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html "Compose with Thunderbird download page on FreeAptitude"
+[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html#changelog "Compose with Thunderbird changelog on FreeAptitude"
+[installation]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html#installation "Compose with Thunderbird installation on FreeAptitude"
 [pling]: https://pling.com/p/1988940/ "Compose with Thunderbird page on Pling"
 [github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
 [issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"
