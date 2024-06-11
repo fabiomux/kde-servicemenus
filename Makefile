@@ -11,6 +11,14 @@ clean-uncompressed-dirs:
 clean: clean-archives clean-uncompressed-dirs
 	@rm -rf ./tmp || true
 	@echo 'Cleanup done!'
+compare_with_kompare: --prepare-tgz
+	@sed -i 's@__project_name__@compare_with_kompare@g' ./tmp/install.sh
+	@tar --exclude=*.swp \
+	     --exclude=*.yaml \
+	     --transform "s|common|compare_with_kompare|" \
+	     --transform "s|tmp|compare_with_kompare|" \
+	     -czf compare_with_kompare-$(shell grep 'Version:' './compare_with_kompare/compare_with_kompare.desktop' | cut -f 3 -d ' ').tgz ./compare_with_kompare ./common/Makefile ./tmp/install.sh ./common/LICENSE
+	@echo 'Archive "compare_with_kompare" ready!'
 compose_with_betterbird: --prepare-tgz
 	@sed -i 's@__project_name__@compose_with_betterbird@g' ./tmp/install.sh
 	@tar --exclude=*.swp \
@@ -116,6 +124,7 @@ sqlite_tools: --prepare-tgz
 	     -czf sqlite_tools-$(shell grep 'Version:' './sqlite_tools/sqlite_tools.desktop' | cut -f 3 -d ' ').tgz ./sqlite_tools ./common/Makefile ./tmp/install.sh ./common/LICENSE
 	@echo 'Archive "sqlite_tools" ready!'
 all:
+	@make compare_with_kompare
 	@make compose_with_betterbird
 	@make compose_with_betterbird-flatpak
 	@make compose_with_thunderbird

@@ -51,6 +51,8 @@ within the three KDE environments:s KDE 4 (for legacy), Plasma 5, and the new Pl
 ## The available services
 
 My personal KDE service menus collection includes the following scripts:
+- [Compare with Kompare][compare_with_kompare]:
+  Cache and retrieve the file to compare with the selected one, using the clipboard area or a cache file;
 - [Compose with Betterbird][compose_with_betterbird]:
   compose a new email with the Betterbird email client using the selected files as attachments;
 - [Compose with Betterbird (Flatpak edition)][compose_with_betterbird_flatpak]:
@@ -186,6 +188,7 @@ More info is available at:
 
 
 [fdes]: https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html "Freedesktop Desktop Entry specification"
+[compare_with_kompare]: https://github.com/fabiomux/kde-servicemenus/tree/main/compare_with_kompare "Compare with Kompare GitHub page"
 [compose_with_betterbird]: https://github.com/fabiomux/kde-servicemenus/tree/main/compose_with_betterbird "Compose with Betterbird GitHub page"
 [compose_with_betterbird_flatpak]: https://github.com/fabiomux/kde-servicemenus/tree/main/compose_with_betterbird-flatpak "Compose with Betterbird Flatpak edition GitHub page"
 [compose_with_thunderbird]: https://github.com/fabiomux/kde-servicemenus/tree/main/compose_with_thunderbird "Compose with Thunderbird GitHub page"
