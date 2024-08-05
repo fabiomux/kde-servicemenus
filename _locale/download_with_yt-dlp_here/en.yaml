@@ -5,6 +5,7 @@
 :common:
   insert_url: Insert the URL of the file to download
   looking: Looking for the formats...
+  no_content_available: No content available
   select_format: Select the format
   download: Starting the download...
   downloading: Download of
@@ -17,12 +18,15 @@
   select_audio_video:
     :name: Select among the audio + video formats
     title:  Download with yt-dlp - Audio + Video
+    no_content_available: No audio+video content available
   select_audio:
     :name: Select among the only audio formats
     title: Download with yt-dlp - Only Audio
+    no_content_available: No only-audio content available
   select_video:
     :name: Select among the only video formats
     title: Download with yt-dlp - Only Video
+    no_content_available: No only-video content available
   best:
     :name: Autoselect the best audio + video format
     title: Download with yt-dlp - Best audio + video

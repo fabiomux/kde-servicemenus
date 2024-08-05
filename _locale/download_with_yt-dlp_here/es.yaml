@@ -5,6 +5,7 @@
 :common:
   insert_url: Inserta la URL del archivo a descargar
   looking: Buscando los formatos...
+  no_content_available: No hay contenido disponible
   select_format: Selecciona el formato
   download: Iniciando la descarga...
   downloading: Descarga de
@@ -17,12 +18,15 @@
   select_audio_video:
     :name: Selecciona entre los formatos de audio + video
     title: Descargar con yt-dlp - Audio + Vídeo
+    no_content_available: No hay contenido de audio+vídeo disponible
   select_audio:
     :name: Selecciona entre los únicos formatos de audio
     title: Descargar con yt-dlp - Sólo audio
+    no_content_available: No hay contenido de solo audio disponible
   select_video:
     :name: Selecciona entre los únicos formatos de vídeo
     title: Descargar con yt-dlp - Sólo vídeo
+    no_content_available: No hay contenido de solo video disponible
   best:
     :name: Selecciona automáticamente el mejor formato de audio + vídeo
     title: Descargar con yt-dlp - Mejor audio + video

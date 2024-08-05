@@ -19,49 +19,28 @@ These are the *Download with yt-dlp here* service menu features:
 - Automatically select the best video format;
 - Automatically select the best audio + video format;
 - A dialog shows the progress and allows to cancel the download;
-- The output file format can be overriden using the $KSM_DWYDH_OUTPUT variable.
+- The output file format can be overridden using the $KSM_DWYDH_OUTPUT variable.
 
 ## Requirements
 
 - KDE 4 or superior;
 - KDialog;
-- qtchooser (only for KDE Plasma 6 users);
 - yt-dlp.
-
-## KDE Plasma 6 support
-
-To make it work under KDE Plasma 6 complete the following steps:
-1. Install the `qtchooser` package
-2. Be sure to have `qmake6` installed
-3. Run in Konsole:
-    ```
-    qtchooser -install qt6 $(which qmake6)
-    ```
-4. In the .bashrc append the line:
-    ```
-    export QT_SELECT=qt6
-    ```
-5. Logout and login.
 
 ## Install
 
-The archive contains a Makefile which can be used to install the content with ease,
-just access the `download_with_yt-dlp_here` subfolder with the terminal and type:
-```
-$ make install
-```
+The recommended methods are:
+- The settings interface from Dolphin:
+  * From Settings > Context Menu > Download new services;
+  * Search for "download_with_yt-dlp_here".
+- The Discover application:
+  * Under Application Addons > Servicemenu;
+  * Search for: "download_with_yt-dlp_here".
 
-## Uninstall
+That way the latest stable version is installed and updated with ease,
+and also it easy to remove as well, still using the mentioned applications.
 
-To remove the installed file, just type from within the `download_with_yt-dlp_here` subfolder:
-```
-$ make uninstall
-```
-
-## Contributing
-
-This addon is enabled to be fully translated in a custom language, to discover how
-to contribute, just follow the instructions in the [main README file][contributing].
+For debugging purpose follow one of the other methods mentioned on the [project page][installation].
 
 ## Get Help
 
@@ -70,8 +49,23 @@ to contribute, just follow the instructions in the [main README file][contributi
 - [yt-dlp Github repo][yt_dlp]
 - [yt-dlp supported sites list][sites]
 
+## Contributing
+
+If you like this addon and want to encourage me to improve the project or keep it
+regularly updated, you can:
+- Become a fan and add a positive rating on the [Pling page][pling];
+- Star it here on the [GitHub page][github];
+- Report bugs or malfunctions or even ask for new features, just opening an issue
+  on the [GitHub issues][issues] page;
+- Localize it in your language using the [English locale][locale] file as a template.
+
 [download]: https://freeaptitude.altervista.org/downloads/download-with-yt-dlp-here.html "Download with yt-dlp here download page on FreeAptitude"
 [changelog]: https://freeaptitude.altervista.org/downloads/download-with-yt-dlp-here.html#changelog "Download with yt-dlp here changelog on FreeAptitude"
+[installation]: https://freeaptitude.altervista.org/downloads/download-with-yt-dlp-here.html#installation "Download with yt-dlp here installation on FreeAptitude"
+[pling]: https://pling.com/p/2012539/ "Download with yt-dlp here page on Pling"
+[github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
+[issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"
+[locale]: https://github.com/fabiomux/kde-servicemenus/blob/main/_locale/download_with_yt-dlp_here/en.yaml "English localization file to use as template"
 [contributing]: https://github.com/fabiomux/kde-servicemenus#contributing "How to contribute to the Download with yt-dlp here project"
 [yt_dlp]: https://github.com/yt-dlp/yt-dlp "yt-dlp Github repo"
 [sites]: https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md "yt-dlp supported sites"
