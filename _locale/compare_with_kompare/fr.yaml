@@ -18,6 +18,12 @@
     :name: Avec un fichier dans le cache
     title: Comparer avec Kompare – Élément mis en cache
     no_file: Il n'y a aucun fichier valide ou existant dans le cache!
+  4selected:
+    :name: Fichiers sélectionnés
+    title: Comparer avec Kompare - Fichiers sélectionnés
+    not_enough_files: Vous devez sélectionner au moins deux fichiers
+    select_source_file: Sélectionnez le fichier source
+    select_dest_file: Sélectionnez le fichier de destination
   cache:
     :name: Enregistrer les fichiers pour plus tard
     title: Comparer avec Kompare - Cache

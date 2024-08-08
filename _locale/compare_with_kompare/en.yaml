@@ -18,6 +18,12 @@
     :name: With a file in the cache
     title: Compare with Kompare - Cached item
     no_file: There are no valid or existing files in the cache!
+  4selected:
+    :name: Selected files
+    title: Compare with Kompare - Selected files
+    not_enough_files: Must select at least two files
+    select_source_file: Select the source file
+    select_dest_file: Select the destination file
   cache:
     :name: Save files for later
     title: Compare with Kompare - Cache

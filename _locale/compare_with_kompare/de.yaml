@@ -18,6 +18,12 @@
     :name: Mit einer Datei im Cache
     title: Mit Kompare vergleichen - Zwischengespeichertes Element
     no_file: Im Cache sind keine gültigen oder vorhandenen Dateien vorhanden!
+  4selected:
+    :name: Ausgewählte Dateien
+    title: Vergleichen mit Kompare - Ausgewählte Dateien
+    not_enough_files: Es müssen mindestens zwei Dateien ausgewählt werden
+    select_source_file: Wählen Sie die Quelldatei aus
+    select_dest_file: Wählen Sie die Zieldatei aus
   cache:
     :name: Dateien für später speichern
     title: Mit Kompare vergleichen - Cache

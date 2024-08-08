@@ -15,6 +15,7 @@ These are the *Compare with Kompare* service menu features:
 - Compare the selected file with one of the last copied files on Klipper;
 - Compare the selected file with one among the full Klipper history;
 - Compare the selected file with one among the files stored in the cache;
+- Compare the selected file with one among the other selected;
 - Removes invalid files from the cache;
 - Erase the cache;
 - Show and edit the cache file.
@@ -27,16 +28,17 @@ These are the *Compare with Kompare* service menu features:
 
 ## Install
 
-The recommended methods are:
-- The settings interface from Dolphin:
-  * From Settings > Context Menu > Download new services;
-  * Search for "compare_with_kompare".
-- The Discover application:
-  * Under Application Addons > Servicemenu;
-  * Search for: "compare_with_kompare".
+The recommended method to install this service menu is through *Dolphin*:
+- From Settings > Context Menu > Download new services;
+- Search for "compare_with_kompare";
+- Click on the *Install* button and select the localized archive of your choice.
 
-That way the latest stable version is installed and updated with ease,
-and also it easy to remove as well, still using the mentioned applications.
+That way the latest stable version is installed, updated, and easily removed from the same interface.
+
+Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+- Under Application Addons > Servicemenu;
+- Search for: "compare_with_kompare";
+- Click on the *Install* button.
 
 For debugging purpose follow one of the other methods mentioned on the [project page][installation].
 
