@@ -2,16 +2,13 @@
 
 KDE service menus, or Dolphin service menus, are mainly INI files implementing the recommendations of the
 [Freedesktop Desktop Entry Specification][fdes], and provide a method to embed in the contextual menu of
-KDE applications dedicated to file management (like Dolphin, Krusader, Konqueror, and KFind), shortcuts
-that recall an application that might come in handy to manipulate the selected files.
+KDE applications dedicated to file management, like Dolphin, Krusader, Konqueror, and KFind), shortcuts
+that recall an application useful to manipulate the selected files.
 
-With some extra effort instead of a single command, a complete script can be included within these add-ons,
-so over time, I wrote a bunch of them to solve or speed up a wide range of problems, and here I decided to
-publish those of common interest.
-
-The main goal is to provide *decent quality* addons, all of them are packed following these principles:
-- *Essential bundle*: no extra script besides the installer is bundled, all the commands go in the desktop
-  file and the final size shouldn't exceed the order of the tens Kbytes, indeed the files included in the
+In an attempt to include the snippets I usually recall from the command line, I decided to write my
+personal collection and arrange them following my guidelines:
+- *Essential bundle*: no extra script besides the installer is bundled, all the commands go into the desktop
+  file and the final size shouldn't exceed the order of the tens of Kbytes, indeed the files included in the
   archive are:
   * The installer that is in charge of installing and uninstalling the service;
   * The README file for documentation;
@@ -24,29 +21,17 @@ The main goal is to provide *decent quality* addons, all of them are packed foll
   * In the KDE-store page;
   * In the Blog page.
 - *POSIX compatibility* to run flawlessly on the two basic shells: Bash and Dash;
-- The best *integration* level as possible.
+- The best *integration* level possible making use of *KDialog* and other common practices.
 
-The last point requires some more explanation.
-Until these add-ons run commands without interaction it is easy to create a service menu perfectly integrated
-with the environment: the standard provides a method to customize the menu labels for each language just
-specifying its code between square brackets.
+With time I realized that the integration wasn't fully accomplished until the messages provided by the
+Kdialog's dialogs would not have been fully translated into one of the supported languages.
 
-Unfortunately, when speaking about interactions through Kdialog's dialogs, there is not a simple workaround
-to output the request in the current language without complicating the code structure, but that's quite 
-normal, these add-ons are not intended to implement a lot of commands in a single line.
+The shortest and most effective workaround to solve that problem has been the implementation of a translating
+system based on a list of strings to replace inside a script template to generate the final
+service menu, a file for each supported language.
 
-Also, moving the entire code in an external script wouldn't solve the problem, but would only move it outside
-the desktop file.
-
-As an alternative, I found it easier to create a system to keep the commands separated from the localization
-strings, as usually happens for similar contexts in other programming languages, then creating a *compiler*
-that would build different packages for each localization.
-
-This is the best way I found to overcome that small but annoying problem, and now every service can be fully
-localized and provided as a separated package directly in the KDE-Store!
-
-Last but not least, speaking about integration, it also important for me to be able to install the services
-within the three KDE environments:s KDE 4 (for legacy), Plasma 5, and the new Plasma 6.
+Last but not least, speaking about integration, it is also important for me to be able to install the
+services within the three KDE environments: KDE 4 (for legacy), Plasma 5, and the new Plasma 6.
 
 ## The available services
 
@@ -85,25 +70,27 @@ My personal KDE service menus collection includes the following scripts:
 ## Install
 
 There are several ways to install the service menus listed in this repository. The best option is always
-using the KDE store service from *Dolphin* or *Discover*, but in case something goes wrong, one of the method
-below might come in handy for debugging purposes.
+using the KDE store service from *Dolphin* or *Discover*, but in case something goes wrong, one of the
+other methods might come in handy for debugging purposes.
 
 ### From Dolphin
 
-All of them are available at the [KDE store][kde_store] and, at the same time, in the twin websites
+All service menus are available at the [KDE store][kde_store] and, at the same time, in the twin websites
 ([Opendesktop][opendesktop], [Pling][pling]), that way the installation can be easily performed from the
 settings interface:
 
     Settings > Services > Download new Services
 
-Just fill up the text box with the service name, and once found, install it using the install button.
+Just fill the text box with the service name, and once found, install it using the install button.
 
-From the same interface can uninstall the service menu as well.
+When multiple localizations are provided the interface expands on an overlay frame that allows to select
+the best option.
+
+From the same interface uninstall the service menu as well.
 
 ### From the tar archive
 
-Once downloaded, the archive from the KDE store, or one of the other twin websites can make use of the
-Makefile included or install the archive using the *servicemenuinstaller* utility.
+Once the archive has been downloaded there are two ways to proceed.
 
 #### Using the Makefile
 
@@ -139,44 +126,17 @@ To uninstall the service:
 $ servicemenuinstaller uninstall <archive-name.tgz>
 ```
 
-### From the GitHub repository
-
-After cloning the repository:
-```shell
-$ git clone https://github.com/fabiomux/kde-servicemenus.git
-```
-
-Enter the project folder:
-```shell
-$ cd kde-servicemenus
-```
-
-Build the archive for the wanted project replacing *project_name* with the related folder:
-```shell
-$ make <project_name>
-```
-
-Install it using the *Dolphin* utility:
-```shell
-$ servicemenuinstaller install <archive-name.tgz>
-```
-
-You can use the same archive to uninstall the service if not needed:
-```shell
-$ servicemenuinstaller uninstall <archive-name.tgz>
-```
-
 ## Contributing
 
-Besides reporting bugs or asking for new features on the issues page, another way to lend your help to
-the project is translating the strings used within the service menus.
+Besides reporting bugs or asking for new features on the issues page, another way to lend your help is
+by translating the strings used within the service menus.
 
 To make the services fully compliant to a particular language, I created a system to embed the strings
 directly within the exec line and generate a different package for each one.
 
 The translated strings are available under the path of this repo:
 
-    _locale/<service_folder>/<language_code>.yaml
+    <service_folder>/locale/<language_code>.yaml
 
 The placeholders are quite self-explanatory, all the translations are based on the `en.yaml` file and
 respect the *YAML* format.
