@@ -18,7 +18,7 @@ These are the *Download with yt-dlp here* service menu features:
 - Automatically select the best audio format;
 - Automatically select the best video format;
 - Automatically select the best audio + video format;
-- A dialog shows the progress and allows to cancel the download;
+- A dialog shows the progress and allows you to cancel the download;
 - The output file format can be overridden using the $KSM_DWYDH_OUTPUT variable.
 
 ## Requirements
@@ -29,16 +29,17 @@ These are the *Download with yt-dlp here* service menu features:
 
 ## Install
 
-The recommended methods are:
-- The settings interface from Dolphin:
-  * From Settings > Context Menu > Download new services;
-  * Search for "download_with_yt-dlp_here".
-- The Discover application:
-  * Under Application Addons > Servicemenu;
-  * Search for: "download_with_yt-dlp_here".
+The recommended method to install this service menu is through *Dolphin*:
+- From Settings > Context Menu > Download new services;
+- Search for "download_with_yt-dlp_here";
+- Click on the *Install* button and select the localized archive of your choice.
 
-That way the latest stable version is installed and updated with ease,
-and also it easy to remove as well, still using the mentioned applications.
+That way the latest stable version is installed, updated, and easily removed from the same interface.
+
+Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+- Under Application Addons > Servicemenu;
+- Search for: "download_with_yt-dlp_here";
+- Click on the *Install* button.
 
 For debugging purpose follow one of the other methods mentioned on the [project page][installation].
 
@@ -65,7 +66,7 @@ regularly updated, you can:
 [pling]: https://pling.com/p/2012539/ "Download with yt-dlp here page on Pling"
 [github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
 [issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"
-[locale]: https://github.com/fabiomux/kde-servicemenus/blob/main/_locale/download_with_yt-dlp_here/en.yaml "English localization file to use as template"
+[locale]: https://github.com/fabiomux/kde-servicemenus/blob/main/download_with_yt-dlp_here/locale/en.yaml "English localization file to use as template"
 [contributing]: https://github.com/fabiomux/kde-servicemenus#contributing "How to contribute to the Download with yt-dlp here project"
 [yt_dlp]: https://github.com/yt-dlp/yt-dlp "yt-dlp Github repo"
 [sites]: https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md "yt-dlp supported sites"
