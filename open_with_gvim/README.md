@@ -1,9 +1,9 @@
 # Open with gVim service menu
 
-This service menu opens the selected files within different tabs inside the gVim
-text editor. Differently, they are opened only within their respective buffers, but
-visualizing a single window with the content of the last buffer and leaving hidden
-the others.
+This service menu opens the selected files within separate tabs inside the gVim
+text editor. Otherwise, using the default opening feature, multiple files are opened
+inside a different buffer, but only the last is visualized. This addon can reuse
+one of the opened windows without starting a new session.
 
 ## Features
 
@@ -16,6 +16,7 @@ These are the *Open with gVim* service menu features:
 - Support for Vim text editor in the Konsole terminal;
 - Support for gVimdiff;
 - Support for Vimdiff in the Konsole terminal.
+- Open a file, or a group of them, from within the first, the last, or a session of your choice among those available.
 
 ## Requirements
 
@@ -28,7 +29,7 @@ These are the *Open with gVim* service menu features:
 The recommended method to install this service menu is through *Dolphin*:
 - From Settings > Context Menu > Download new services;
 - Search for "open_with_gvim";
-- Click on the *Install* button.
+- Click on the *Install* button and select the localized archive of your choice.
 
 That way the latest stable version is installed, updated, and easily removed from the same interface.
 

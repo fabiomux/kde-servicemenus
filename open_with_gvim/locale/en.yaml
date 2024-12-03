@@ -1,12 +1,22 @@
 ---
 :service_menu: open_with_gvim
 :entry:
-  :submenu:
+  :submenu: Open with gVim
 :common:
 :actions:
   open_gvim:
-    :name: Open with gVim
-    title: Open with gVim - gVim
+    :name: New window
+    title: Open with gVim - New window
+  open_gvim_first_window:
+    :name: First window open
+    title: Open with gVim - First window
+  open_gvim_last_window:
+    :name: Last window open
+    title: Open with gVim - Last window
+  open_gvim_select_window:
+    :name: Select the window
+    title: Open with gVim - Select window
+    select_window: Select the window
   open_gvimdiff:
     :name: Open with gVimdiff
     title: Open with gVim - gVimdiff
