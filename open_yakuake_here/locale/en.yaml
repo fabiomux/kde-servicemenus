@@ -34,3 +34,12 @@
   new_session_vsplit_right:
     :name: New session - Right terminal
     title: Open Yakuake Here - Right terminal
+  rename_active_tab_basename:
+    :name: Rename the active tab - Current directory name
+    title: Open Yakuake Here - Rename tab to directory name
+  rename_active_tab_dirname:
+    :name: Rename the active tab - Current directory path
+    title: Open Yakuake Here - Rename tab to directory path
+  rename_active_tab_fullpath:
+    :name: Rename the active tab - Full path
+    title: Open Yakuake Here - Rename tab to full path

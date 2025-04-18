@@ -34,3 +34,12 @@
   new_session_vsplit_right:
     :name: Nieuwe sessie (rechterkant)
     title: Openen in Yakuake - (rechterkant)
+  rename_active_tab_basename:
+    :name: Hernoem het actieve tabblad - Naam van de huidige map
+    title: Open Yakuake hier - Hernoem het tabblad naar de mapnaam
+  rename_active_tab_dirname:
+    :name: Hernoem het actieve tabblad - Pad van de huidige map
+    title: Open Yakuake hier - Hernoem het tabblad naar het mappad
+  rename_active_tab_fullpath:
+    :name: Hernoem het actieve tabblad - Volledig pad
+    title: Open Yakuake hier - Hernoem het tabblad naar het volledige pad

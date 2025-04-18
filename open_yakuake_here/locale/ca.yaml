@@ -34,3 +34,12 @@
   new_session_vsplit_right:
     :name: Sessió nova - Terminal a la dreta
     title: Obrir Yakuake aquí - Terminal a la dreta
+  rename_active_tab_basename:
+    :name: Canvia el nom de la pestanya activa - Nom del directori actual
+    title: Obriu Yakuake Aquí - Canvieu el nom de la pestanya al nom del directori
+  rename_active_tab_dirname:
+    :name: Canvia el nom de la pestanya activa - Ruta del directori actual
+    title: Obriu Yakuake Aquí - Canvieu el nom de la pestanya a la ruta del directori
+  rename_active_tab_fullpath:
+    :name: Canvia el nom de la pestanya activa - Camí complet
+    title: Obriu Yakuake Aquí - Canvieu el nom de la pestanya al camí complet

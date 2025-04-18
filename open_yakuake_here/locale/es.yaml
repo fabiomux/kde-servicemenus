@@ -34,3 +34,12 @@
   new_session_vsplit_right:
     :name: Sesión nueva - Terminal a la derecha
     title: Abrir Yakuake aquí - Terminal a la derecha
+  rename_active_tab_basename:
+    :name: Cambiar el nombre de la pestaña activa - Nombre del directorio actual
+    title: Abrir Yakuake aquí - Cambiar el nombre de la pestaña al nombre del directorio
+  rename_active_tab_dirname:
+    :name: Cambiar el nombre de la pestaña activa - Ruta del directorio actual
+    title: Abrir Yakuake aquí - Cambiar el nombre de la pestaña a la ruta del directorio
+  rename_active_tab_fullpath:
+    :name: Cambiar el nombre de la pestaña activa - Ruta completa
+    title: Abrir Yakuake aquí - Cambiar el nombre de la pestaña a la ruta completa

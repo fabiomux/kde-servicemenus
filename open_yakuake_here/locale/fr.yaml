@@ -34,3 +34,12 @@
   new_session_vsplit_right:
     :name: Nouvelle session - Terminal droit
     title: Ouvrez Yakuake ici - Terminal de droite
+  rename_active_tab_basename:
+    :name: Renommer l'onglet actif - Nom du répertoire actuel
+    title: Ouvrir Yakuake ici - Renommer l'onglet avec le nom du répertoire
+  rename_active_tab_dirname:
+    :name: Renommer l'onglet actif - Chemin du répertoire actuel
+    title: Ouvrir Yakuake ici - Renommer l'onglet avec le chemin du répertoire
+  rename_active_tab_fullpath:
+    :name: Renommer l'onglet actif - Chemin complet
+    title: Ouvrir Yakuake ici - Renommer l'onglet avec le chemin complet

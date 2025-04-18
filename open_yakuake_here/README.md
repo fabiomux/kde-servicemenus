@@ -1,21 +1,23 @@
 # Open Yakuake Here service menu
 
-This service menu is thought to open the path that we are browsing in our file manager within
+This service menu is thought to open the path from the file manager within
 the Yakuake terminal. Besides that, it also allows us to decide if the session, visualized
-as a tab, has to be the current or a new one. Last but not least, we can optionally decide to split
-the session in half, vertically or horizontally, and where change the path, either left or right,
-or either top or bottom.
+as a tab, has to be the current one or a new one. Last but not least, we can optionally split
+the session in half, vertically or horizontally, and open the selected path in the left or right
+panel, top or bottom.
 
 ## Features
 
 These are the *Open Yakuake Here* service menu features:
-- Fully translated into 6 languages besides English
-  (Catalan, Dutch, French, German, Italian, Spanish);
+- Fully translated into 7 languages besides English
+  (Catalan, Dutch, French, German, Italian, Portuguese, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
 - Support for KDE Plasma 6;
 - Opens the path in the current or new session
 - Splits the session horizontally and opens the terminal either in the top or bottom panel
 - Splits the session vertically and opens the terminal either in the left or right panel
+- When opening a new session, it also renames the tab with the folder name
+- Renames the active tab with the current full path, dirname, or directory path
 
 ## Requirements
 
@@ -25,12 +27,11 @@ These are the *Open Yakuake Here* service menu features:
 
 ## Install
 
-The recommended method to install this service menu is through *Dolphin*:
+To keep the latest stable version installed, updated, and easily removed from the same interface,
+it is recommended to install this service menu through *Dolphin*:
 - From Settings > Context Menu > Download new services;
 - Search for "open_yakuake_here";
 - Click on the *Install* button.
-
-That way the latest stable version is installed, updated, and easily removed from the same interface.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
 - Under Application Addons > Servicemenu;

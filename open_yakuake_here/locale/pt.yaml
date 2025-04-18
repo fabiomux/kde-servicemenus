@@ -1,0 +1,45 @@
+---
+:service_menu: open_yakuake_here
+:entry:
+  :submenu: Abra o Yakuake aqui
+:common:
+:actions:
+  current_session:
+    :name: Sessão atual
+    title: Abra o Yakuake aqui - Sessão atual
+  current_session_hsplit_bottom:
+    :name: Sessão atual - Terminal inferior
+    title: Abra o Yakuake aqui - Terminal inferior
+  current_session_hsplit_top:
+    :name: Sessão atual - Terminal superior
+    title: Abra o Yakuake aqui - Terminal superior
+  current_session_vsplit_left:
+    :name: Sessão atual - Terminal esquerdo
+    title: Abra o Yakuake aqui - Terminal esquerdo
+  current_session_vsplit_right:
+    :name: Sessão atual - Terminal direito
+    title: Abra o Yakuake aqui - Terminal direito
+  new_session:
+    :name: Nova sessão
+    title: Abra o Yakuake aqui - Nova sessão
+  new_session_hsplit_bottom:
+    :name: Nova sessão - Terminal inferior
+    title: Abra o Yakuake aqui - Terminal inferior
+  new_session_hsplit_top:
+    :name: Nova sessão - Terminal superior
+    title: Abra o Yakuake aqui - Terminal superior
+  new_session_vsplit_left:
+    :name: Nova sessão - Terminal esquerdo
+    title: Abra o Yakuake aqui - Terminal esquerdo
+  new_session_vsplit_right:
+    :name: Nova sessão - Terminal direito
+    title: Abra o Yakuake aqui - Terminal direito
+  rename_active_tab_basename:
+    :name: Renomear o separador ativo - Nome do diretório atual
+    title: Abra o Yakuake aqui - Renomeie o separador para o nome do diretório
+  rename_active_tab_dirname:
+    :name: Renomear o separador ativo - Caminho do diretório atual
+    title: Abra o Yakuake aqui - Renomeie o separador para o caminho do diretório
+  rename_active_tab_fullpath:
+    :name: Renomear o separador ativo - Caminho completo
+    title: Abra o Yakuake aqui - Renomeie o separador para o caminho completo

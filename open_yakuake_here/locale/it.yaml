@@ -34,3 +34,12 @@
   new_session_vsplit_right:
     :name: Nuova sessione - Terminale a destra
     title: Apri Yakuake Qui - Terminale a destra
+  rename_active_tab_basename:
+    :name: Rinomina la scheda attiva - Nome della directory
+    title: Apri Yakuake qui - Rinomina la scheda con il nome della directory
+  rename_active_tab_dirname:
+    :name: Rinomina la scheda attiva - Percorso della directory
+    title: Apri Yakuake qui - Rinomina la scheda con il percorso della directory
+  rename_active_tab_fullpath:
+    :name: Rinomina la scheda attiva - Percorso completo
+    title: Apri Yakuake qui - Rinomina la scheda con il percorso completo

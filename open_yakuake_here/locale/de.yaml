@@ -34,3 +34,12 @@
   new_session_vsplit_right:
     :name: Neue Sitzung – Rechtes Terminal
     title: Yakuake hier öffnen – Rechtes Terminal
+  rename_active_tab_basename:
+    :name: Aktiven Tab umbenennen – Aktueller Verzeichnisname
+    title: Yakuake hier öffnen – Tab in Verzeichnisnamen umbenennen
+  rename_active_tab_dirname:
+    :name: Aktiven Tab umbenennen – Aktueller Verzeichnispfad
+    title: Yakuake hier öffnen – Tab in Verzeichnispfad umbenennen
+  rename_active_tab_fullpath:
+    :name: Aktiven Tab umbenennen – Vollständiger Pfad
+    title: Yakuake hier öffnen – Tab in vollständigen Pfad umbenennen
