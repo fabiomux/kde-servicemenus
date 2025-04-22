@@ -1,0 +1,53 @@
+---
+:service_menu: download_com_yt-dlp_aqui
+:entry:
+  :submenu: Download com yt-dlp aqui
+:common:
+  insert_url: Introduza o URL do ficheiro para download
+  looking: Procura os formatos...
+  no_content_available: Sem conteúdo disponível
+  select_format: Selecione o formato
+  download: A iniciar o download...
+  downloading: Download de
+  canceled: Download de $n cancelado
+  completed: Download de $n concluído!
+:actions:
+  select_all:
+    :name: Selecione de entre todos os formatos disponíveis
+    title: Download com yt-dlp - Todos os formatos
+  select_audio_video:
+    :name: Selecione entre os formatos de áudio + vídeo
+    title: Download com yt-dlp - Áudio + Vídeo
+    no_content_available: Nenhum conteúdo áudio+vídeo disponível
+  select_audio:
+    :name: Selecione entre os únicos formatos de áudio
+    title: Download com yt-dlp - Apenas áudio
+    no_content_available: Nenhum conteúdo apenas de áudio disponível
+  select_video:
+    :name: Selecione entre os únicos formatos de vídeo
+    title: Download com yt-dlp - Só vídeo
+    no_content_available: Nenhum conteúdo apenas de vídeo disponível
+  best:
+    :name: Selecione automaticamente o melhor formato de áudio + vídeo
+    title: Download com yt-dlp - Melhor áudio + vídeo
+    looking: Procura o melhor formato de áudio e vídeo...
+  best_audio:
+    :name: Selecione automaticamente o melhor formato de áudio
+    title: Download com yt-dlp - Melhor áudio
+    looking: Procura o melhor formato de áudio...
+  best_video:
+    :name: Selecione automaticamente o melhor formato de vídeo
+    title: Download com yt-dlp - Melhor vídeo
+    looking: Procura o melhor formato de vídeo...
+  klipper_best:
+    :name: Selecione automaticamente o melhor formato de áudio + vídeo (último URL do Klipper)
+    title: Download com yt-dlp - Melhor áudio + vídeo
+    looking: Procura o melhor formato de áudio e vídeo...
+  klipper_best_audio:
+    :name: Selecione automaticamente o melhor formato de áudio (último URL do Klipper)
+    title: Download com yt-dlp - Melhor áudio
+    looking: Procura o melhor formato de áudio...
+  klipper_best_video:
+    :name: Selecione automaticamente o melhor formato de vídeo (último URL do Klipper)
+    title: Download com yt-dlp - Melhor vídeo
+    looking: Procura o melhor formato de vídeo...

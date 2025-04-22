@@ -39,3 +39,15 @@
     :name: Autoselect the best video format
     title: Download with yt-dlp - Best video
     looking: Looking for the best video format...
+  klipper_best:
+    :name: Autoselect the best audio + video format (last Klipper URL)
+    title: Download with yt-dlp - Best audio + video
+    looking: Looking for the best audio and video format...
+  klipper_best_audio:
+    :name: Autoselect the best audio format (last Klipper URL)
+    title: Download with yt-dlp - Best audio
+    looking: Looking for the best audio format...
+  klipper_best_video:
+    :name: Autoselect the best video format (last Klipper URL)
+    title: Download with yt-dlp - Best video
+    looking: Looking for the best video format...

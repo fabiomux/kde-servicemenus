@@ -39,3 +39,15 @@
     :name: Selecciona automáticamente el mejor formato de vídeo
     title: Descargar con yt-dlp - Mejor vídeo
     looking: Buscando el mejor formato de vídeo...
+  klipper_best:
+    :name: Selecciona automáticamente el mejor formato de audio + vídeo
+    title: Descargar con yt-dlp - Mejor audio + video
+    looking: Buscando el mejor formato de audio y video...
+  klipper_best_audio:
+    :name: Selecciona automáticamente el mejor formato de audio (última URL de Klipper)
+    title: Descargar con yt-dlp - Mejor audio
+    looking: Buscando el mejor formato de audio...
+  klipper_best_video:
+    :name: Selecciona automáticamente el mejor formato de vídeo (última URL de Klipper)
+    title: Descargar con yt-dlp - Mejor vídeo
+    looking: Buscando el mejor formato de vídeo...
