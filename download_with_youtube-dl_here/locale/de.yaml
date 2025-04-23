@@ -39,3 +39,15 @@
     :name: Automatische Auswahl des besten Videoformats
     title: Mit youtube-dl herunterladen – Bestes Video
     looking: Auf der Suche nach dem besten Videoformat...
+  klipper_best:
+    :name: Automatische Auswahl des besten Audio- und Videoformats (letzte Klipper-URL)
+    title: Mit youtube-dl herunterladen – Bestes Audio + Video
+    looking: Auf der Suche nach dem besten Audio- und Videoformat...
+  klipper_best_audio:
+    :name: Automatische Auswahl des besten Audioformats (letzte Klipper-URL)
+    title: Mit youtube-dl herunterladen – Bestes Audio
+    looking: Auf der Suche nach dem besten Audioformat...
+  klipper_best_video:
+    :name: Automatische Auswahl des besten Videoformats (letzte Klipper-URL)
+    title: Mit youtube-dl herunterladen – Bestes Video
+    looking: Auf der Suche nach dem besten Videoformat...

@@ -29,13 +29,25 @@
     no_content_available: Nessun contenuto solo video disponibile
   best:
     :name: Selezione automatica del miglior formato audio + video
-    title: Download con youtube-dl - Migliore Audio + Video
+    title: Download con youtube-dl - Miglior Audio + Video
     looking: Cerco il miglior formato audio + video...
   best_audio:
     :name: Selezione automatica del miglior formato audio
-    title: Download con youtube-dl - Migliore Audio
+    title: Download con youtube-dl - Miglior Audio
     looking: Cerco il miglior formato audio...
   best_video:
     :name: Selezione automatica del miglior formato video
-    title: Download con youtube-dl - Migliore Video
+    title: Download con youtube-dl - Miglior Video
+    looking: Cerco il miglior formato video...
+  klipper_best:
+    :name: Selezione automatica del miglior formato audio + video (ultimo URL di Klipper)
+    title: Download con youtube-dl - Miglior Audio + Video
+    looking: Cerco il miglior formato audio + video...
+  klipper_best_audio:
+    :name: Selezione automatica del miglior formato audio (ultimo URL di Klipper)
+    title: Download con youtube-dl - Miglior Audio
+    looking: Cerco il miglior formato audio...
+  klipper_best_video:
+    :name: Selezione automatica del miglior formato video (ultimo URL di Klipper)
+    title: Download con youtube-dl - Miglior Video
     looking: Cerco il miglior formato video...

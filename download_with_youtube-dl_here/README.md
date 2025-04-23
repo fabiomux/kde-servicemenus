@@ -1,15 +1,15 @@
 # Download with youtube-dl here service menu
 
 The service menu allows downloading media files from within one of the supported
-websites in the current folder using the *youtube-dl* command line tool.
-Having this application no more updates, probably want to try the successor,
+websites, or from a direct URL, in the current folder using the *youtube-dl* command line
+tool. Having this application no more updates, probably want to try the successor,
 *yt-dlp* and the related service menu in my collection.
 
 ## Features
 
 These are the *Download with youtube-dl here* service menu features:
-- Fully translated into 4 languages besides English
-  (French, German, Italian, Spanish);
+- Fully translated into 5 languages besides English
+  (French, German, Italian, Portuguese, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
 - Support for KDE Plasma 6;
 - Select the format among all the available formats;
@@ -19,6 +19,10 @@ These are the *Download with youtube-dl here* service menu features:
 - Automatically select the best audio format;
 - Automatically select the best video format;
 - Automatically select the best audio + video format;
+- Automatically select the best audio format from the last URL on Klipper;
+- Automatically select the best video format from the last URL on Klipper;
+- Automatically select the best audio + video format from the last URL on Klipper;
+- Download a file from the internet using the direct URL and the automatic best format selection;
 - A dialog shows the progress and allows you to cancel the download;
 - The output file format can be overridden using the $KSM_DWYDH_OUTPUT variable.
 
@@ -30,12 +34,11 @@ These are the *Download with youtube-dl here* service menu features:
 
 ## Install
 
-The recommended method to install this service menu is through *Dolphin*:
+To keep the latest stable version installed, updated, and easily removed from the same interface,
+it is recommended to install this service menu through *Dolphin*:
 - From Settings > Context Menu > Download new services;
 - Search for "download_with_youtube-dl_here";
 - Click on the *Install* button and select the localized archive of your choice.
-
-That way the latest stable version is installed, updated, and easily removed from the same interface.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
 - Under Application Addons > Servicemenu;
