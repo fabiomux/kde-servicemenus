@@ -1,0 +1,28 @@
+---
+:service_menu: open_with_gvim
+:entry:
+  :submenu: Abrir com gVim
+:common:
+:actions:
+  open_gvim:
+    :name: Nova janela
+    title: Abrir com gVim - Nova janela
+  open_gvim_first_window:
+    :name: Primeira janela aberta
+    title: Abrir com gVim - Primeira janela
+  open_gvim_last_window:
+    :name: Última janela aberta
+    title: Abrir com gVim - Última janela
+  open_gvim_select_window:
+    :name: Selecione a janela
+    title: Abrir com gVim - Selecionar janela
+    select_window: Selecione a janela
+  open_gvimdiff:
+    :name: Abrir com gVimdiff
+    title: Abrir com gVim - gVimdiff
+  open_vim:
+    :name: Abrir com Vim (Konsole)
+    title: Abrir com gVim - Vim
+  open_vimdiff:
+    :name: Abrir com Vimdiff (Konsole)
+    title: Abrir com gVim - Vimdiff
