@@ -1,0 +1,44 @@
+---
+:service_menu: compare_with_kompare
+:entry:
+  :submenu: Comparar com Kompare
+:common:
+  select_file: Selecione o ficheiro para comparar
+  finding_history: Encontrar ficheiros no histórico do Klipper
+:actions:
+  1last_klipper:
+    :name: Com o último item da Klipper
+    title: Comparar com Kompare - Último no Klipper
+    no_file: Não existe nenhum ficheiro válido ou existente no último item do Klipper!
+  2all_klipper:
+    :name: Com um ficheiro dentro do histórico do Klipper
+    title: Comparar com a história do Kompare - Klipper
+    no_file: Não existem ficheiros válidos ou existentes entre os itens do Klipper!
+  3cached_item:
+    :name: Com um ficheiro na cache
+    title: Comparar com Kompare - Item em cache
+    no_file: Não existem ficheiros válidos ou existentes na cache!
+  4selected:
+    :name: Ficheiros selecionados
+    title: Comparar com Kompare - Ficheiros seleccionados
+    not_enough_files: Deve selecionar pelo menos dois ficheiros
+    select_source_file: Selecione o ficheiro de origem
+    select_dest_file: Selecione o ficheiro de destino
+  cache:
+    :name: Guardar ficheiros para mais tarde
+    title: Comparar com Kompare - Cache
+    cached: Ficheiros em cache!
+  erase_cache:
+    :name: Limpar a cache
+    title: Comparar com Kompare - Limpeza de cache
+    confirm: Quer apagar o cache?
+    clean: Cache limpo!
+  remove_invalid:
+    :name: Remover itens inválidos da cache
+    title: Comparar com Kompare - Remover inválido
+    removed: Itens inválidos removidos
+  show_cache:
+    :name: Mostrar o ficheiro de cache
+    title: Comparar com Kompare - Mostrar cache
+    missing_editor: Nenhum editor foi configurado para abrir o ficheiro de cache
+    missing_editor_details: Configure a variável de ambiente KSM_CWK_EDITOR com um nome de editor válido no seu ficheiro . bashrc
