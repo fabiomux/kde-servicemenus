@@ -59,6 +59,8 @@ My personal KDE service menus collection includes the following scripts:
   open the selected path in the first or last Konsole window, current or new session;
 - [Open with gVIM][open_with_gvim]:
   displays all the selected files in different gVIM tabs instead of opening them in hidden buffers;
+- [Open with Kate][open_with_kate]:
+  open the selected files within a Kate session or one of the opened windows;
 - [Open Yakuake Here][open_yakuake_here]:
   open the selected path in the current or new Yakuake's session, within the current terminal with or without
   splitting it horizontally or vertically;
@@ -159,6 +161,7 @@ More info is available at:
 [download_with_ytdlp]: https://github.com/fabiomux/kde-servicemenus/tree/main/download_with_yt-dlp_here "Download with yt-dlp GitHub page"
 [open_konsole_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_konsole_here "Open Konsole Here GitHub page"
 [open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_with_gvim "Open with gVIM GitHub page"
+[open_with_kate]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_with_kate "Open with Kate GitHub page"
 [open_yakuake_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_yakuake_here "Open Yakuake here GitHub page"
 [scan_with_clamav]: https://github.com/fabiomux/kde-servicemenus/tree/main/scan_with_clamav "Scan with ClamAV GitHub page"
 [sqlite_tools]: https://github.com/fabiomux/kde-servicemenus/tree/main/sqlite_tools "SQLite Tools GitHub page"
