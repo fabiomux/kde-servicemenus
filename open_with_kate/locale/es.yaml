@@ -1,0 +1,20 @@
+---
+:service_menu: open_with_kate
+:entry:
+  :submenu: Abrir con Kate
+:common:
+:actions:
+  window_first:
+    :name: Abrir en la primera ventana
+    title: Abrir con Kate - Primera ventana
+  window_last:
+    :name: Abrir en la última ventana
+    title: Abrir con Kate - Última ventana
+  window_select:
+    :name: Seleccionar la ventana
+    title: Abrir con Kate - Seleccionar ventana
+    select: Seleccionar la ventana
+  session_select:
+    :name: Seleccionar la sesión
+    title: Abrir con Kate - Seleccionar sesión
+    select: Seleccionar la sesión
