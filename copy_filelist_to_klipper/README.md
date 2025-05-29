@@ -11,7 +11,7 @@ services quickly available within our file manager.
 These are the *Copy file list to Klipper* service menu features:
 - Fully translated into 4 languages besides English
   (French, German, Italian, Spanish);
-- Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
+- Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
 - Can enable the final popup setting up the $KSM_CFLTK_VERBOSE variable;
 - Lists all the files in the folder;
@@ -30,12 +30,11 @@ These are the *Copy file list to Klipper* service menu features:
 
 ## Install
 
-The recommended method to install this service menu is through *Dolphin*:
+To keep the latest stable version installed, updated, and easily removed from the same interface,
+it is recommended to install this service menu through *Dolphin*:
 - From Settings > Context Menu > Download new services;
 - Search for "copy_filelist_to_klipper";
 - Click on the *Install* button and select the localized archive of your choice.
-
-That way the latest stable version is installed, updated, and easily removed from the same interface.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
 - Under Application Addons > Servicemenu;

@@ -10,7 +10,7 @@ tool. Having this application no more updates, probably want to try the successo
 These are the *Download with youtube-dl here* service menu features:
 - Fully translated into 5 languages besides English
   (French, German, Italian, Portuguese, Spanish);
-- Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
+- Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
 - Select the format among all the available formats;
 - Select the format among the only audio formats;

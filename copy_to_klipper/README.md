@@ -1,24 +1,25 @@
 # Copy to Klipper service menu
 
-This service menu allows to copy in the clipboard, through the Klipper
-D-Bus service, several details about the selected files.
+This service menu allows you to copy to the clipboard through the Klipper
+D-Bus service, several details about the selected files, like the filename,
+full filename, file path, file permissions...
 
 ## Features
 
 These are the *Copy to Klipper* service menu features:
 - Fully translated into 5 languages besides English
   (Dutch, French, German, Italian, Spanish);
-- Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
+- Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
 - Can enable the final popup setting up the $KSM_CTK_VERBOSE variable;
 - Multiple file copy resulting in a list of items separated by a new-line character;
-- Supports the copy of distinct filename's parts as full filename, filename only,
+- Supports the copy of distinct filenames' parts as full filename, filename only,
   path only, filename without extension;
-- Supports the copy of the file checksum algorithms md5, sha256, and sha512;
+- Supports the copy of the file checksum algorithms MD5, SHA256, and SHA512;
 - Supports the copy of the mime and file type;
-- Supports the copy of the file size in bytes and human-readable format;
+- Supports the copy of the file size in bytes and a human-readable format;
 - Supports the copy of the file permissions in octal or human-readable format;
-- Supports the copy of the file group, user id, and name;
+- Supports the copy of the file group, user ID, and name;
 - Supports the copy of the last access and the last modification time;
 - Supports the copy of the file mount point.
 
@@ -32,12 +33,11 @@ These are the *Copy to Klipper* service menu features:
 
 ## Install
 
-The recommended method to install this service menu is through *Dolphin*:
+To keep the latest stable version installed, updated, and easily removed from the same interface,
+it is recommended to install this service menu through *Dolphin*:
 - From Settings > Context Menu > Download new services;
 - Search for "copy_to_klipper";
 - Click on the *Install* button and select the localized archive of your choice.
-
-That way the latest stable version is installed, updated, and easily removed from the same interface.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
 - Under Application Addons > Servicemenu;

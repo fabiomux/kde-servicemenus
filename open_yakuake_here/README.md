@@ -11,7 +11,7 @@ panel, top or bottom.
 These are the *Open Yakuake Here* service menu features:
 - Fully translated into 7 languages besides English
   (Catalan, Dutch, French, German, Italian, Portuguese, Spanish);
-- Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
+- Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
 - Opens the path in the current or new session
 - Splits the session horizontally and opens the terminal either in the top or bottom panel

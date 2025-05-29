@@ -51,9 +51,9 @@ regularly updated, you can:
   on the [GitHub issues][issues] page;
 - Localize it in your language using the [English locale][locale] file as a template.
 
-[download]: https://freeaptitude.altervista.org/downloads/open with kate.html "Open with Kate download page on FreeAptitude"
-[changelog]: https://freeaptitude.altervista.org/downloads/open with kate.html#changelog "Open with Kate changelog on FreeAptitude"
-[installation]: https://freeaptitude.altervista.org/downloads/open with kate.html#installation "Open with Kate installation on FreeAptitude"
+[download]: https://freeaptitude.altervista.org/downloads/open-with-kate.html "Open with Kate download page on FreeAptitude"
+[changelog]: https://freeaptitude.altervista.org/downloads/open-with-kate.html#changelog "Open with Kate changelog on FreeAptitude"
+[installation]: https://freeaptitude.altervista.org/downloads/open-with-kate.html#installation "Open with Kate installation on FreeAptitude"
 [pling]: https://pling.com/p/2290441/ "Open with Kate page on Pling"
 [github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
 [issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"
