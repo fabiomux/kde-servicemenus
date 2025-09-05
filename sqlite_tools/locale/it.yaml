@@ -2,6 +2,8 @@
 :service_menu: sqlite_tools
 :entry:
   :submenu: Strumenti SQLite
+:common:
+  select_table: Seleziona una tabella
 :actions:
   odbc_register:
     :name: Registra come Data Source ODBC
@@ -34,12 +36,11 @@
   db_table_schema:
     :name: Schema della tabella
     title: Strumenti SQLite - Schema
-    select: Seleziona una tabella
     schema_for: Schema SQL per
   db_table_content:
     :name: Esporta il contenuto della tabella
     title: Strumenti SQLite - Esporta
-    select_table: Seleziona una o più tabelle
+    select_tables: Seleziona una o più tabelle
     content: Contenuto della tabella
     select_mode: Seleziona il formato dell'output
     box: Tabella disegnata con caratteri unicode
@@ -56,7 +57,6 @@
   db_table_content_cols:
     :name: Esporta il contenuto delle colonne della tabella
     title: Strumenti SQLite - Esporta
-    select_table: Seleziona una tabella
     select_cols: Seleziona una o più colonne
     content: Contenuto della tabella
     select_mode: Seleziona il formato dell'output
@@ -71,6 +71,11 @@
     tcl: Lista in TCL
     file_exist: Il file esiste e non sarà sovrascritto!
     exported: Il contenuto delle tabelle è stato esportato!
+  db_table_reset_autoinc:
+    :name: Reimposta l'indice di autoincremento all'ultimo valore
+    title: Strumenti SQLite - Reimposta indice
+    confirm: Vuoi reimpostare l'indice $i della tabella $t a $m?
+    reset: Indice reimpostato a $m per la tabella $t!
   db_dump:
     :name: Dump del database
     title: SQL Tools - Dump

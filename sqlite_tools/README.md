@@ -1,16 +1,17 @@
 # SQLite Tools service menu
 
-This service menu aims to facilitate SQLite file management for those basic operations
-or data presentation making them available in a few clicks.
+This service menu aims to facilitate the SQLite file management for all those basic operations
+like data export, schema querying, or ODBC registration, making them available with just a few clicks.
 
 ## Features
 
 These are the *SQLite Tools* service menu features:
+
 - Fully translated into 4 languages besides English
   (French, German, Italian, Spanish);
-- Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
+- Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
-- Register and unregister an SQLite file as ODBC data source to use it with software like LibreOffice;
+- Register and unregister an SQLite file as an ODBC data source to use it with software like LibreOffice;
 - Show the ODBC file configuration paths;
 - List the tables within the database in a Kdialog dialog;
 - List the views within the database in a Kdialog dialog;
@@ -22,28 +23,30 @@ These are the *SQLite Tools* service menu features:
   supported formats -
   CSV, JSON, HTML, Markdown, SQL INSERT, TCL,
   inline, list, box, column, ASCII table, tabs;
+- Reset the autoincrement counter for each table to the latest used value;
 - Database dump with or without the table schema in the SQL INSERT format.
 
 ## Requirements
 
 - KDE 4 or superior;
 - KDialog;
-- sqlite3
-- unixODBC (only for ODBC-related actions)
-- sql-formatter (optional and only for DB table schema action)
+- sqlite3;
+- unixODBC (only for ODBC-related actions);
+- sql-formatter (optional and only for DB table schema action).
 
 ## Install
 
-The recommended method to install this service menu is through *Dolphin*:
-- From Settings > Context Menu > Download new services;
-- Search for "sqlite_tools";
-- Click on the *Install* button and select the localized archive of your choice.
+To keep the latest stable version installed, updated, and easily removed from the same interface,
+it is recommended to install this service menu through *Dolphin*:
 
-That way the latest stable version is installed, updated, and easily removed from the same interface.
+- From Settings > Context Menu > Download new services;
+- Search for *SQLite Tools*;
+- Click on the *Install* button.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+
 - Under Application Addons > Servicemenu;
-- Search for: "sqlite_tools";
+- Search for: *SQLite Tools*;
 - Click on the *Install* button.
 
 For debugging purpose follow one of the other methods mentioned on the [project page][installation].
@@ -57,6 +60,7 @@ For debugging purpose follow one of the other methods mentioned on the [project 
 
 If you like this addon and want to encourage me to improve the project or keep it
 regularly updated, you can:
+
 - Become a fan and add a positive rating on the [Pling page][pling];
 - Star it here on the [GitHub page][github];
 - Report bugs or malfunctions or even ask for new features, just opening an issue

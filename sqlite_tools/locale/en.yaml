@@ -2,6 +2,8 @@
 :service_menu: sqlite_tools
 :entry:
   :submenu: SQLite Tools
+:common:
+  select_table: Select a table
 :actions:
   odbc_register:
     :name: Register as ODBC Data Source
@@ -34,12 +36,11 @@
   db_table_schema:
     :name: Get the table schema
     title: SQLite Tools - Schema
-    select: Select a table
     schema_for: SQL schema for
   db_table_content:
     :name: Export the table content
     title: SQLite Tools - Export
-    select_table: Select one or more tables
+    select_tables: Select one or more tables
     content: Table content of
     select_mode: Select the output format
     box: Tables using unicode box-drawing characters
@@ -56,7 +57,6 @@
   db_table_content_cols:
     :name: Export the table column's content
     title: SQLite Tools - Export
-    select_table: Select a table
     select_cols: Select one ore more columns
     content: Table content of
     select_mode: Select the output format
@@ -71,6 +71,11 @@
     tcl: TCL list elements
     file_exist: The file exist and won't be overwritten!
     exported: The table contents has been exported!
+  db_table_reset_autoinc:
+    :name: Reset the autoincrement index to the last value
+    title: SQLite Tools - Reset index
+    confirm: Do you want to reset the $i index of the $t table to $m?
+    reset: Index reset to $m for the table $t!
   db_dump:
     :name: Database Dump
     title: SQL Tools - Dump

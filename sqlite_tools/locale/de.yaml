@@ -2,6 +2,8 @@
 :service_menu: sqlite_tools
 :entry:
   :submenu: SQLite-Tools
+:common:
+  select_table: Wählen Sie eine Tabelle aus
 :actions:
   odbc_register:
     :name: Registrieren Sie sich als ODBC-Datenquelle
@@ -34,12 +36,11 @@
   db_table_schema:
     :name: Tabellenschema abrufen
     title: SQLite-Tools – Schema
-    select: Wählen Sie eine Tabelle aus
     schema_for: SQL-Schema für
   db_table_content:
     :name: Tabelleninhalt exportieren
     title: SQLite-Tools – Exportieren
-    select_table: Wählen Sie eine oder mehrere Tabellen aus
+    select_tables: Wählen Sie eine oder mehrere Tabellen aus
     content: Tabelleninhalt von
     select_mode: Wählen Sie das Ausgabeformat
     box: Tabellen mit Unicode-Boxzeichenzeichen
@@ -56,7 +57,6 @@
   db_table_content_cols:
     :name: Exportiert den Inhalt der Tabellenspalte
     title: SQLite-Tools – Exportieren
-    select_table: Wählen Sie eine Tabelle aus
     select_cols: Wählen Sie eine oder mehrere Spalten aus
     content: Tabelleninhalt von
     select_mode: Wählen Sie das Ausgabeformat
@@ -71,6 +71,11 @@
     tcl: TCL-Listenelemente
     file_exist: Die Datei existiert und wird nicht überschrieben!
     exported: Der Tabelleninhalt wurde exportiert!
+  db_table_reset_autoinc:
+    :name: Setzt den Autoinkrement-Index auf den letzten Wert zurück.
+    title: SQLite-Tools – Index zurücksetzen.
+    confirm: Möchten Sie den Index $i der Tabelle $t auf $m zurücksetzen?
+    reset: Index für die Tabelle $t auf $m zurückgesetzt!
   db_dump:
     :name: Datenbank-Dump
     title: SQL Tools – Dump
