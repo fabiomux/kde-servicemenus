@@ -1,13 +1,15 @@
 # Download with youtube-dl here service menu
 
 The service menu allows downloading media files from within one of the supported
-websites, or from a direct URL, in the current folder using the *youtube-dl* command line
-tool. Having this application no more updates, probably want to try the successor,
-*yt-dlp* and the related service menu in my collection.
+websites, or from a direct URL, in the current folder using the *youtube-dl*
+command line tool.
+Being no longer updated, probably want to try the successor *yt-dlp* and the related
+service menu in my collection.
 
 ## Features
 
 These are the *Download with youtube-dl here* service menu features:
+
 - Fully translated into 5 languages besides English
   (French, German, Italian, Portuguese, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -36,13 +38,15 @@ These are the *Download with youtube-dl here* service menu features:
 
 To keep the latest stable version installed, updated, and easily removed from the same interface,
 it is recommended to install this service menu through *Dolphin*:
+
 - From Settings > Context Menu > Download new services;
-- Search for "download_with_youtube-dl_here";
-- Click on the *Install* button and select the localized archive of your choice.
+- Search for *Download with youtube-dl here*;
+- Click on the *Install* button.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+
 - Under Application Addons > Servicemenu;
-- Search for: "download_with_youtube-dl_here";
+- Search for: *Download with youtube-dl here*;
 - Click on the *Install* button.
 
 For debugging purpose follow one of the other methods mentioned on the [project page][installation].
@@ -57,6 +61,7 @@ For debugging purpose follow one of the other methods mentioned on the [project 
 
 If you like this addon and want to encourage me to improve the project or keep it
 regularly updated, you can:
+
 - Become a fan and add a positive rating on the [Pling page][pling];
 - Star it here on the [GitHub page][github];
 - Report bugs or malfunctions or even ask for new features, just opening an issue

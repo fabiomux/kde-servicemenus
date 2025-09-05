@@ -10,9 +10,10 @@ For those using Flatpak, an identical addon dedicated to that system is availabl
 ## Features
 
 These are the *Compose with Thunderbird* service menu features:
+
 - Fully translated into 4 languages besides English
   (French, German, Italian, Spanish);
-- Works from within the Dolphin, Konqueror, Krusader, and KFind-results context menu;
+- Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
 - Compose a new email attaching all the selected files in the folder;
 - Store the selected files in a cache file;
@@ -31,16 +32,17 @@ These are the *Compose with Thunderbird* service menu features:
 
 ## Install
 
-The recommended method to install this service menu is through *Dolphin*:
-- From Settings > Context Menu > Download new services;
-- Search for "compose_with_thunderbird";
-- Click on the *Install* button and select the localized archive of your choice.
+To keep the latest stable version installed, updated, and easily removed from the same interface,
+it is recommended to install this service menu through *Dolphin*:
 
-That way the latest stable version is installed, updated, and easily removed from the same interface.
+- From Settings > Context Menu > Download new services;
+- Search for *Compose with Thunderbird*;
+- Click on the *Install* button.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+
 - Under Application Addons > Servicemenu;
-- Search for: "compose_with_thunderbird";
+- Search for: *Compose with Thunderbird*;
 - Click on the *Install* button.
 
 For debugging purpose follow one of the other methods mentioned on the [project page][installation].
@@ -54,6 +56,7 @@ For debugging purpose follow one of the other methods mentioned on the [project 
 
 If you like this addon and want to encourage me to improve the project or keep it
 regularly updated, you can:
+
 - Become a fan and add a positive rating on the [Pling page][pling];
 - Star it here on the [GitHub page][github];
 - Report bugs or malfunctions or even ask for new features, just opening an issue
@@ -65,9 +68,9 @@ regularly updated, you can:
 Thanks to:
 - trytomakeyouprivate@GitHub for introducing the Flatpak version
 
-[download]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html "Compose with Thunderbird download page on FreeAptitude"
-[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html#changelog "Compose with Thunderbird changelog on FreeAptitude"
-[installation]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html#installation "Compose with Thunderbird installation on FreeAptitude"
+[download]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html "Compose with Thunderbird download page on FreeAptitude"
+[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html#changelog "Compose with Thunderbird changelog on FreeAptitude"
+[installation]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html#installation "Compose with Thunderbird installation on FreeAptitude"
 [pling]: https://pling.com/p/1988940/ "Compose with Thunderbird page on Pling"
 [github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
 [issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"

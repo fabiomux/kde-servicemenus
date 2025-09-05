@@ -8,6 +8,7 @@ Klipper and to a cache file stored in the home directory.
 ## Features
 
 These are the *Compare with Kompare* service menu features:
+
 - Fully translated into 5 languages besides English
   (French, German, Italian, Portuguese, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -30,13 +31,15 @@ These are the *Compare with Kompare* service menu features:
 
 To keep the latest stable version installed, updated, and easily removed from the same interface,
 it is recommended to install this service menu through *Dolphin*:
+
 - From Settings > Context Menu > Download new services;
-- Search for "compare_with_kompare";
-- Click on the *Install* button and select the localized archive of your choice.
+- Search for *Compare with Kompare*;
+- Click on the *Install* button.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+
 - Under Application Addons > Servicemenu;
-- Search for: "compare_with_kompare";
+- Search for: *Compare with Kompare*;
 - Click on the *Install* button.
 
 For debugging purpose follow one of the other methods mentioned on the [project page][installation].
@@ -50,6 +53,7 @@ For debugging purpose follow one of the other methods mentioned on the [project 
 
 If you like this addon and want to encourage me to improve the project or keep it
 regularly updated, you can:
+
 - Become a fan and add a positive rating on the [Pling page][pling];
 - Star it here on the [GitHub page][github];
 - Report bugs or malfunctions or even ask for new features, just opening an issue

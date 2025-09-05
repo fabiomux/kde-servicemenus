@@ -8,6 +8,7 @@ one of the opened windows without starting a new session.
 ## Features
 
 These are the *Open with gVim* service menu features:
+
 - Fully translated into 6 languages besides English
   (Dutch, French, German, Italian, Portuguese, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -28,13 +29,15 @@ These are the *Open with gVim* service menu features:
 
 To keep the latest stable version installed, updated, and easily removed from the same interface,
 it is recommended to install this service menu through *Dolphin*:
+
 - From Settings > Context Menu > Download new services;
-- Search for "open_with_gvim";
-- Click on the *Install* button and select the localized archive of your choice.
+- Search for *Open with gVim*;
+- Click on the *Install* button.
 
 Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+
 - Under Application Addons > Servicemenu;
-- Search for: "open_with_gvim";
+- Search for: *Open with gVim*;
 - Click on the *Install* button.
 
 For debugging purpose follow one of the other methods mentioned on the [project page][installation].
@@ -48,6 +51,7 @@ For debugging purpose follow one of the other methods mentioned on the [project 
 
 If you like this addon and want to encourage me to improve the project or keep it
 regularly updated, you can:
+
 - Become a fan and add a positive rating on the [Pling page][pling];
 - Star it here on the [GitHub page][github];
 - Report bugs or malfunctions or even ask for new features, just opening an issue
