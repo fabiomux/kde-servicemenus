@@ -11,10 +11,10 @@ These are the *Open with Kate* service menu features:
   (French, German, Italian, Portuguese, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
-- Open the selected files in the first opened window
-- Open the selected files in the last opened window
-- Select one of the open windows
-- Select one of the stored sessions
+- Open the selected files in the first opened window;
+- Open the selected files in the last opened window;
+- Select one of the open windows;
+- Select one of the stored sessions.
 
 ## Requirements
 
