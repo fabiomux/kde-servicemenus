@@ -16,7 +16,7 @@ These are the *Scan with ClamAV* service menu features:
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
 - Scans the selected file or folder within the current or a new session (Konsole or Yakuake);
-- Scans the selected file or folder within the first or last terminal instance (Konsole);
+- Scans the selected file or folder within the first or last terminal instance (Konsole).
 
 ## Requirements
 

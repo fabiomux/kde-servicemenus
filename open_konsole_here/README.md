@@ -3,7 +3,7 @@
 This service menu is thought to open the path we are browsing in our file manager within
 the Konsole terminal. Among the opened windows can be selected the first, the last, or any
 of them, through a Kdialog selection dialog.  Besides that, it also allows us to decide
-if the session, visualized as a tab, has to be the current or a new one.
+if the session, visualized as a tab, has to be the current one or a new one.
 
 ## Features
 
@@ -13,9 +13,9 @@ These are the *Open Konsole Here* service menu features:
   (Dutch, French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
-- Opens the path in the first or last opened window, or in a new one
-- Can also select one of the opened windows, not necessarily the first or the last
-- Opens the path in the first or last session or tab, in one of the aforementioned windows
+- Opens the path in the first or last opened window, or in a new one;
+- Can also select one of the opened windows, not necessarily the first or the last;
+- Opens the path in the first or last session or tab, in one of the windows as mentioned earlier.
 
 ## Requirements
 

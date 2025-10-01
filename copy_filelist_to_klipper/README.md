@@ -17,11 +17,11 @@ These are the *Copy file list to Klipper* service menu features:
 - Can enable the final popup setting up the $KSM_CFLTK_VERBOSE variable;
 - Lists all the files in the folder;
 - Lists all the files matching a particular wildcard;
-- Lists all the files changed less or more in a given number of days;
+- Lists all the files changed more or less in a given number of days;
 - Lists all the files bigger or smaller than a specific size;
 - Lists all empty files
 - Lists all empty folders;
-- All the findings are provided in two versions with or without the subfolders' evaluation.
+- All the findings are provided in two versions, with or without the subfolders' evaluation.
 
 ## Requirements
 

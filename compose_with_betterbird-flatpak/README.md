@@ -4,7 +4,7 @@ This service menu is the exact clone of the "Compose with Betterbird" service me
 but specifically thought for those using the Flatpak system.
 It composes a new email using the selected files as attachments and Betterbird as
 an email client.
-It also allows to cache files from different folders and composing all of them later.
+It also allows caching files from different folders and composing them later.
 
 ## Features
 
@@ -67,9 +67,9 @@ regularly updated, you can:
 Thanks to:
 - trytomakeyouprivate@GitHub for introducing the Flatpak version
 
-[download]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird-flatpak.html "Compose with Betterbird - Flatpak edition download page on FreeAptitude"
-[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird-flatpak.html#changelog "Compose with Betterbird - Flatpak edition changelog on FreeAptitude"
-[installation]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird-flatpak.html#installation "Compose with Betterbird - Flatpak edition installation on FreeAptitude"
+[download]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird.html "Compose with Betterbird - Flatpak edition download page on FreeAptitude"
+[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird.html#changelog "Compose with Betterbird - Flatpak edition changelog on FreeAptitude"
+[installation]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird.html#installation "Compose with Betterbird - Flatpak edition installation on FreeAptitude"
 [pling]: https://pling.com/p/1989302/ "Compose with Betterbird - Flatpak edition page on Pling"
 [github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
 [issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"

@@ -4,7 +4,7 @@ This service menu is the exact clone of the "Compose with Thunderbird" service m
 but specifically thought for those using the Flatpak system.
 It composes a new email using the selected files as attachments and Thunderbird as
 an email client.
-It also allows to cache files from different folders and composing all of them later.
+It also allows caching files from different folders and composing them later.
 For those using Flatpak, an identical addon dedicated to that system is available.
 
 ## Features
@@ -68,9 +68,9 @@ regularly updated, you can:
 Thanks to:
 - trytomakeyouprivate@GitHub for introducing the Flatpak version
 
-[download]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html "Compose with Thunderbird download page on FreeAptitude"
-[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html#changelog "Compose with Thunderbird changelog on FreeAptitude"
-[installation]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html#installation "Compose with Thunderbird installation on FreeAptitude"
+[download]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html "Compose with Thunderbird download page on FreeAptitude"
+[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html#changelog "Compose with Thunderbird changelog on FreeAptitude"
+[installation]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird.html#installation "Compose with Thunderbird installation on FreeAptitude"
 [pling]: https://pling.com/p/1988940/ "Compose with Thunderbird page on Pling"
 [github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
 [issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"

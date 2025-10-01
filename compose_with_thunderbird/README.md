@@ -2,7 +2,7 @@
 
 This service menu composes a new email using the selected files as attachments and
 Thunderbird as an email client.
-It also allows to cache files from different folders and composing all of them later.
+It also allows caching files from different folders and composing them later.
 For those using Flatpak, an identical addon dedicated to that system is available.
 
 ## Features
