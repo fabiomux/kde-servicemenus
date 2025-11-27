@@ -10,6 +10,7 @@ It also allows caching files from different folders and composing them later.
 
 These are the *Compose with Betterbird - Flatpak edition* service menu features:
 
+- Licensed under the GPL-v3 license;
 - Fully translated into 4 languages besides English
   (French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -26,6 +27,7 @@ These are the *Compose with Betterbird - Flatpak edition* service menu features:
 
 - KDE 4 or superior;
 - KDialog;
+- qtpaths6 for Plasma 6;
 - Flatpak;
 - Betterbird for Flatpak.
 
@@ -38,7 +40,7 @@ it is recommended to install this service menu through *Dolphin*:
 - Search for *Compose with Betterbird - Flatpak edition*;
 - Click on the *Install* button.
 
-Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+Also, the *Discover* application can install it:
 
 - Under Application Addons > Servicemenu;
 - Search for: *Compose with Betterbird - Flatpak edition*;
@@ -62,14 +64,21 @@ regularly updated, you can:
   on the [GitHub issues][issues] page;
 - Localize it in your language using the [English locale][locale] file as a template.
 
+And also:
+
+- Try other service menus from my collection:
+    https://www.pling.com/c/2286451;
+- Lend your support to the cause:
+    https://github.com/sponsors/fabiomux
+
 ## Acknowledgments
 
 Thanks to:
 - trytomakeyouprivate@GitHub for introducing the Flatpak version
 
-[download]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird.html "Compose with Betterbird - Flatpak edition download page on FreeAptitude"
-[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird.html#changelog "Compose with Betterbird - Flatpak edition changelog on FreeAptitude"
-[installation]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird.html#installation "Compose with Betterbird - Flatpak edition installation on FreeAptitude"
+[download]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird-flatpak.html "Compose with Betterbird - Flatpak edition download page on FreeAptitude"
+[changelog]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird-flatpak.html#changelog "Compose with Betterbird - Flatpak edition changelog on FreeAptitude"
+[installation]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird-flatpak.html#installation "Compose with Betterbird - Flatpak edition installation on FreeAptitude"
 [pling]: https://pling.com/p/1989302/ "Compose with Betterbird - Flatpak edition page on Pling"
 [github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
 [issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"

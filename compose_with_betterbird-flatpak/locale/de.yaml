@@ -10,13 +10,13 @@
   subject: Betreff
   topic: E-Mail-Thema
 :actions:
-  1selected:
+  selected:
     :name: Datei auswählen
     title: Mit Betterbird komponieren – Ausgewählt
-  2with_cached:
+  with_cached:
     :name: Mit gespeicherten Dateien senden
     title: Mit Betterbird komponieren – Mit zwischengespeicherten Dateien
-  3only_cached:
+  only_cached:
     :name: Gespeicherte Dateien senden
     title: Mit Betterbird komponieren – Zwischengespeicherte Dateien
     empty: Leerer Cache!

@@ -10,13 +10,13 @@
   subject: Sujet
   topic: Sujet de l'e-mail
 :actions:
-  1selected:
+  selected:
     :name: Fichiers sélectionnés
     title: Composer avec Betterbird - Sélectionné
-  2with_cached:
+  with_cached:
     :name: Avec les fichiers enregistrés
     title: Composer avec Betterbird - Avec les fichiers en cache
-  3only_cached:
+  only_cached:
     :name: Les fichiers enregistrés uniquement
     title: Composer avec Betterbird - Fichiers mis en cache
     empty: Vider le cache!
