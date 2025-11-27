@@ -6,19 +6,19 @@
   select_file: Sélectionnez le fichier à comparer
   finding_history: Recherche de fichiers dans l'historique de Klipper
 :actions:
-  1last_klipper:
+  last_klipper:
     :name: Avec le dernier élément de Clipper
     title: Comparer avec Kompare - Dernier sur Klipper
     no_file: Il n'y a aucun fichier valide ou existant dans le dernier élément Klipper!
-  2all_klipper:
+  all_klipper:
     :name: Avec un fichier dans l'historique de Clipper
     title: Comparer avec Kompare - Historique de Klipper
     no_file: Il n'y a aucun fichier valide ou existant parmi les éléments Klipper!
-  3cached_item:
+  cached_item:
     :name: Avec un fichier dans le cache
     title: Comparer avec Kompare – Élément mis en cache
     no_file: Il n'y a aucun fichier valide ou existant dans le cache!
-  4selected:
+  selected:
     :name: Fichiers sélectionnés
     title: Comparer avec Kompare - Fichiers sélectionnés
     not_enough_files: Vous devez sélectionner au moins deux fichiers

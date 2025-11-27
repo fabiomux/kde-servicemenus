@@ -6,19 +6,19 @@
   select_file: Zu vergleichende Datei auswählen
   finding_history: Dateien im Klipper-Verlauf suchen
 :actions:
-  1last_klipper:
+  last_klipper:
     :name: Mit dem neuesten Element in Klipper
     title: Mit Kompare vergleichen - Letztes in Klipper
     no_file: Im letzten Klipper-Element ist keine gültige oder vorhandene Datei vorhanden!
-  2all_klipper:
+  all_klipper:
     :name: Mit einer Datei im Klipper-Verlauf
     title: Mit Kompare vergleichen - Klipper-Verlauf
     no_file: Unter den Klipper-Elementen sind keine gültigen oder vorhandenen Dateien!
-  3cached_item:
+  cached_item:
     :name: Mit einer Datei im Cache
     title: Mit Kompare vergleichen - Zwischengespeichertes Element
     no_file: Im Cache sind keine gültigen oder vorhandenen Dateien vorhanden!
-  4selected:
+  selected:
     :name: Ausgewählte Dateien
     title: Vergleichen mit Kompare - Ausgewählte Dateien
     not_enough_files: Es müssen mindestens zwei Dateien ausgewählt werden

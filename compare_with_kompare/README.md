@@ -9,6 +9,7 @@ Klipper and to a cache file stored in the home directory.
 
 These are the *Compare with Kompare* service menu features:
 
+- Licensed under the GPL-v3 license;
 - Fully translated into 5 languages besides English
   (French, German, Italian, Portuguese, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -25,7 +26,8 @@ These are the *Compare with Kompare* service menu features:
 
 - KDE 4 or superior;
 - KDialog;
-- kompare
+- qtpaths6 for Plasma 6;
+- Kompare.
 
 ## Install
 
@@ -36,7 +38,7 @@ it is recommended to install this service menu through *Dolphin*:
 - Search for *Compare with Kompare*;
 - Click on the *Install* button.
 
-Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+Also, the *Discover* application can install it:
 
 - Under Application Addons > Servicemenu;
 - Search for: *Compare with Kompare*;
@@ -59,6 +61,13 @@ regularly updated, you can:
 - Report bugs or malfunctions or even ask for new features, just opening an issue
   on the [GitHub issues][issues] page;
 - Localize it in your language using the [English locale][locale] file as a template.
+
+And also:
+
+- Try other service menus from my collection:
+    https://www.pling.com/c/2286451;
+- Lend your support to the cause:
+    https://github.com/sponsors/fabiomux
 
 [download]: https://freeaptitude.altervista.org/downloads/compare-with-kompare.html "Compare with Kompare download page on FreeAptitude"
 [changelog]: https://freeaptitude.altervista.org/downloads/compare-with-kompare.html#changelog "Compare with Kompare changelog on FreeAptitude"
