@@ -10,13 +10,13 @@
   subject: Betreff
   topic: E-Mail-Thema
 :actions:
-  1selected:
+  selected:
     :name: Datei auswählen
     title: Mit Thunderbird komponieren – Ausgewählt
-  2with_cached:
+  with_cached:
     :name: Mit gespeicherten Dateien senden
     title: Mit Thunderbird komponieren – Mit zwischengespeicherten Dateien
-  3only_cached:
+  only_cached:
     :name: Gespeicherte Dateien senden
     title: Mit Thunderbird komponieren – Zwischengespeicherte Dateien
     empty: Leerer Cache!
