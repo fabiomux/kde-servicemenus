@@ -1,5 +1,5 @@
 ---
-:service_menu: copiar_lista_archivos_a_klipper
+:service_menu: copy_filelist_to_klipper
 :entry:
   :submenu: Copiar lista de archivos a Klipper
 :common:

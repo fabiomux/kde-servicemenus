@@ -10,6 +10,7 @@ services quickly available within our file manager.
 
 These are the *Copy file list to Klipper* service menu features:
 
+- Licensed under the GPL-v3 license;
 - Fully translated into 4 languages besides English
   (French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -27,6 +28,7 @@ These are the *Copy file list to Klipper* service menu features:
 
 - KDE 4 or superior;
 - KDialog;
+- qtpaths6 for Plasma 6;
 - find
 
 ## Install
@@ -38,7 +40,7 @@ it is recommended to install this service menu through *Dolphin*:
 - Search for *Copy file list to Klipper*;
 - Click on the *Install* button.
 
-Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+Also, the *Discover* application can install it:
 
 - Under Application Addons > Servicemenu;
 - Search for: *Copy file list to Klipper*;
@@ -61,6 +63,13 @@ regularly updated, you can:
 - Report bugs or malfunctions or even ask for new features, just opening an issue
   on the [GitHub issues][issues] page;
 - Localize it in your language using the [English locale][locale] file as a template.
+
+And also:
+
+- Try other service menus from my collection:
+    https://www.pling.com/c/2286451;
+- Lend your support to the cause:
+    https://github.com/sponsors/fabiomux
 
 [download]: https://freeaptitude.altervista.org/downloads/copy-filelist-to-klipper.html "Copy file list to Klipper download page on FreeAptitude"
 [changelog]: https://freeaptitude.altervista.org/downloads/copy-filelist-to-klipper.html#changelog "Copy file list to Klipper changelog on FreeAptitude"
