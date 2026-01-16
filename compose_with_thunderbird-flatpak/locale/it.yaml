@@ -10,13 +10,13 @@
   subject: Soggetto
   topic: Argomento dell'e-mail
 :actions:
-  1selected:
+  selected:
     :name: File selezionati
     title: Componi con Thunderbird - Selezionato
-  2with_cached:
+  with_cached:
     :name: Con i file salvati
     title: Scrivi con Thunderbird - Con file memorizzati nella cache
-  3only_cached:
+  only_cached:
     :name: Solo i file salvati
     title: Scrivi con Thunderbird - File memorizzati nella cache
     empty: Cache vuota!

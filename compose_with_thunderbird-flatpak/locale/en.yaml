@@ -10,13 +10,13 @@
   subject: Subject
   topic: Email topic
 :actions:
-  1selected:
+  selected:
     :name: Selected files
     title: Compose with Thunderbird - Selected
-  2with_cached:
+  with_cached:
     :name: With the saved files
     title: Compose with Thunderbird - With cached files
-  3only_cached:
+  only_cached:
     :name: The saved files only
     title: Compose with Thunderbird - Cached files
     empty: Empty cache!
