@@ -9,6 +9,7 @@ For those using Flatpak, an identical addon dedicated to that system is availabl
 
 These are the *Compose with Betterbird* service menu features:
 
+- Licensed under the GPL-v3 license;
 - Fully translated into 4 languages besides English
   (French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -25,6 +26,7 @@ These are the *Compose with Betterbird* service menu features:
 
 - KDE 4 or superior;
 - KDialog;
+- qtpaths6 for Plasma 6;
 - Betterbird.
 
 ## Install
@@ -36,7 +38,7 @@ it is recommended to install this service menu through *Dolphin*:
 - Search for *Compose with Betterbird*;
 - Click on the *Install* button.
 
-Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+Also, the *Discover* application can install it:
 
 - Under Application Addons > Servicemenu;
 - Search for: *Compose with Betterbird*;
@@ -59,6 +61,13 @@ regularly updated, you can:
 - Report bugs or malfunctions or even ask for new features, just opening an issue
   on the [GitHub issues][issues] page;
 - Localize it in your language using the [English locale][locale] file as a template.
+
+And also:
+
+- Try other service menus from my collection:
+    https://www.pling.com/c/2286451;
+- Lend your support to the cause:
+    https://github.com/sponsors/fabiomux
 
 [download]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird.html "Compose with Betterbird download page on FreeAptitude"
 [changelog]: https://freeaptitude.altervista.org/downloads/compose-with-betterbird.html#changelog "Compose with Betterbird changelog on FreeAptitude"

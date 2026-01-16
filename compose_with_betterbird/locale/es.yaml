@@ -10,13 +10,13 @@
   subject: Asunto
   topic: Tema de correo electrónico
 :actions:
-  1selected:
+  selected:
     :name: Archivos seleccionados
     title: Componer con Betterbird - Seleccionado
-  2with_cached:
+  with_cached:
     :name: Con los archivos guardados
     title: Redactar con Betterbird - Con archivos en caché
-  3only_cached:
+  only_cached:
     :name: Solo los archivos guardados
     title: Redactar con Betterbird - Archivos en caché
     empty: ¡Vaciar caché!
