@@ -1,0 +1,45 @@
+---
+:service_menu: open_yakuake_here
+:entry:
+  :submenu: Открыть Yakuake здесь
+:common:
+:actions:
+  current_session:
+    :name: Текущий сеанс
+    title: Открыть Yakuake здесь - Текущий сеанс
+  current_session_hsplit_bottom:
+    :name: Текущий сеанс - Терминал снизу
+    title: Открыть Yakuake здесь - Терминал снизу
+  current_session_hsplit_top:
+    :name: Текущий сеанс - Терминал сверху
+    title: Открыть Yakuake здесь - Терминал сверху
+  current_session_vsplit_left:
+    :name: Текущий сеанс - Терминал слева
+    title: Открыть Yakuake здесь - Терминал слева
+  current_session_vsplit_right:
+    :name: Текущий сеанс - Терминал справа
+    title: Открыть Yakuake здесь - Терминал справа
+  new_session:
+    :name: Новый сеанс
+    title: Открыть Yakuake здесь - Новый сеанс
+  new_session_hsplit_bottom:
+    :name: Новый сеанс - Терминал снизу
+    title: Открыть Yakuake здесь - Терминал снизу
+  new_session_hsplit_top:
+    :name: Новый сеанс - Терминал сверху
+    title: Открыть Yakuake здесь - Терминал сверху
+  new_session_vsplit_left:
+    :name: Новый сеанс - Терминал слева
+    title: Открыть Yakuake здесь - Терминал слева
+  new_session_vsplit_right:
+    :name: Новый сеанс - Терминал справа
+    title: Открыть Yakuake здесь - Терминал справа
+  rename_active_tab_basename:
+    :name: Переименовать активную вкладку - Имя текущей папки
+    title: Открыть Yakuake здесь - Переименовать вкладку в имя папки
+  rename_active_tab_dirname:
+    :name: Переименовать активную вкладку - Путь к текущей папке
+    title: Открыть Yakuake здесь - Переименовать вкладку в путь к папке
+  rename_active_tab_fullpath:
+    :name: Переименовать активную вкладку - Полный путь
+    title: Открыть Yakuake здесь - Переименовать вкладку в полный путь
