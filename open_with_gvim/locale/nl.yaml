@@ -5,7 +5,7 @@
 :common:
 :actions:
   open_gvim:
-    :name: Nieuw venster
+    :name: Openen met gVim
     title: Openen met gVim - Nieuw venster
   open_gvim_first_window:
     :name: Eerste geopend venster
