@@ -7,6 +7,7 @@ like data export, schema querying, or ODBC registration, making them available w
 
 These are the *SQLite Tools* service menu features:
 
+- Licensed under the GPL-v3 license;
 - Fully translated into 4 languages besides English
   (French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -30,6 +31,7 @@ These are the *SQLite Tools* service menu features:
 
 - KDE 4 or superior;
 - KDialog;
+- qtpaths6 for Plasma 6;
 - sqlite3;
 - unixODBC (only for ODBC-related actions);
 - sql-formatter (optional and only for DB table schema action).
@@ -43,7 +45,7 @@ it is recommended to install this service menu through *Dolphin*:
 - Search for *SQLite Tools*;
 - Click on the *Install* button.
 
-Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+Also, the *Discover* application can install it:
 
 - Under Application Addons > Servicemenu;
 - Search for: *SQLite Tools*;
@@ -66,6 +68,13 @@ regularly updated, you can:
 - Report bugs or malfunctions or even ask for new features, just opening an issue
   on the [GitHub issues][issues] page;
 - Localize it in your language using the [English locale][locale] file as a template.
+
+And also:
+
+- Try other service menus from my collection:
+    https://www.pling.com/c/2286451;
+- Lend your support to the cause:
+    https://github.com/sponsors/fabiomux
 
 [download]: https://freeaptitude.altervista.org/downloads/sqlite-tools.html "SQLite Tools download page on FreeAptitude"
 [changelog]: https://freeaptitude.altervista.org/downloads/sqlite-tools.html#changelog "SQLite Tools changelog on FreeAptitude"

@@ -9,6 +9,7 @@ if the session, visualized as a tab, has to be the current one or a new one.
 
 These are the *Open Konsole Here* service menu features:
 
+- Licensed under the GPL-v3 license;
 - Fully translated into 5 languages besides English
   (Dutch, French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
@@ -21,7 +22,8 @@ These are the *Open Konsole Here* service menu features:
 
 - KDE 4 or superior;
 - KDialog;
-- konsole.
+- qtpaths6 for Plasma 6;
+- Konsole.
 
 ## Install
 
@@ -32,7 +34,7 @@ it is recommended to install this service menu through *Dolphin*:
 - Search for *Open Konsole Here*;
 - Click on the *Install* button.
 
-Also, the *Discover* application can install it, but doesn't allow to select a localized version:
+Also, the *Discover* application can install it:
 
 - Under Application Addons > Servicemenu;
 - Search for: *Open Konsole Here*;
@@ -55,6 +57,13 @@ regularly updated, you can:
 - Report bugs or malfunctions or even ask for new features, just opening an issue
   on the [GitHub issues][issues] page;
 - Localize it in your language using the [English locale][locale] file as a template.
+
+And also:
+
+- Try other service menus from my collection:
+    https://www.pling.com/c/2286451;
+- Lend your support to the cause:
+    https://github.com/sponsors/fabiomux
 
 [download]: https://freeaptitude.altervista.org/downloads/open-konsole-here.html "Open Konsole Here download page on FreeAptitude"
 [changelog]: https://freeaptitude.altervista.org/downloads/open-konsole-here.html#changelog "Open Konsole Here changelog on FreeAptitude"
