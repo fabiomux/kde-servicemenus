@@ -11,8 +11,8 @@ panel, top or bottom.
 These are the *Open Yakuake Here* service menu features:
 
 - Licensed under the GPL-v3 license;
-- Fully translated into 7 languages besides English
-  (Catalan, Dutch, French, German, Italian, Portuguese, Spanish);
+- Fully translated into 8 languages besides English
+  (Catalan, Dutch, French, German, Italian, Portuguese, Russian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
 - Opens the path in the current or new session
@@ -67,6 +67,11 @@ And also:
     https://www.pling.com/c/2286451;
 - Lend your support to the cause:
     https://github.com/sponsors/fabiomux
+
+## Acknowledgments
+
+Thanks to:
+- DayDve@github.com for Russian translation.
 
 [download]: https://freeaptitude.altervista.org/downloads/open-yakuake-here.html "Open Yakuake Here download page on FreeAptitude"
 [changelog]: https://freeaptitude.altervista.org/downloads/open-yakuake-here.html#changelog "Open Yakuake Here changelog on FreeAptitude"
