@@ -11,6 +11,7 @@
   downloading: Download di
   canceled: Download di $n Fermato!
   completed: Download di $n Completato!
+  no_player: Nessun player noto è installato, usa le variabili KSM_DWYDH_VIDEOPLAYER e KSM_DWYDH_AUDIOPLAYER per definirli!
 :actions:
   select_all:
     :name: Seleziona tra i formati disponibili
@@ -51,3 +52,15 @@
     :name: Selezione automatica del miglior formato video (ultimo URL di Klipper)
     title: Download con yt-dlp - Migliore Video
     looking: Cerco il miglior formato video...
+  stream_best:
+    :name: Guarda nel lettore video (miglior audio + video)
+    title: Scarica con yt-dlp - Miglior streaming audio + video
+    looking: Alla ricerca del miglior formato audio + video
+  stream_best_audio:
+    :name: Ascolta nel lettore audio (miglior audio)
+    title: Scarica con yt-dlp - Miglior streaming audio
+    looking: Alla ricerca del miglior formato audio
+  stream_best_video:
+    :name: Guarda nel lettore video (miglior video)
+    title: Scarica con yt-dlp - Miglior streaming video
+    looking: Alla ricerca del miglior formato video

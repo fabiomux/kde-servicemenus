@@ -1,5 +1,5 @@
 ---
-:service_menu: download_com_yt-dlp_aqui
+:service_menu: download_with_yt-dlp_here
 :entry:
   :submenu: Download com yt-dlp aqui
 :common:
@@ -11,6 +11,7 @@
   downloading: Download de
   canceled: Download de $n cancelado
   completed: Download de $n concluído!
+  no_player: Nenhum leitor conhecido está instalado. Utilize as variáveis KSM_DWYDH_VIDEOPLAYER e KSM_DWYDH_AUDIOPLAYER para os definir!
 :actions:
   select_all:
     :name: Selecione de entre todos os formatos disponíveis
@@ -51,3 +52,15 @@
     :name: Selecione automaticamente o melhor formato de vídeo (último URL do Klipper)
     title: Download com yt-dlp - Melhor vídeo
     looking: Procura o melhor formato de vídeo...
+  stream_best:
+    :name: Visualizar no leitor de vídeo (melhor áudio + vídeo)
+    title: Download with yt-dlp - Melhor streaming de áudio + vídeo
+    looking: Procurar o melhor formato de áudio + vídeo
+  stream_best_audio:
+    :name: Ouvir no leitor de áudio (melhor áudio)
+    title: Download with yt-dlp - Melhor streaming de áudio
+    looking: Procurando o melhor formato de áudio
+  stream_best_video:
+    :name: Visualizar no leitor de vídeo (melhor vídeo)
+    title: Download com yt-dlp - Melhor streaming de vídeo
+    looking: Procurando o melhor formato de vídeo

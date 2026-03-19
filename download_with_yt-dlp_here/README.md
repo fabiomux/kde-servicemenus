@@ -13,16 +13,12 @@ These are the *Download with yt-dlp here* service menu features:
   (French, German, Italian, Portuguese, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
-- Select the format among all the available formats;
-- Select the format among the only audio formats;
-- Select the format among the only video formats;
-- Select the format among the audio + video formats;
-- Automatically select the best audio format;
-- Automatically select the best video format;
-- Automatically select the best audio + video format;
-- Automatically select the best audio format from the last URL on Klipper;
-- Automatically select the best video format from the last URL on Klipper;
-- Automatically select the best audio + video format from the last URL on Klipper;
+- Select the only audio, only video or audio+video format among all the available formats;
+- Automatically select either the best audio, video, or audio+video format format;
+- Automatically select either the best audio, video or audio+video format from the last URL on Klipper;
+- Stream the best, best audio, or best video format in your player;
+- Configurable video player with KSM_DWYDH_VIDEOPLAYER variable;
+- Configurable audio player with KSM_DWYDH_AUDIOPLAYER variable;
 - Download a file from the internet using the direct URL and the automatic best format selection;
 - A dialog shows the progress and allows you to cancel the download;
 - The output file format can be overridden using the $KSM_DWYDH_OUTPUT variable.
