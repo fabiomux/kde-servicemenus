@@ -1,0 +1,41 @@
+---
+:service_menu: link_url_here
+:entry:
+  :submenu: Link URL Here
+:common:
+  insert_url: Insert the URL to link
+  insert_name: Insert the shortcut name
+  invalid_name: The name inserted is not valid!
+  file_exists: The file exists, do you want to overwrite it?
+  select_option: Select one option or cancel
+  select_options: Select one or more options or cancel
+  new_window: New Window
+  new_tab: New Tab
+  private_window: Private Window
+  none: None
+  full_screen: Full Screen
+  no_extensions: No Extensions
+  select_profile: Select the profile or cancel
+:actions:
+  default_browser:
+    :name: Default Browser
+    title: Link URL Here - Default Browser
+  brave:
+    :name: Brave
+    title: Link URL Here - Brave
+  firefox:
+    :name: Firefox
+    title: Link URL Here - Firefox
+  falkon:
+    :name: Falkon
+    title: Link URL Here - Falkon
+    current_tab: Current Tab
+  chromium:
+    :name: Chromium
+    title: Link URL Here - Chromium
+  google_chrome:
+    :name: Chrome
+    title: Link URL Here - Chrome
+  vivaldi:
+    :name: Vivaldi
+    title: Link URL Here - Vivaldi

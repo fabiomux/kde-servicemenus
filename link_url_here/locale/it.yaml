@@ -1,0 +1,41 @@
+---
+:service_menu: link_url_here
+:entry:
+  :submenu: Link URL Here
+:common:
+  insert_url: Inserisci l'URL del collegamento
+  insert_name: Inserisci il nome del collegamento
+  invalid_name: Il nome inserito non è valido!
+  file_exists: Il file esiste, vuoi sovrascriverlo?
+  select_option: Seleziona un'opzione o annulla
+  select_options: Seleziona una o più opzioni o annulla
+  new_window: Nuova finestra
+  new_tab: Nuova scheda
+  private_window: Finestra privata
+  none: Nessuna
+  full_screen: Schermo intero
+  no_extensions: Nessuna estensione
+  select_profile: Seleziona il profilo o annulla
+:actions:
+  default_browser:
+    :name: Browser predefinito
+    title: Link URL qui - Browser predefinito
+  brave:
+    :name: Brave
+    title: Link URL qui - Brave
+  firefox:
+    :name: Firefox
+    title: Link URL qui - Firefox
+  falkon:
+    :name: Falkon
+    title: Link URL qui - Falkon
+    current_tab: Scheda corrente
+  chromium:
+    :name: Chromium
+    title: Link URL qui - Chromium
+  google_chrome:
+    :name: Chrome
+    title: Link URL qui - Chrome
+  vivaldi:
+    :name: Vivaldi
+    title: Link URL qui - Vivaldi

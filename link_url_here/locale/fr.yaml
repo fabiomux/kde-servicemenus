@@ -1,0 +1,41 @@
+---
+:service_menu: link_url_here
+:entry:
+  :submenu: Lien URL ici
+:common:
+  insert_url: Insérez l'URL du lien
+  insert_name: Insérez le nom du raccourci
+  invalid_name: Le nom saisi n'est pas valide!
+  file_exists: Le fichier existe déjà. Voulez-vous l'écraser?
+  select_option: Sélectionnez une option ou annulez
+  select_options: Sélectionnez une ou plusieurs options ou annulez
+  new_window: Nouvelle fenêtre
+  new_tab: Nouvel onglet
+  private_window: Fenêtre privée
+  none: Aucun
+  full_screen: Plein écran
+  no_extensions: Aucune extension
+  select_profile: Sélectionnez le profil ou annulez
+:actions:
+  default_browser:
+    :name: Navigateur par défaut
+    title: Lien URL - Navigateur par défaut
+  brave:
+    :name: Brave
+    title: Lien URL - Brave
+  firefox:
+    :name: Firefox
+    title: Lien URL - Firefox
+  falkon:
+    :name: Falkon
+    title: Lien URL - Falkon
+    current_tab: Onglet actuel
+  chromium:
+    :name: Chromium
+    title: Lien URL - Chromium
+  google_chrome:
+    :name: Chrome
+    title: Lien URL - Chrome
+  vivaldi:
+    :name: Vivaldi
+    title: Lien URL - Vivaldi

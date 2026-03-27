@@ -1,0 +1,41 @@
+---
+:service_menu: link_url_here
+:entry:
+  :submenu: Link-URL hier einfügen
+:common:
+  insert_url: URL zum Verlinken einfügen
+  insert_name: Namen für die Verknüpfung einfügen
+  invalid_name: Der eingegebene Name ist ungültig!
+  file_exists: Die Datei existiert bereits. Soll sie überschrieben werden?
+  select_option: Eine Option auswählen oder abbrechen
+  select_options: Eine oder mehrere Optionen auswählen oder abbrechen
+  new_window: Neues Fenster
+  new_tab: Neuer Tab
+  private_window: Privates Fenster
+  none: Keine
+  full_screen: Vollbild
+  no_extensions: Keine Erweiterungen
+  select_profile: Profil auswählen oder abbrechen
+:actions:
+  default_browser:
+    :name: Standardbrowser
+    title: URL hier einfügen – Standardbrowser
+  brave:
+    :name: Brave
+    title: URL hier einfügen – Brave
+  firefox:
+    :name: Firefox
+    title: URL hier einfügen – Firefox
+  falkon:
+    :name: Falkon
+    title: URL hier einfügen – Falkon
+    current_tab: Aktueller Tab
+  chromium:
+    :name: Chromium
+    title: URL hier einfügen – Chromium
+  google_chrome:
+    :name: Chrome
+    title: URL hier einfügen – Chrome
+  vivaldi:
+    :name: Vivaldi
+    title: URL hier einfügen – Vivaldi

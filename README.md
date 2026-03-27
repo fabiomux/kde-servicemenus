@@ -7,6 +7,7 @@ that recall an application useful to manipulate the selected files.
 
 In an attempt to include the snippets I usually recall from the command line, I decided to write my
 personal collection and arrange them following my guidelines:
+
 - *Essential bundle*: no extra script besides the installer is bundled, all the commands go into the desktop
   file and the final size shouldn't exceed the order of the tens of Kbytes, indeed the files included in the
   archive are:
@@ -36,6 +37,7 @@ services within the three KDE environments: KDE 4 (for legacy), Plasma 5, and th
 ## The available services
 
 My personal KDE service menus collection includes the following scripts:
+
 - [Compare with Kompare][compare_with_kompare]:
   Cache and retrieve the file to compare with the selected one, using the clipboard area or a cache file;
 - [Compose with Betterbird][compose_with_betterbird]:
@@ -55,6 +57,9 @@ My personal KDE service menus collection includes the following scripts:
   download a file in the current folder using the *youtube-dl* command line tool;
 - [Download with yt-dlp here][download_with_ytdlp]:
   download a file in the current folder using the *yt-dlp* command line tool;
+- [Link URL here][link_url_here]:
+  create a file in the current folder which can open an URL with the wanted options using the browser
+  of your choice among those supported;
 - [Open Konsole Here][open_konsole_here]:
   open the selected path in the first or last Konsole window, current or new session;
 - [Open with gVIM][open_with_gvim]:
@@ -159,6 +164,7 @@ More info is available at:
 [copy_to_klipper]: https://github.com/fabiomux/kde-servicemenus/tree/main/copy_to_klipper "Copy to Klipper GitHub page"
 [download_with_youtubedl]: https://github.com/fabiomux/kde-servicemenus/tree/main/download_with_youtube-dl_here "Download with youtube-dl GitHub page"
 [download_with_ytdlp]: https://github.com/fabiomux/kde-servicemenus/tree/main/download_with_yt-dlp_here "Download with yt-dlp GitHub page"
+[link_url_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/link_url_here "Link URL here GitHub page"
 [open_konsole_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_konsole_here "Open Konsole Here GitHub page"
 [open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_with_gvim "Open with gVIM GitHub page"
 [open_with_kate]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_with_kate "Open with Kate GitHub page"

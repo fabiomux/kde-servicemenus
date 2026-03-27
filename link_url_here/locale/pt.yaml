@@ -1,0 +1,41 @@
+---
+:service_menu: link_url_here
+:entry:
+  :submenu: Link URL Aqui
+:common:
+  insert_url: Introduza o URL para o link
+  insert_name: Introduza o nome do atalho
+  invalid_name: O nome introduzido não é válido!
+  file_exists: O ficheiro já existe. Deseja sobrescrevê-lo?
+  select_option: Selecione uma opção ou cancele
+  select_options: Selecione uma ou mais opções ou cancele
+  new_window: Nova janela
+  new_tab: Novo separador
+  private_window: Janela privada
+  none: Nenhuma
+  full_screen: Ecrã completo
+  no_extensions: Sem extensões
+  select_profile: Selecione o perfil ou cancele
+:actions:
+  default_browser:
+    :name: Navegador padrão
+    title: Link URL aqui - Navegador padrão
+  brave:
+    :name: Brave
+    title: Link URL aqui - Brave
+  firefox:
+    :name: Firefox
+    title: Link URL aqui - Firefox
+  falkon:
+    :name: Falkon
+    title: Link URL aqui - Falkon
+    current_tab: Separador atual
+  chromium:
+    :name: Chromium
+    title: Link URL aqui - Chromium
+  google_chrome:
+    :name: Chrome
+    title: Link URL aqui - Chrome
+  vivaldi:
+    :name: Vivaldi
+    title: Lsaràink URL aqui - Vivaldi
