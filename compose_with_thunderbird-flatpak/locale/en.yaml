@@ -9,6 +9,7 @@
   email: Email
   subject: Subject
   topic: Email topic
+  no_tb: The Thunderbird application is not installed
 :actions:
   selected:
     :name: Selected files

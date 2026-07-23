@@ -4,11 +4,11 @@
   :submenu: Componi con Thunderbird
 :common:
   comma_error: Il file contiene una o più virgole
-  comma_error_details: I file con una virgola non possono essere inclusi a causa di un bug nel comando
-    di Thunderbird.\n\nRinomina il file o allegalo manualmente!
+  comma_error_details: I file con una virgola non possono essere inclusi a causa di un bug nel comando di Thunderbird.\n\nRinomina il file o allegalo manualmente!
   email: e-mail
   subject: Soggetto
   topic: Argomento dell'e-mail
+  no_tb: L'applicazione Thunderbird non è installata
 :actions:
   selected:
     :name: File selezionati

@@ -4,11 +4,11 @@
   :submenu: Componer con Thunderbird
 :common:
   comma_error: El archivo contiene uno o más caracteres de coma
-  comma_error_details: Los archivos con un carácter de coma no se pueden incluir debido a un error en el
-     comando de Thunderbird.\n\n¡Cambie el nombre del archivo o adjúntelo manualmente!
+  comma_error_details: Los archivos con un carácter de coma no se pueden incluir debido a un error en el comando de Thunderbird.\n\n¡Cambie el nombre del archivo o adjúntelo manualmente!
   email: Correo electrónico
   subject: Asunto
   topic: Tema de correo electrónico
+  no_tb: La aplicación Thunderbird no está instalada.
 :actions:
   selected:
     :name: Archivos seleccionados
@@ -19,16 +19,16 @@
   only_cached:
     :name: Solo los archivos guardados
     title: Redactar con Thunderbird - Archivos en caché
-    empty: ¡Vaciar caché!
+    empty: "¡Vaciar caché!"
   cache:
     :name: Guardar archivos para más tarde
     title: Redactar con Thunderbird - Caché
-    cached: ¡Archivos almacenados en caché!
+    cached: "¡Archivos almacenados en caché!"
   erase_cache:
     :name: Limpiar el caché
     title: Redactar con Thunderbird - Limpieza de caché
-    confirm: ¿Quieres borrar el caché?
-    clean: ¡Caché limpio!
+    confirm: "¿Quieres borrar el caché?"
+    clean: "¡Caché limpio!"
   remove_invalid:
     :name: Eliminar elementos no válidos del caché
     title: Redactar con Thunderbird - Eliminar no válido

@@ -4,11 +4,11 @@
   :submenu: Mit Thunderbird versenden
 :common:
   comma_error: Die Datei enthält ein oder mehrere Kommazeichen
-  comma_error_details: Dateien mit einem Kommazeichen können aufgrund eines Fehlers im Thunderbird nicht eingebunden werden
-     Befehl.\n\nBenennen Sie die Datei um oder hängen Sie sie manuell an!
+  comma_error_details: Dateien mit einem Kommazeichen können aufgrund eines Fehlers im Thunderbird nicht eingebunden werden Befehl.\n\nBenennen Sie die Datei um oder hängen Sie sie manuell an!
   email: Email
   subject: Betreff
   topic: E-Mail-Thema
+  no_tb: Die Thunderbird-Anwendung ist nicht installiert
 :actions:
   selected:
     :name: Datei auswählen

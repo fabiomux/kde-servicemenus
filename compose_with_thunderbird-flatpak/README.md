@@ -15,6 +15,7 @@ These are the *Compose with Thunderbird - Flatpak edition* service menu features
   (French, German, Italian, Spanish);
 - Works from within the Dolphin, Konqueror, Krusader, and KFind results context menu;
 - Support for KDE Plasma 6;
+- Support for Thunderbird and Thunderbird ESR;
 - Compose a new email attaching all the selected files in the folder;
 - Store the selected files in a cache file;
 - Compose a new email attaching all the cached files;
@@ -58,7 +59,7 @@ For debugging purpose follow one of the other methods mentioned on the [project 
 If you like this addon and want to encourage me to improve the project or keep it
 regularly updated, you can:
 
-- Become a fan and add a positive rating on the [Pling page][pling];
+- Become a fan and add a positive rating on the [OpenDesktop page][opendesktop];
 - Star it here on the [GitHub page][github];
 - Report bugs or malfunctions or even ask for new features, just opening an issue
   on the [GitHub issues][issues] page;
@@ -67,7 +68,7 @@ regularly updated, you can:
 And also:
 
 - Try other service menus from my collection:
-    https://www.pling.com/c/2286451;
+    https://www.opendesktop.org/c/2286451;
 - Lend your support to the cause:
     https://github.com/sponsors/fabiomux
 
@@ -79,7 +80,7 @@ Thanks to:
 [download]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html "Compose with Thunderbird - Flatpak edition download page on FreeAptitude"
 [changelog]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html#changelog "Compose with Thunderbird - Flatpak edition changelog on FreeAptitude"
 [installation]: https://freeaptitude.altervista.org/downloads/compose-with-thunderbird-flatpak.html#installation "Compose with Thunderbird - Flatpak edition installation on FreeAptitude"
-[pling]: https://pling.com/p/1988940/ "Compose with Thunderbird - Flatpak edition page on Pling"
+[opendesktop]: https://opendesktop.org/p/1988940/ "Compose with Thunderbird - Flatpak edition page on OpenDesktop"
 [github]: https://github.com/fabiomux/kde-servicemenus "KDE ServiceMenus page on GitHub"
 [issues]: https://github.com/fabiomux/kde-servicemenus/issues "KDE ServiceMenus issues page on GitHub"
 [locale]: https://github.com/fabiomux/kde-servicemenus/blob/main/compose_with_thunderbird-flatpak/locale/en.yaml "English localization file to use as template"
