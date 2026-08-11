@@ -64,6 +64,8 @@ My personal KDE service menus collection includes the following scripts:
   of your choice among those supported;
 - [Open Konsole Here][open_konsole_here]:
   open the selected path in the first or last Konsole window, current or new session;
+- [Open Midnight Commander Here][open_mc_here]:
+  open the selected folders in Midnight Commander, within a Yakuake or Konosole terminal;
 - [Open with gVIM][open_with_gvim]:
   displays all the selected files in different gVIM tabs instead of opening them in hidden buffers;
 - [Open with Kate][open_with_kate]:
@@ -178,6 +180,7 @@ More info is available at:
 [download_with_ytdlp]: https://github.com/fabiomux/kde-servicemenus/tree/main/download_with_yt-dlp_here "Download with yt-dlp GitHub page"
 [link_url_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/link_url_here "Link URL here GitHub page"
 [open_konsole_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_konsole_here "Open Konsole Here GitHub page"
+[open_mc_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_mc_here "Open Midnight Command Here GitHub page"
 [open_with_gvim]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_with_gvim "Open with gVIM GitHub page"
 [open_with_kate]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_with_kate "Open with Kate GitHub page"
 [open_yakuake_here]: https://github.com/fabiomux/kde-servicemenus/tree/main/open_yakuake_here "Open Yakuake here GitHub page"

@@ -1,0 +1,19 @@
+---
+:service_menu: open_mc_here
+:entry:
+  :submenu: Apri Midnight Commander qui
+:common:
+  title:
+:actions:
+  mc_in_y_new_session:
+    :name: In Yakuake - Nuova sessione
+  mc_in_y_current_session:
+    :name: In Yakuake - Sessione corrente
+  mc_in_k_last_inst_current_sess:
+    :name: Nella console - Ultima istanza, sessione corrente
+  mc_in_k_last_inst_new_sess:
+    :name: Nella console - Ultima istanza, nuova sessione
+  mc_in_k_first_inst_current_sess:
+    :name: Nella console - Prima istanza, sessione corrente
+  mc_in_k_first_inst_new_sess:
+    :name: Nella console - Prima istanza, nuova sessione
